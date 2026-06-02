@@ -3,6 +3,10 @@
 > 点一下菜，它就在盘子里"炸开"成一个个食材——看得懂、看得见过敏原。
 > Tap a dish and watch it break apart on the plate into its ingredients — easy to understand, with allergens made visible.
 
+<p align="center">
+  <img src="docs/demo.gif" width="280" alt="Demo — tap the dish to decompose it into its labelled ingredients, tap again to reassemble" />
+</p>
+
 > ⚠️ **品牌说明 / Branding note**：本仓库中的「甘露 / NECTAR」是**虚构的占位品牌**，仅用于公开演示，不代表任何真实餐厅。
 > "甘露 / NECTAR" is a **fictional placeholder brand** used only for this public demo; it does not represent any real restaurant.
 
