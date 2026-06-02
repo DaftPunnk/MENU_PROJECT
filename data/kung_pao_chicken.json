@@ -1,0 +1,22 @@
+{
+  "id": "kung-pao-chicken",
+  "name_zh": "宫保鸡丁",
+  "name_en": "Kung Pao Chicken",
+  "category": "main",
+  "emoji": "🍲",
+  "cultural_note_en": "A classic Sichuan dish with a balance of spicy, sweet, and tangy flavors. Originated from Qing Dynasty, named after governor Ding Baozhen (titled 'Gong Bao'). This version is finished with cashews; the signature element is the numbing-spicy nut and dried chili combination.",
+  "ingredients": [
+    {"name_zh": "鸡腿肉", "name_en": "Chicken thigh", "emoji": "🍗", "image": "chicken", "category": "protein", "allergens": []},
+    {"name_zh": "腰果", "name_en": "Cashews", "emoji": "🥜", "image": "cashew", "category": "nut", "allergens": ["tree nut"]},
+    {"name_zh": "干辣椒", "name_en": "Dried red chili", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []},
+    {"name_zh": "花椒", "name_en": "Sichuan peppercorn", "emoji": "🪻", "image": "peppercorn", "category": "spice", "allergens": []},
+    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "蒜", "name_en": "Garlic", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
+    {"name_zh": "酱油", "name_en": "Soy sauce", "emoji": "🍶", "image": "soy_sauce", "category": "sauce", "allergens": ["soy", "gluten"]},
+    {"name_zh": "醋", "name_en": "Chinese black vinegar", "emoji": "🧴", "image": "vinegar", "category": "sauce", "allergens": []},
+    {"name_zh": "糖", "name_en": "Sugar", "emoji": "🧂", "image": "sugar", "category": "seasoning", "allergens": []},
+    {"name_zh": "料酒", "name_en": "Shaoxing cooking wine", "emoji": "🍷", "image": "cooking_wine", "category": "seasoning", "allergens": ["alcohol", "gluten"]},
+    {"name_zh": "淀粉", "name_en": "Cornstarch", "emoji": "🌽", "image": "cornstarch", "category": "thickener", "allergens": []}
+  ]
+}
