@@ -7,6 +7,14 @@
   <img src="docs/demo.gif" width="280" alt="Demo — tap the dish to decompose it into its labelled ingredients, tap again to reassemble" />
 </p>
 
+## 🔗 在线演示 / Live demo
+
+**<https://daftpunnk.github.io/MENU_PROJECT/>** — 手机扫码即开 / scan to open on your phone
+
+<p align="center">
+  <img src="docs/qr.png" width="170" alt="QR code linking to the live demo" />
+</p>
+
 > ⚠️ **品牌说明 / Branding note**：本仓库中的「甘露 / NECTAR」是**虚构的占位品牌**，仅用于公开演示，不代表任何真实餐厅。
 > "甘露 / NECTAR" is a **fictional placeholder brand** used only for this public demo; it does not represent any real restaurant.
 
@@ -106,8 +114,8 @@ src/
 
 ## 📌 状态 / Status
 
-当前是 **demo 阶段**，只做了一道菜（宫保鸡丁 / Kung Pao Chicken）作为概念验证。数据结构和组件都已抽象成"任意菜品"通用，后续可以扩展成多道菜的可翻页菜单、加过敏原筛选、部署上线生成二维码。
-Currently a **demo** with a single dish (Kung Pao Chicken) as a proof of concept. The data model and components are already generalised for any dish, so it can grow into a multi-dish paginated menu, an allergen filter, and a deployed build behind a QR code.
+当前是 **可扫码演示阶段**：已上线部署，含三道菜——松露虾饺（点心）、宫保鸡丁（主菜）、Flox Tail（鸡尾酒），按分类手风琴浏览，点开放大进入「点击炸开食材」详情。数据结构和组件都已抽象成"任意菜品"通用，后续可继续加菜、做过敏原筛选。
+Now a **live, scannable demo**: deployed and online, with three dishes — Truffle Ha Kao (dim sum), Kung Pao Chicken (main) and the Flox Tail cocktail — browsed via a category accordion that zooms into the tap-to-decompose detail view. The data model and components are generalised for any dish, so it can keep growing with more dishes and an allergen filter.
 
 ---
 
