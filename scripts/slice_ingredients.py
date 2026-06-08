@@ -13,7 +13,11 @@ The input is a 4-col × 3-row grid sheet (last cell empty) on a light grey backg
   4) saves them named in reading order (left→right, top→bottom)
 
 用法 / usage:
+  # 默认宫保鸡丁 4×3 网格 / default Kung Pao 4×3 sheet:
   python scripts/slice_ingredients.py src/assets/ingredients_sheet.png src/assets
+
+  # 自定义网格 + 名字(逗号分隔,读序排列) / custom grid + names (comma-separated, in reading order):
+  python scripts/slice_ingredients.py <sheet> <outdir> <cols> <rows> <name1,name2,...>
 """
 import sys
 import os
@@ -21,11 +25,11 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 
-COLS, ROWS = 4, 3
-
-# 网格顺序对应的文件名(必须和提示词里的 1–11 顺序一致)
-# Filenames in grid order — must match the 1–11 order in the prompt.
-NAMES = [
+# 默认网格与文件名(宫保鸡丁);可由命令行覆盖。名字顺序必须和提示词里的格子顺序一致。
+# Default grid + filenames (Kung Pao); overridable from the CLI. The name order must match the
+# cell order in the image-generation prompt (left→right, top→bottom).
+DEFAULT_COLS, DEFAULT_ROWS = 4, 3
+DEFAULT_NAMES = [
     "cashew",      # 1 腰果
     "chili",       # 2 干辣椒
     "peppercorn",  # 3 花椒
@@ -95,7 +99,7 @@ def autocrop(cell, pad_frac=0.06):
     return cell[y0:y1, x0:x1]
 
 
-def main(src, outdir):
+def main(src, outdir, cols=DEFAULT_COLS, rows=DEFAULT_ROWS, names=DEFAULT_NAMES):
     im = Image.open(src).convert("RGBA")
     arr = np.array(im)
     bg = detect_bg(arr[..., :3])
@@ -103,11 +107,11 @@ def main(src, outdir):
 
     keyed = key_out_bg(arr, bg)
     H, W = keyed.shape[:2]
-    cw, ch = W // COLS, H // ROWS
+    cw, ch = W // cols, H // rows
 
     saved = 0
-    for i, name in enumerate(NAMES):
-        r, c = i // COLS, i % COLS
+    for i, name in enumerate(names):
+        r, c = i // cols, i % cols
         cell = keyed[r * ch:(r + 1) * ch, c * cw:(c + 1) * cw]
         cropped = autocrop(cell)
         if cropped is None:
@@ -117,8 +121,14 @@ def main(src, outdir):
         Image.fromarray(cropped).save(out)
         print(f"  [ok] {name}.png  ({cropped.shape[1]}x{cropped.shape[0]})")
         saved += 1
-    print(f"done - {saved}/{len(NAMES)} ingredients saved to {outdir}")
+    print(f"done - {saved}/{len(names)} ingredients saved to {outdir}")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    src, outdir = sys.argv[1], sys.argv[2]
+    if len(sys.argv) > 5:
+        cols, rows = int(sys.argv[3]), int(sys.argv[4])
+        names = [n.strip() for n in sys.argv[5].split(",") if n.strip()]
+        main(src, outdir, cols, rows, names)
+    else:
+        main(src, outdir)

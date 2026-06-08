@@ -17,6 +17,25 @@ import sugar from './assets/sugar.webp'
 import cooking_wine from './assets/cooking_wine.webp'
 import cornstarch from './assets/cornstarch.webp'
 
+// 松露虾饺 Ha Kao 的食材 / Ha Kao ingredients
+import shrimp from './assets/shrimp.webp'
+import truffle from './assets/truffle.webp'
+import truffle_oil from './assets/truffle_oil.webp'
+import wheat_starch from './assets/wheat_starch.webp'
+import tapioca from './assets/tapioca.webp'
+import salt from './assets/salt.webp'
+
+// Flox Tail 的食材 / Flox Tail ingredients (foamer + rice-paper bird stay as emoji)
+import rum from './assets/rum.webp'
+import benedictine from './assets/benedictine.webp'
+import cinnamon from './assets/cinnamon.webp'
+import fennel from './assets/fennel.webp'
+import star_anise from './assets/star_anise.webp'
+import grapefruit from './assets/grapefruit.webp'
+import pineapple from './assets/pineapple.webp'
+import peach from './assets/peach.webp'
+import lime from './assets/lime.webp'
+
 export const ingredientImages = {
   chicken,
   cashew,
@@ -30,4 +49,21 @@ export const ingredientImages = {
   sugar,
   cooking_wine,
   cornstarch,
+  // 松露虾饺 / Ha Kao
+  shrimp,
+  truffle,
+  truffle_oil,
+  wheat_starch,
+  tapioca,
+  salt,
+  // Flox Tail
+  rum,
+  benedictine,
+  cinnamon,
+  fennel,
+  star_anise,
+  grapefruit,
+  pineapple,
+  peach,
+  lime,
 }

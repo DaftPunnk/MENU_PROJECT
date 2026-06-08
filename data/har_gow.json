@@ -1,0 +1,16 @@
+{
+  "id": "ha-kao",
+  "name_zh": "松露虾饺",
+  "name_en": "Ha Kao",
+  "category": "dim_sum",
+  "emoji": "🥟",
+  "cultural_note_en": "A Cantonese dim-sum classic from the teahouses of Guangzhou, here in an upscale black-truffle version. A translucent wheat-starch skin, pleated by hand into at least seven folds, wraps a filling of whole shrimp and black truffle; each dumpling is finished with a shaving of truffle on top and a brush of truffle oil. Steamed to order and best eaten while the skin is still glossy and springy.",
+  "ingredients": [
+    {"name_zh": "虾仁", "name_en": "Shrimp", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "黑松露", "name_en": "Black truffle", "emoji": "🍄", "image": "truffle", "category": "filling", "allergens": []},
+    {"name_zh": "黑松露油", "name_en": "Black truffle oil", "emoji": "🫗", "image": "truffle_oil", "category": "seasoning", "allergens": []},
+    {"name_zh": "澄面", "name_en": "Wheat starch (skin)", "emoji": "🌾", "image": "wheat_starch", "category": "wrapper", "allergens": ["gluten"]},
+    {"name_zh": "生粉", "name_en": "Tapioca starch", "emoji": "⚪", "image": "tapioca", "category": "wrapper", "allergens": []},
+    {"name_zh": "盐", "name_en": "Salt", "emoji": "🧂", "image": "salt", "category": "seasoning", "allergens": []}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flox-tail",
+  "name_zh": "Flox Tail",
+  "name_en": "Flox Tail",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "A house signature served straight up in a coupe. A rum base is layered with herbal DOM Bénédictine and warm baking spices — cinnamon, fennel and star anise — then balanced with grapefruit, pineapple and peach purées and a squeeze of lime. Shaken to a soft pink with a cocktail foamer and finished with an edible rice-paper bird floated on the foam. Aromatic, fruity and gently spiced.",
+  "ingredients": [
+    {"name_zh": "朗姆酒", "name_en": "Rum", "emoji": "🥃", "image": "rum", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "廊酒", "name_en": "Bénédictine", "emoji": "🍶", "image": "benedictine", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "肉桂", "name_en": "Cinnamon", "emoji": "🪵", "image": "cinnamon", "category": "spice", "allergens": []},
+    {"name_zh": "茴香", "name_en": "Fennel", "emoji": "🌿", "image": "fennel", "category": "spice", "allergens": []},
+    {"name_zh": "八角", "name_en": "Star anise", "emoji": "✴️", "image": "star_anise", "category": "spice", "allergens": []},
+    {"name_zh": "西柚", "name_en": "Grapefruit", "emoji": "🍊", "image": "grapefruit", "category": "citrus", "allergens": []},
+    {"name_zh": "菠萝泥", "name_en": "Pineapple purée", "emoji": "🍍", "image": "pineapple", "category": "fruit", "allergens": []},
+    {"name_zh": "桃子泥", "name_en": "Peach purée", "emoji": "🍑", "image": "peach", "category": "fruit", "allergens": []},
+    {"name_zh": "青柠汁", "name_en": "Lime juice", "emoji": "🍋", "image": "lime", "category": "citrus", "allergens": []},
+    {"name_zh": "糖", "name_en": "Sugar", "emoji": "🍬", "image": "sugar", "category": "sweetener", "allergens": []},
+    {"name_zh": "起泡剂", "name_en": "Cocktail foamer", "emoji": "🫧", "image": "foamer", "category": "foam", "allergens": []},
+    {"name_zh": "糯米纸", "name_en": "Rice-paper bird", "emoji": "🐦", "image": "rice_paper", "category": "garnish", "allergens": []}
+  ]
+}

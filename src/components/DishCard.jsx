@@ -56,19 +56,24 @@ function DishCard({ dish, image }) {
           <div className="absolute inset-2 rounded-[50%] border border-[#c9a96a]/25" />
         </motion.div>
 
-        {/* 合拢态:完整成菜图,负责"勾人";展开时淡出、缩小,像被端走炸开 */}
-        {/* closed state: the full plated-dish image (the appetizing hook); fades + shrinks away when opened */}
-        {image && (
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[84%] flex justify-center pointer-events-none z-10">
-            <motion.img
-              src={image}
-              alt={dish.name_en}
-              className="max-h-[380px] w-auto object-contain"
-              animate={{ opacity: isOpen ? 0 : 1, scale: isOpen ? 0.65 : 1 }}
-              transition={{ duration: 0.35 }}
-            />
-          </div>
-        )}
+        {/* 合拢态封面:有成菜图就用图,没有就用大 emoji 占位;都负责"勾人",展开时淡出、缩小,像被端走炸开 */}
+        {/* closed-state cover: the plated-dish photo if there is one, otherwise a big emoji placeholder —
+            either way the appetizing hook; fades + shrinks away when opened */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[84%] flex justify-center pointer-events-none z-10">
+          <motion.div
+            className="flex justify-center"
+            animate={{ opacity: isOpen ? 0 : 1, scale: isOpen ? 0.65 : 1 }}
+            transition={{ duration: 0.35 }}
+          >
+            {image ? (
+              <img src={image} alt={dish.name_en} className="max-h-[380px] w-auto object-contain" />
+            ) : (
+              <span className="text-[150px] leading-none drop-shadow-[0_12px_30px_rgba(0,0,0,0.45)]">
+                {dish.emoji}
+              </span>
+            )}
+          </motion.div>
+        </div>
 
         {/* 食材零件:合拢时缩进盘子(看不见),展开时从盘子飞到上方网格,带名字+过敏标记 */}
         {/* ingredient pieces: hidden in the plate when closed, flying up into the grid (with name + allergens) when opened */}

@@ -34,3 +34,9 @@ CLAUDE.md
 
 # Notes (don't push) / 个人笔记不上传
 NOTES.md
+
+# Python cache / Python 缓存
+__pycache__/
+
+# 原始菜品照片(图像流水线的输入,不被 app 使用) / raw dish photos (pipeline inputs, not used by the app)
+src/assets/*.jpg
