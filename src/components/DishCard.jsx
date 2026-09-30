@@ -12,9 +12,37 @@ import { ingredientImages } from '../ingredientImages'
 const PLATE_LEFT = 50
 const PLATE_TOP = 80
 
+// 鸡尾酒用酒杯代替盘子:杯口(零件飞出的位置)的百分比 / cocktails get a glass instead of a plate — the rim spot pieces fly out of
+const GLASS_TOP = 71
+
+// 代码画的 coupe 鸡尾酒杯(浅宽杯身 + 细杯脚),配色与盘子一致
+// a code-drawn coupe glass (wide shallow bowl + thin stem), in the same palette as the plate
+function CoupeGlass() {
+  return (
+    <svg viewBox="0 0 100 60" className="w-full h-auto drop-shadow-[0_12px_30px_rgba(0,0,0,0.45)]">
+      <defs>
+        <linearGradient id="coupe-fill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#26407a" />
+          <stop offset="100%" stopColor="#0d1730" />
+        </linearGradient>
+      </defs>
+      {/* 杯身 / bowl */}
+      <path d="M4 4 C6 22 30 30 50 30 C70 30 94 22 96 4 Z" fill="url(#coupe-fill)" stroke="#c9a96a" strokeOpacity="0.5" strokeWidth="0.6" />
+      {/* 杯口 / rim */}
+      <ellipse cx="50" cy="4" rx="46" ry="3" fill="#0d1730" stroke="#c9a96a" strokeOpacity="0.6" strokeWidth="0.6" />
+      {/* 杯脚 + 底座 / stem + foot */}
+      <rect x="48.8" y="30" width="2.4" height="24" fill="#c9a96a" fillOpacity="0.45" />
+      <ellipse cx="50" cy="55" rx="17" ry="2.8" fill="url(#coupe-fill)" stroke="#c9a96a" strokeOpacity="0.5" strokeWidth="0.6" />
+    </svg>
+  )
+}
+
 function DishCard({ dish, image }) {
   // isOpen 控制菜是否已"分解" / isOpen controls whether the dish is decomposed
   const [isOpen, setIsOpen] = useState(false)
+  // 鸡尾酒从酒杯里飞出,其余从盘子里 / cocktails burst out of a glass, everything else out of the plate
+  const isDrink = dish.category === 'cocktail'
+  const pileTop = isDrink ? GLASS_TOP : PLATE_TOP
 
   // 展开态:把食材排进盘子上方的网格(4 列,自动分行)
   // open state: lay the ingredients into a grid above the plate (4 columns, wrapping into rows)
@@ -45,16 +73,28 @@ function DishCard({ dish, image }) {
       >
         {/* 空盘子(代码画的椭圆):展开后才显形(成菜图淡出、盘子空了);合拢时被成菜图盖住 */}
         {/* the empty plate (CSS ellipse): appears once opened (dish faded out, plate now empty); hidden behind the dish when closed */}
-        <motion.div
-          className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%]
-                     border border-[#c9a96a]/50 bg-gradient-to-b from-[#26407a] to-[#0d1730]
-                     shadow-[0_12px_30px_rgba(0,0,0,0.45)]"
-          style={{ top: `${PLATE_TOP}%`, width: '68%', height: '14%' }}
-          animate={{ opacity: isOpen ? 1 : 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          <div className="absolute inset-2 rounded-[50%] border border-[#c9a96a]/25" />
-        </motion.div>
+        {/* 鸡尾酒则换成空酒杯,杯口对准 GLASS_TOP / for a cocktail it's an empty glass instead, rim aligned to GLASS_TOP */}
+        {isDrink ? (
+          <motion.div
+            className="absolute left-1/2 -translate-x-1/2 w-[58%]"
+            style={{ top: `${GLASS_TOP - 3}%` }}
+            animate={{ opacity: isOpen ? 1 : 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <CoupeGlass />
+          </motion.div>
+        ) : (
+          <motion.div
+            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[50%]
+                       border border-[#c9a96a]/50 bg-gradient-to-b from-[#26407a] to-[#0d1730]
+                       shadow-[0_12px_30px_rgba(0,0,0,0.45)]"
+            style={{ top: `${PLATE_TOP}%`, width: '68%', height: '14%' }}
+            animate={{ opacity: isOpen ? 1 : 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="absolute inset-2 rounded-[50%] border border-[#c9a96a]/25" />
+          </motion.div>
+        )}
 
         {/* 合拢态封面:有成菜图就用图,没有就用大 emoji 占位;都负责"勾人",展开时淡出、缩小,像被端走炸开 */}
         {/* closed-state cover: the plated-dish photo if there is one, otherwise a big emoji placeholder —
@@ -86,7 +126,7 @@ function DishCard({ dish, image }) {
             openLeft={openLeft}
             openTop={openTop}
             pileLeft={PLATE_LEFT}
-            pileTop={PLATE_TOP}
+            pileTop={pileTop}
             // 按食材的 image 关键字查到真实图片;查不到则为 undefined,组件退回 emoji
             // look up the real image by the ingredient's `image` key; undefined → component falls back to emoji
             image={ingredientImages[ing.image]}
