@@ -1,0 +1,626 @@
+{
+  "_comment": "酒水单(暂只有品项/价格/描述,成分待菜单最终确定后再补)。dish 字段 = 已有成分拆解的菜品 id,点击可跳详情。/ Beverage list — items, prices and descriptions only; ingredient breakdowns come once the menu is final. `dish` = id of a dish JSON that has a breakdown.",
+  "footer_en": "R18 for the service of alcohol. Host Responsibility limits apply.",
+  "sections": [
+    {
+      "id": "signature_cocktails",
+      "name_zh": "招牌鸡尾酒",
+      "name_en": "Signature Cocktails",
+      "emoji": "🍸",
+      "note_en": "Classics available on request",
+      "groups": [
+        {
+          "items": [
+            { "name": "Flox-tail", "price": 26, "dish": "flox-tail", "desc_en": "A cocktail inspired by New Zealand artist Flox and her artwork created for our bar. Dark Rum, Pink Grapefruit, Spiced Peach & a touch of art" },
+            { "name": "Royal 75", "price": 28, "desc_en": "Lychee, Mandarin, Gin topped with Perrier-Jouët Champagne" },
+            { "name": "Silk Road Negroni", "price": 25, "desc_en": "Gin, Spiced with Ginger, Black Pepper, Black Tea and Clove, combined with Campari & Sweet Vermouth. A Chinese twist on a classic" },
+            { "name": "M.S.G", "price": 25, "desc_en": "Fragrant Mint, Chai Spiced Gin & Citrus. So refreshing it will leave you wanting more" },
+            { "name": "Chang Jiang", "price": 25, "desc_en": "Bourbon & Mandarin Brandy, with a hint of lemon. A modern twist on a classic Sidecar." },
+            { "name": "Wēi là Margarita", "price": 25, "desc_en": "A Margarita improved with Honey, Tea, and a touch of heat. Tequila, Apple Liqueur, Honey & Amber Tea Syrup, Apple Juice, Kaitaia Fire Hot Sauce" },
+            { "name": "Black Forest Martini", "price": 25, "desc_en": "Vodka, Chambord, Crème de Cacao Blanc, Cherry Purée, Cold Brew Coffee" },
+            { "name": "Eye of the Dragon", "price": 25, "desc_en": "Vodka, Lychee, Marasquin, Citrus" },
+            { "name": "Monkey Business", "price": 25, "desc_en": "Monkey Shoulder, Banana Liqueur, Ginger Liqueur, Citrus" },
+            { "name": "Ool-La-La", "price": 25, "desc_en": "A not-so Old Fashioned. Oolong tea infused Makers Mark with Spiced Syrup & Black Walnut bitters" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baijiu_cocktails",
+      "name_zh": "白酒鸡尾酒",
+      "name_en": "Baijiu Cocktails",
+      "emoji": "🏮",
+      "note_en": "Baijiu is the most consumed spirit in the world with more than 20 billion bottles produced each year. These cocktails showcase the unique & complex flavours of our very own house Baijiu.",
+      "groups": [
+        {
+          "items": [
+            { "name": "Jade Dragon", "price": 25, "desc_en": "A Sweet Balance of White Rum, Zealong Green Heart Tea, Apple Juice, Green Apple Syrup, Citrus & Bitters." },
+            { "name": "Berries From Beijing", "price": 25, "desc_en": "Baijiu, Chambord, Raspberry, Topped with Soda" },
+            { "name": "Baijiu Blush", "price": 25, "desc_en": "Small Batch Rhubarb Gin, Violette & Citrus, shaken & served" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conscious_curations",
+      "name_zh": "无酒精特调",
+      "name_en": "Conscious Curations",
+      "emoji": "🌿",
+      "note_en": "Alcohol-free",
+      "groups": [
+        {
+          "items": [
+            { "name": "Icebreaker", "price": 12, "desc_en": "Fresh Mint, Lu Cha, Apple & Chinese Mint Tea" },
+            { "name": "In the Grove", "price": 14, "desc_en": "Seedlip Grove, Grapefruit, Blood Orange Purée, Agave" },
+            { "name": "Sweet & Pink Sour", "price": 14, "desc_en": "Pink London Dry Lyre’s, Lemon, Sugar & Dried Strawberries" },
+            { "name": "Suan-Mei-Tang", "price": 12, "desc_en": "Sour Plum, Juniper, Pineapple, Chinese Spiced Grenadine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beer",
+      "name_zh": "啤酒",
+      "name_en": "Beer",
+      "emoji": "🍺",
+      "groups": [
+        {
+          "name_zh": "生啤", "name_en": "Tap",
+          "items": [
+            { "name": "Tiger Crystal", "detail": "500ml · 4.5% · Singapore", "price": 16 },
+            { "name": "Tiger Crystal", "detail": "400ml · 4.5% · Singapore", "price": 12.5 },
+            { "name": "Sawmill Pilsner", "detail": "4.8% · Matakana NZ", "price": 13 }
+          ]
+        },
+        {
+          "name_zh": "瓶装 / 罐装", "name_en": "Bottled",
+          "items": [
+            { "name": "Tsingtao Rice Lager", "detail": "640ml · 4.5% · China", "price": 20 },
+            { "name": "Urbanaut Newtown Hazy Pale Ale", "detail": "330ml can · 4.8% · Matakana NZ", "price": 13 },
+            { "name": "Guinness", "detail": "440ml can · 4.1% · Ireland", "price": 16 },
+            { "name": "Corona Lager", "detail": "330ml · 4.6% · Mexico", "price": 13.5 },
+            { "name": "Morningcider", "detail": "330ml can · 4.9% · Morningside NZ", "price": 13 }
+          ]
+        },
+        {
+          "name_zh": "低醇 / 无醇", "name_en": "Low / No Alcohol",
+          "items": [
+            { "name": "Garage Project Fugazi Session Ale", "detail": "330ml · 2.2% · Kingsland NZ", "price": 12 },
+            { "name": "Sawmill Bare Beer Pale Ale", "detail": "0% · Matakana NZ", "price": 12 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soft_drinks",
+      "name_zh": "软饮与饮用水",
+      "name_en": "Soft Drinks & Water",
+      "emoji": "🥤",
+      "groups": [
+        {
+          "items": [
+            { "name": "Soft Drinks", "detail": "Coca Cola · Coca Cola Zero · Sprite", "price": 7.5 },
+            { "name": "Fruit Juices", "detail": "Apple · Orange · Pineapple · Cranberry", "price": 7.5 },
+            { "name": "Most Organic Juice", "detail": "Apple, Orange & Mango · Apple & Peach · Sparkling Apple & Blackcurrant", "price": 8.5 },
+            { "name": "Antipodes Water", "detail": "Sparkling or Still", "prices": [{ "label": "500ml", "price": 7 }, { "label": "1L", "price": 14 }] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tea",
+      "name_zh": "茶",
+      "name_en": "Tea",
+      "emoji": "🍵",
+      "note_en": "Zealong Tea Botanical Collection — based in Waikato, New Zealand, Zealong Tea Estate are award-winning producers of 100% New Zealand grown and organically certified tea.",
+      "groups": [
+        {
+          "items": [
+            { "name": "Green Heart", "price": 6, "price_note": "pp", "desc_en": "Green Tea, Lemongrass, Ginger, Jasmine & Kawakawa" },
+            { "name": "Lady Gatsby", "price": 6, "price_note": "pp", "desc_en": "Green Tea, Rose Petal, Manuka Leaf & Cinnamon" },
+            { "name": "Ice Breaker", "price": 6, "price_note": "pp", "desc_en": "Green Tea, Peppermint, Spearmint & Kawakawa" },
+            { "name": "Chai", "price": 6, "price_note": "pp", "desc_en": "Black Tea, cardamon, black pepper, cinnamon, ginger & clove" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wine_glass",
+      "name_zh": "杯卖葡萄酒",
+      "name_en": "Wine by the Glass",
+      "emoji": "🍷",
+      "groups": [
+        {
+          "name_zh": "香槟", "name_en": "Champagne",
+          "items": [
+            { "name": "NV Perrier-Jouët Grand Brut", "detail": "Épernay", "price": 32 }
+          ]
+        },
+        {
+          "name_zh": "起泡酒", "name_en": "Sparkling",
+          "items": [
+            { "name": "NV Kumeu River Crémant", "detail": "Auckland", "price": 20 },
+            { "name": "NV Cloudy Bay Pelorus", "detail": "Marlborough", "price": 18 },
+            { "name": "NV Nautilus Estate Rosé", "detail": "Marlborough", "price": 22 }
+          ]
+        },
+        {
+          "name_zh": "长相思", "name_en": "Sauvignon Blanc",
+          "items": [
+            { "name": "2025 Rohe Dillons Point", "detail": "Marlborough", "price": 15 },
+            { "name": "2024 Cloudy Bay", "detail": "Marlborough", "price": 24 }
+          ]
+        },
+        {
+          "name_zh": "灰皮诺", "name_en": "Pinot Gris",
+          "items": [
+            { "name": "2023 Misha’s Vineyard, Dress Circle", "detail": "Central Otago (off dry)", "price": 18 }
+          ]
+        },
+        {
+          "name_zh": "霞多丽", "name_en": "Chardonnay",
+          "items": [
+            { "name": "2024 Kumeu River Ray’s Road", "detail": "Hawke’s Bay", "price": 22 },
+            { "name": "2023 Cloudy Bay", "detail": "Marlborough", "price": 24 }
+          ]
+        },
+        {
+          "name_zh": "桃红", "name_en": "Rosé",
+          "items": [
+            { "name": "2024 Esk Valley", "detail": "Hawke’s Bay", "price": 15 }
+          ]
+        },
+        {
+          "name_zh": "黑皮诺", "name_en": "Pinot Noir",
+          "items": [
+            { "name": "2020 Mount Beautiful", "detail": "Waipara Valley, North Canterbury", "price": 18 },
+            { "name": "2023 Cloudy Bay", "detail": "Marlborough", "price": 27 }
+          ]
+        },
+        {
+          "name_zh": "梅洛与赤霞珠混酿", "name_en": "Merlot & Cabernet Blends",
+          "items": [
+            { "name": "2019 Elephant Hill Merlot", "detail": "Hawke’s Bay", "price": 19 }
+          ]
+        },
+        {
+          "name_zh": "西拉 / 设拉子", "name_en": "Syrah & Shiraz",
+          "items": [
+            { "name": "2020 Elephant Hill", "detail": "Hawke’s Bay", "price": 18 },
+            { "name": "2024 Bird in Hand", "detail": "Adelaide Hills", "price": 22 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wine_bottle",
+      "name_zh": "整瓶葡萄酒",
+      "name_en": "Wine by the Bottle",
+      "emoji": "🍾",
+      "groups": [
+        {
+          "name_zh": "香槟", "name_en": "Champagne",
+          "items": [
+            { "name": "NV Perrier-Jouët, Grand Brut", "detail": "Épernay", "price": 160 },
+            { "name": "NV Pol Roger, Reserve Brut", "detail": "Épernay", "price": 195 },
+            { "name": "NV Perrier-Jouët, Blanc de Blanc", "detail": "Épernay", "price": 230 },
+            { "name": "NV Taittinger, Brut Reserve", "detail": "Reims", "price": 245 },
+            { "name": "2006 Laurent-Perrier", "detail": "Tours-sur-Marne", "price": 275 },
+            { "name": "2013 Perrier-Jouët, Belle Epoque", "detail": "Épernay", "price": 506 },
+            { "name": "2013 Dom Perignon", "detail": "Épernay", "price": 1276 },
+            { "name": "2008 Bollinger, La Grande Annee", "detail": "Ay", "price": 475 },
+            { "name": "2002 G.H. Mumm, Cuvée Rene Lalou", "detail": "Reims", "price": 620 },
+            { "name": "2004 Pol Roger, Cuvée Sir Winston Churchill", "detail": "Épernay", "price": 650 }
+          ]
+        },
+        {
+          "name_zh": "桃红香槟", "name_en": "Champagne Rosé",
+          "items": [
+            { "name": "NV Perrier-Jouët ‘Blason’", "detail": "Épernay", "price": 185 },
+            { "name": "NV Moet & Chandon Rosé Imperial", "detail": "Épernay", "price": 190 },
+            { "name": "NV Ayala Majeur", "detail": "Ay", "price": 250 },
+            { "name": "NV Bollinger", "detail": "Ay", "price": 250 },
+            { "name": "NV Beau Joie", "detail": "Épernay", "price": 300 }
+          ]
+        },
+        {
+          "name_zh": "起泡酒", "name_en": "Sparkling",
+          "items": [
+            { "name": "NV Cloudy Bay Pelorus", "detail": "Marlborough", "price": 95 },
+            { "name": "NV Maude", "detail": "Central Otago", "price": 90 },
+            { "name": "NV Nautilus Cuvée Brut", "detail": "Marlborough", "price": 95 },
+            { "name": "NV Kumeu River Cremant", "detail": "Auckland", "price": 105 }
+          ]
+        },
+        {
+          "name_zh": "桃红起泡酒", "name_en": "Sparkling Rosé",
+          "items": [
+            { "name": "NV Cloudy Bay Pelorus", "detail": "Marlborough", "price": 85 },
+            { "name": "2021 Nautilus Estate Rosé", "detail": "Marlborough", "price": 100 }
+          ]
+        },
+        {
+          "name_zh": "长相思", "name_en": "Sauvignon Blanc",
+          "items": [
+            { "name": "2025 Ata Rangi Te Wā", "detail": "Martinborough", "price": 75 },
+            { "name": "2025 Cloudy Bay", "detail": "Marlborough", "price": 110 },
+            { "name": "2023 Cloudy Bay Te Koko", "detail": "Marlborough", "price": 170 },
+            { "name": "2023 Greystone", "detail": "Waipara Valley, North Canterbury", "price": 75 },
+            { "name": "2023 Greywacke Wild Sauvignon", "detail": "Marlborough (Oak-Fermented)", "price": 85 },
+            { "name": "2021 Giesen, The August", "detail": "Marlborough", "price": 100 },
+            { "name": "2025 Rohe Dillons Point", "detail": "Marlborough", "price": 65 },
+            { "name": "2023 Domaine Gerard Fion Sancerre", "detail": "Loire Valley", "price": 95 }
+          ]
+        },
+        {
+          "name_zh": "灰皮诺", "name_en": "Pinot Gris",
+          "items": [
+            { "name": "2025 Odyssey", "detail": "Marlborough", "price": 65 },
+            { "name": "2023 Misha’s Vineyard, Dress Circle", "detail": "Central Otago", "price": 75 },
+            { "name": "2024 Brick Bay", "detail": "Auckland (off dry)", "price": 85 }
+          ]
+        },
+        {
+          "name_zh": "霞多丽", "name_en": "Chardonnay",
+          "items": [
+            { "name": "2023 Martinborough Vineyard Homeblock", "detail": "Martinborough", "price": 90 },
+            { "name": "2023 Cloudy Bay", "detail": "Marlborough", "price": 115 },
+            { "name": "2024 Kumeu River, Rays Road", "detail": "Hawke's Bay", "price": 90 },
+            { "name": "2024 China Terrace", "detail": "Gibbston Valley", "price": 100 },
+            { "name": "2024 Te Mata Estate, Elston", "detail": "Hawke’s Bay", "price": 110 },
+            { "name": "2024 Man O’ War Valhalla, Black Label", "detail": "Waiheke Island", "price": 115 },
+            { "name": "2007 Foxes Island", "detail": "Marlborough", "price": 250 },
+            { "name": "2014 Pyramid Valley Field of Fire", "detail": "North Canterbury", "price": 280 },
+            { "name": "2016 Pyramid Valley Field of Fire", "detail": "North Canterbury", "price": 280 },
+            { "name": "2014 Anthony Joseph, Vidal 1888, Lyons Vineyard", "detail": "Hawke’s Bay", "price": 345 }
+          ]
+        },
+        {
+          "name_zh": "霞多丽 · 澳大利亚", "name_en": "Chardonnay · Australia",
+          "items": [
+            { "name": "2017 Cape Mentelle", "detail": "Margaret River", "price": 90 },
+            { "name": "2019 Tolpuddle Vineyard", "detail": "Coal River Valley, Tasmania", "price": 149 },
+            { "name": "2012 Yering Station Reserve", "detail": "Yarra Valley", "price": 190 },
+            { "name": "2009 Cullen Kevin John", "detail": "Margaret River", "price": 250 }
+          ]
+        },
+        {
+          "name_zh": "雷司令", "name_en": "Riesling",
+          "items": [
+            { "name": "2025 Felton Road", "detail": "Central Otago (dry)", "price": 115 }
+          ]
+        },
+        {
+          "name_zh": "琼瑶浆", "name_en": "Gewürztraminer",
+          "items": [
+            { "name": "2025 Pegasus Bay", "detail": "Waipara Valley, North Canterbury", "price": 75 }
+          ]
+        },
+        {
+          "name_zh": "其他白葡萄品种", "name_en": "Other White Varietals",
+          "items": [
+            { "name": "2023 Blank Canvas Gruner Veltliner", "detail": "Marlborough", "price": 70 },
+            { "name": "2023 Jim Barry Assyrtiko", "detail": "Clare Valley", "price": 80 },
+            { "name": "2016 Mad Szent Tamas Furmint", "detail": "Tokaj", "price": 90 }
+          ]
+        },
+        {
+          "name_zh": "桃红", "name_en": "Rosé",
+          "items": [
+            { "name": "2024 Esk Valley", "detail": "Hawke’s Bay", "price": 60 },
+            { "name": "2023 Triennes Mediterranee", "detail": "France", "price": 65 }
+          ]
+        },
+        {
+          "name_zh": "黑皮诺", "name_en": "Pinot Noir",
+          "items": [
+            { "name": "2020 Mount Beautiful", "detail": "Waipara Valley, North Canterbury", "price": 80 },
+            { "name": "2023 Akarua", "detail": "Central Otago", "price": 110 },
+            { "name": "2022 Big Sky ‘Te Muna Road’ Provenance", "detail": "Martinborough", "price": 110 },
+            { "name": "2024 Craggy Range ‘Te Muna Road’", "detail": "Martinborough", "price": 110 },
+            { "name": "2022 Cloudy Bay", "detail": "Marlborough", "price": 135 },
+            { "name": "2022 Amisfield", "detail": "Central Otago (O)", "price": 140 },
+            { "name": "2024 Felton Road Calvert", "detail": "Bannockburn, Central Otago", "price": 186 },
+            { "name": "2008 Foxes Island", "detail": "Marlborough", "price": 220 },
+            { "name": "2022 Cloudy Bay, Te Wahi", "detail": "Marlborough", "price": 280 },
+            { "name": "2022 Joseph Drouhin, Givry", "detail": "Burgundy, France", "price": 110 }
+          ]
+        },
+        {
+          "name_zh": "梅洛与马尔贝克", "name_en": "Merlot & Malbec",
+          "items": [
+            { "name": "2019 Elephant Hill Merlot", "detail": "Hawke’s Bay, NZ", "price": 92 },
+            { "name": "2014 Bodega Noemia, J. Alberto, Malbec", "detail": "Argentina", "price": 290 }
+          ]
+        },
+        {
+          "name_zh": "品丽珠 / 赤霞珠及混酿", "name_en": "Cabernet Franc, Sauvignon & Blends",
+          "items": [
+            { "name": "2024 Man O War, Ironclad", "detail": "Cabernet Franc, Merlot, Petit Verdot, Cabernet Sauvignon · Waiheke Island, NZ", "price": 125 },
+            { "name": "2015 Alpha Domus, The Aviator, CS Blend", "detail": "Hawke’s Bay, NZ", "price": 230 },
+            { "name": "2022 Vasse Felix", "detail": "Margaret River, Aus", "price": 120 }
+          ]
+        },
+        {
+          "name_zh": "西拉", "name_en": "Syrah",
+          "items": [
+            { "name": "2020 Elephant Hill", "detail": "Hawke’s Bay, NZ", "price": 90 },
+            { "name": "2022 Church Road Grand Reserve", "detail": "Hawke’s Bay, NZ", "price": 120 },
+            { "name": "2023 Te Mata Estate Bullnose", "detail": "Hawke’s Bay, NZ", "price": 180 }
+          ]
+        },
+        {
+          "name_zh": "设拉子", "name_en": "Shiraz",
+          "items": [
+            { "name": "2024 Bird in Hand", "detail": "Adelaide Hills, Aus", "price": 90 },
+            { "name": "2021 Jim Barry McRae Wood", "detail": "Clare Valley, Aus", "price": 135 },
+            { "name": "2019 d’Arenberg Dead Arm", "detail": "McLaren Vale, Aus", "price": 150 },
+            { "name": "2008 Penfolds R.W.T", "detail": "Barossa Valley, Aus", "price": 650 }
+          ]
+        },
+        {
+          "name_zh": "甜酒与加强酒", "name_en": "Sweet & Fortified",
+          "items": [
+            { "name": "2005 Oremus, Tokaj Aszu 6 puttonyos", "detail": "Hungary · 500ml", "price": 250 },
+            { "name": "1993 Lyszka Kastely Tokaj Aszu Essencia", "detail": "Hungary · 500ml", "price": 325 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spirits",
+      "name_zh": "烈酒",
+      "name_en": "Spirits",
+      "emoji": "🥃",
+      "groups": [
+        {
+          "name_zh": "金酒 · 日本", "name_en": "Gin · Nippon",
+          "items": [
+            { "name": "Ki No Bi Kyoto Dry", "price": 22 },
+            { "name": "Ki No Bi Sei Kyoto Dry", "price": 24 },
+            { "name": "Ki No Tea Kyoto Dry", "price": 25 },
+            { "name": "Roku", "price": 16 },
+            { "name": "Ukiyo Cherry Blossom", "price": 15 },
+            { "name": "Ukiyo Japanese Yuzu", "price": 15 }
+          ]
+        },
+        {
+          "name_zh": "金酒 · 伦敦干型", "name_en": "Gin · London Dry",
+          "items": [
+            { "name": "Beefeater", "detail": "UK", "price": 14 },
+            { "name": "Bloom", "detail": "UK", "price": 14 },
+            { "name": "Lind & Lime Rare Dry", "detail": "Scotland", "price": 18 },
+            { "name": "Four Pillars Classic Dry", "detail": "Australia", "price": 15 },
+            { "name": "Scapegrace Silver", "detail": "NZ", "price": 17 },
+            { "name": "Scapegrace Black", "detail": "NZ", "price": 14 },
+            { "name": "Tanqueray", "detail": "UK", "price": 15 }
+          ]
+        },
+        {
+          "name_zh": "金酒 · 新派", "name_en": "Gin · New Style",
+          "items": [
+            { "name": "Citadelle Original", "detail": "France", "price": 17 },
+            { "name": "Citadelle Old Tom", "detail": "France", "price": 17 },
+            { "name": "Citadelle Reserve", "detail": "France", "price": 18 },
+            { "name": "Martin Millers", "detail": "UK", "price": 15 },
+            { "name": "Monkey 47", "detail": "Germany", "price": 25 },
+            { "name": "Scapegrace Gold", "detail": "NZ", "price": 22 },
+            { "name": "The Source", "detail": "NZ", "price": 21 },
+            { "name": "Victor", "detail": "NZ", "price": 14 }
+          ]
+        },
+        {
+          "name_zh": "金酒 · 风味", "name_en": "Gin · Flavoured",
+          "items": [
+            { "name": "Blush Rhubarb", "detail": "NZ", "price": 18 },
+            { "name": "Elephant Sloe", "detail": "Germany", "price": 24 },
+            { "name": "Good George Doris Plum", "detail": "NZ", "price": 15 },
+            { "name": "Four Pillars Bloody Shiraz", "detail": "Australia", "price": 15 },
+            { "name": "Four Pillars Yuzu", "detail": "Australia", "price": 15 },
+            { "name": "Haymans Sloe", "detail": "England", "price": 15 },
+            { "name": "Little Biddy Amber", "detail": "NZ", "price": 16 },
+            { "name": "Little Biddy Pink", "detail": "NZ", "price": 16 },
+            { "name": "Little Biddy Spiced Apple", "detail": "NZ", "price": 16 },
+            { "name": "Malfy Rosa", "detail": "Italy", "price": 16 },
+            { "name": "Malfy Arancia", "detail": "Italy", "price": 16 },
+            { "name": "Monkey 47 Sloe", "detail": "Germany", "price": 25 },
+            { "name": "Reefton Distilling HPH", "detail": "NZ", "price": 14 },
+            { "name": "Reefton Distilling Rose Ripple", "detail": "NZ", "price": 14 },
+            { "name": "Reefton Distilling Citrus Sunset", "detail": "NZ", "price": 14 },
+            { "name": "Scapegrace Blood Orange", "detail": "NZ", "price": 17 }
+          ]
+        },
+        {
+          "name_zh": "金酒 · 草本芳香", "name_en": "Gin · Herbal / Aromatic",
+          "items": [
+            { "name": "Elephant Navy Strength", "detail": "Germany", "price": 24 },
+            { "name": "Herno", "detail": "Sweden", "price": 26 },
+            { "name": "Lavender Hill", "detail": "NZ", "price": 14 },
+            { "name": "Little Biddy Classic", "detail": "NZ", "price": 15 },
+            { "name": "Reid & Reid Barrel Aged", "detail": "NZ", "price": 16 },
+            { "name": "Reid & Reid Native", "detail": "NZ", "price": 15 },
+            { "name": "The Botanist", "detail": "Scotland", "price": 20 },
+            { "name": "St George Terrior", "detail": "USA", "price": 16 },
+            { "name": "Wheadons Rock Samphire", "detail": "UK", "price": 17 },
+            { "name": "Windspiel Premium Dry", "detail": "Germany", "price": 21 }
+          ]
+        },
+        {
+          "name_zh": "伏特加", "name_en": "Vodka",
+          "items": [
+            { "name": "Stolichnaya", "detail": "Latvia", "price": 13 },
+            { "name": "Belvedere Pure", "detail": "Poland", "price": 15 },
+            { "name": "Cardrona The Reid Single Malt", "detail": "NZ", "price": 22 },
+            { "name": "Grey Goose", "detail": "France", "price": 14 },
+            { "name": "Grey Goose Le Citron", "detail": "France", "price": 14 },
+            { "name": "Stolichnaya Elit", "detail": "Latvia", "price": 15 },
+            { "name": "Ukiyo Rice", "detail": "Japan", "price": 16 },
+            { "name": "Reefton Wild Rain", "detail": "NZ", "price": 16 }
+          ]
+        },
+        {
+          "name_zh": "龙舌兰 · 30ml", "name_en": "Tequila · 30ml",
+          "items": [
+            { "name": "Espolon Reposado", "price": 13 },
+            { "name": "Herradura Añejo", "price": 18 },
+            { "name": "Patron Plata", "price": 18 }
+          ]
+        },
+        {
+          "name_zh": "朗姆酒", "name_en": "Rum",
+          "items": [
+            { "name": "Havana Club 3yo", "detail": "Cuba", "price": 12 },
+            { "name": "Bumbu Original", "detail": "Barbados", "price": 12 },
+            { "name": "Bumbu XO", "detail": "Barbados", "price": 15 },
+            { "name": "Sagatiba Cachaça Pura", "detail": "Brazil", "price": 12 },
+            { "name": "Appleton Estate", "detail": "Jamaica", "price": 13 },
+            { "name": "Helmsman Spiced", "detail": "NZ", "price": 16 },
+            { "name": "Stolen Dark", "detail": "NZ", "price": 12 },
+            { "name": "El Dorado 3yo", "detail": "Guyana", "price": 12 },
+            { "name": "El Dorado 12yo", "detail": "Guyana", "price": 15 },
+            { "name": "El Dorado 15yo", "detail": "Guyana", "price": 17 },
+            { "name": "El Dorado 21yo", "detail": "Guyana", "price": 40 },
+            { "name": "Skipper", "detail": "Guyana", "price": 12 }
+          ]
+        },
+        {
+          "name_zh": "威士忌 · 苏格兰", "name_en": "Whisky · Scotland",
+          "items": [
+            { "name": "Ardbeg Corryvreckan", "detail": "Islay", "price": 25 },
+            { "name": "Ardbeg Uigeadail", "detail": "Islay", "price": 25 },
+            { "name": "Balvenie Double Wood Cask 17yo", "detail": "Speyside", "price": 40 },
+            { "name": "Chivas Regal XV", "detail": "Speyside", "price": 18 },
+            { "name": "Chivas Regal 18yo", "detail": "Speyside", "price": 22 },
+            { "name": "Chivas Regal 25yo", "detail": "Speyside", "price": 100 },
+            { "name": "Glenfiddich 15yo", "detail": "Speyside", "price": 25 },
+            { "name": "Glenfiddich 18yo", "detail": "Speyside", "price": 35 },
+            { "name": "Glenfiddich 21yo", "detail": "Speyside", "price": 70 },
+            { "name": "Glenkinchie 12yo", "detail": "Lowland", "price": 19 },
+            { "name": "Glenlivet Founders Reserve", "detail": "Speyside", "price": 14 },
+            { "name": "Glenmorangie 12yo", "detail": "Highland", "price": 14 },
+            { "name": "Highland Park 18yo", "detail": "Orkney", "price": 45 },
+            { "name": "Jura 10", "detail": "Isle of Jura", "price": 18 },
+            { "name": "Jura Prophecy", "detail": "Isle of Jura", "price": 22 },
+            { "name": "Kilchoman Machir Bay", "detail": "Islay", "price": 20 },
+            { "name": "Kilchoman Sanaig", "detail": "Islay", "price": 20 },
+            { "name": "Laphroaig Quarter Cask", "detail": "Islay", "price": 22 },
+            { "name": "Laphroaig Lore", "detail": "Islay", "price": 28 },
+            { "name": "Laphroaig 25yo", "detail": "Islay", "price": 105 },
+            { "name": "Macallan 18yo Fine Oak", "detail": "Speyside", "price": 170 },
+            { "name": "Macallan Edition no.3", "detail": "Speyside", "price": 180 },
+            { "name": "Mackinlay’s Shackleton Rare Old Highland Malt", "detail": "Highland", "price": 50 },
+            { "name": "Monkey Shoulder", "detail": "Speyside", "price": 14 },
+            { "name": "Oban 14yo", "detail": "Highland", "price": 22 },
+            { "name": "Royal Salute 21yo", "detail": "Speyside", "price": 45 },
+            { "name": "Strathisla 12yo", "detail": "Speyside", "price": 15 }
+          ]
+        },
+        {
+          "name_zh": "威士忌 · 美国", "name_en": "Whiskey · America",
+          "items": [
+            { "name": "Buffalo Trace", "detail": "Kentucky", "price": 14 },
+            { "name": "Jack Daniels Single Barrel", "detail": "Tennessee", "price": 17 },
+            { "name": "Johnny Drumm Private Stock", "detail": "Kentucky · 50.5%", "price": 14 },
+            { "name": "Kentucky Vintage", "detail": "Kentucky", "price": 14 },
+            { "name": "Maker’s Mark", "detail": "Kentucky", "price": 13 },
+            { "name": "Old Bardstown", "detail": "Kentucky", "price": 14 },
+            { "name": "Woodford Reserve", "detail": "Kentucky", "price": 14 },
+            { "name": "Pappy Van Winkle 15yo", "detail": "Kentucky · 53.5%", "price": 550 }
+          ]
+        },
+        {
+          "name_zh": "威士忌 · 法国", "name_en": "Whisky · France",
+          "items": [
+            { "name": "Michel Couvreur Clearach Single Malt", "detail": "Burgundy", "price": 50 },
+            { "name": "Michel Couvreur Auld Sherried Single Malt", "detail": "Burgundy", "price": 120 },
+            { "name": "Michel Couvreur Pale Single Malt", "detail": "Burgundy", "price": 60 }
+          ]
+        },
+        {
+          "name_zh": "威士忌 · 日本", "name_en": "Whisky · Nippon",
+          "items": [
+            { "name": "Hibiki Harmony", "price": 30 },
+            { "name": "Hibiki 21yo", "price": 225 },
+            { "name": "Yamazaki 2013 Bourbon Cask, Single Malt", "price": 195 },
+            { "name": "Yamazaki 2013 Puncheon, Single Malt", "price": 195 },
+            { "name": "Yamazaki 2016 Limited Edition, Single Malt", "price": 200 }
+          ]
+        },
+        {
+          "name_zh": "威士忌 · 爱尔兰", "name_en": "Whiskey · Ireland",
+          "items": [
+            { "name": "Connemara, Peated Single Malt", "price": 16 }
+          ]
+        },
+        {
+          "name_zh": "威士忌 · 新西兰", "name_en": "Whisky · New Zealand",
+          "items": [
+            { "name": "Cardrona ‘Just Hatched’ Single Malt", "detail": "Dramfest Edition 2020 · 63.8%", "price": 30 },
+            { "name": "Thomson 23yo, Single Malt, Single Cask", "price": 40 },
+            { "name": "Thomson Two Tone", "price": 13 }
+          ]
+        },
+        {
+          "name_zh": "威士忌 · 加拿大", "name_en": "Whisky · Canada",
+          "items": [
+            { "name": "Canadian Club 12yo", "detail": "Ontario", "price": 14 }
+          ]
+        },
+        {
+          "name_zh": "干邑 · 30ml", "name_en": "Cognac · 30ml",
+          "items": [
+            { "name": "Hennessy VS", "price": 14 },
+            { "name": "Hennessy VSOP", "price": 18 },
+            { "name": "Hennessy XO", "price": 62 },
+            { "name": "Hennessy Paradis", "price": 160 },
+            { "name": "Hennessy Paradis Imperial", "price": 420 },
+            { "name": "Hennessy Richard", "price": 570 },
+            { "name": "Martell Cordon Bleu XO", "price": 37 },
+            { "name": "Martell XO", "price": 48 },
+            { "name": "Martell L’or De Jean", "price": 880 },
+            { "name": "Remy Martin Louis XIII", "price": 750 }
+          ]
+        },
+        {
+          "name_zh": "雅文邑 / 卡尔瓦多斯 · 30ml", "name_en": "Armagnac / Calvados · 30ml",
+          "items": [
+            { "name": "Chateau Du Tariquet VSOP", "detail": "Bas Armagnac", "price": 15 },
+            { "name": "Chateau Du Breuil 15yo", "price": 18 },
+            { "name": "Chateau Du Breuil 20yo XO", "price": 23 },
+            { "name": "Jean-Luc Pasquet Tres Vieille Reserve", "price": 60 },
+            { "name": "Delord Vieil Armagnac 1967", "price": 50 },
+            { "name": "Delord Vieil Armagnac 1946", "price": 250 },
+            { "name": "Delord Bas-Armagnac 1929", "price": 300 },
+            { "name": "Delord Bas-Armagnac 1936", "price": 485 },
+            { "name": "Delord Bas-Armagnac 1918", "price": 460 }
+          ]
+        },
+        {
+          "name_zh": "开胃酒 / 味美思 · 50ml", "name_en": "Aperitif / Vermouth · 50ml",
+          "items": [
+            { "name": "Antica Formula", "price": 14 },
+            { "name": "Campari", "price": 14 },
+            { "name": "Aperol", "price": 14 },
+            { "name": "Dolin Dry", "price": 14 },
+            { "name": "Lillet Blanc", "price": 14 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baijiu",
+      "name_zh": "白酒",
+      "name_en": "Baijiu",
+      "emoji": "🍶",
+      "groups": [
+        {
+          "items": [
+            { "name": "House Baijiu", "desc_en": "Aged 10 years — made in Maotai village & blended exclusively for us.", "prices": [{ "label": "50ml", "price": 30 }, { "label": "500ml", "price": 180 }] },
+            { "name": "Guizhou Feitian Maotai", "desc_en": "World famous & China’s national liquor", "prices": [{ "label": "50ml", "price": 90 }, { "label": "500ml", "price": 500 }] },
+            { "name": "Wu Liang Ye", "prices": [{ "label": "50ml", "price": 50 }, { "label": "500ml", "price": 215 }] }
+          ]
+        }
+      ]
+    }
+  ]
+}

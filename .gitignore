@@ -40,3 +40,6 @@ __pycache__/
 
 # 原始菜品照片(图像流水线的输入,不被 app 使用) / raw dish photos (pipeline inputs, not used by the app)
 src/assets/*.jpg
+
+# 餐厅原始菜单 PDF(含真实店名,公开仓库不上传) / source menu PDFs from the restaurant (real name — keep out of the public repo)
+data/*.pdf

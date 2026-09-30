@@ -1,5 +1,7 @@
-// 菜单总表:把所有菜品按分类(点心/主菜/鸡尾酒)分好组,供主页手风琴使用。
-// The menu registry — groups every dish by category (dim sum / main / cocktail) for the home accordion.
+// 菜单总表:把所有菜品按分类(点心/主菜)分好组,供主页手风琴使用。鸡尾酒归到酒水单(beverages.json),
+// 有成分拆解的鸡尾酒(如 Flox Tail)通过 dishById 从酒水单跳过来。
+// The menu registry — groups every dish by category (dim sum / main) for the home accordion. Cocktails live in
+// the drinks list (beverages.json); those with a breakdown (e.g. Flox Tail) are reached from there via dishById.
 // 以后加新菜:1) 在 data/ 加一个菜品 JSON(带 category 字段) 2) 在这里 import 并加进 allDishes 即可。
 // To add a dish later: 1) drop a dish JSON in data/ (with a `category` field) 2) import it and add it to allDishes.
 
@@ -23,9 +25,8 @@ const allDishes = [
 const CATEGORY_META = {
   dim_sum: { name_zh: '点心', name_en: 'Dim Sum', emoji: '🥟' },
   main: { name_zh: '主菜', name_en: 'Main', emoji: '🍲' },
-  cocktail: { name_zh: '鸡尾酒', name_en: 'Cocktails', emoji: '🍸' },
 }
-const CATEGORY_ORDER = ['dim_sum', 'main', 'cocktail']
+const CATEGORY_ORDER = ['dim_sum', 'main']
 
 // 按分类把菜分好组 / dishes grouped under each category, in display order
 export const categories = CATEGORY_ORDER.map((id) => ({
@@ -33,3 +34,6 @@ export const categories = CATEGORY_ORDER.map((id) => ({
   ...CATEGORY_META[id],
   dishes: allDishes.filter((d) => d.data.category === id),
 }))
+
+// 按 id 查菜(酒水单里带 dish 字段的品项用它打开详情) / look up a dish by id (drinks with a `dish` field open it)
+export const dishById = Object.fromEntries(allDishes.map((d) => [d.data.id, d]))

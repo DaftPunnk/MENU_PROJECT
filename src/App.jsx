@@ -1,8 +1,10 @@
-// App 是根组件:藏青蓝底 + 纯代码画的占位徽标页头,下面是三级菜单导航:
-//   分类手风琴(点心/主菜/鸡尾酒) → 点开分类显示菜的小 icon → 点 icon 放大切换到菜品详情(炸开食材)。
-// App is the root — a navy base with a code-drawn placeholder crest header, over a three-level menu:
-//   a category accordion (dim sum / main / cocktail) → tap a category to reveal dish icons → tap an icon to
-//   zoom into the dish detail (where it explodes into ingredients).
+// App 是根组件:藏青蓝底 + 纯代码画的占位徽标页头,下面是「菜品 / 酒水」两个标签:
+//   菜品 = 分类手风琴(点心/主菜) → 点开分类显示菜的小 icon → 点 icon 放大切换到菜品详情(炸开食材);
+//   酒水 = 酒水单价目列表(DrinksList),有成分拆解的鸡尾酒也能点进详情。
+// App is the root — a navy base with a code-drawn placeholder crest header, over two tabs:
+//   Food = a category accordion (dim sum / main) → tap a category to reveal dish icons → tap an icon to
+//   zoom into the dish detail (where it explodes into ingredients);
+//   Drinks = the beverage price list (DrinksList); cocktails that have a breakdown open the same detail view.
 //
 // 注意:这是一个虚构的占位品牌「甘露 / NECTAR」,用于公开演示,避免使用真实餐厅的名称/logo。
 // 想换成自己的品牌,只改下面 header 里的中英文名即可。
@@ -12,6 +14,7 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import DishCard from './components/DishCard'
+import DrinksList from './components/DrinksList'
 import { categories } from './menu'
 
 function App() {
@@ -19,6 +22,8 @@ function App() {
   const [openCategory, setOpenCategory] = useState(categories[0]?.id ?? null)
   // selected:被选中的菜 { data, image },非空时显示详情页 / the chosen dish; when set, show the detail view
   const [selected, setSelected] = useState(null)
+  // tab:'food' 菜品 / 'drinks' 酒水;从详情返回时停留在原来的标签 / stays put when returning from a detail view
+  const [tab, setTab] = useState('food')
 
   return (
     // 藏青蓝底 + 中心一抹金色微光 / navy base with a faint gold glow at center
@@ -79,72 +84,97 @@ function App() {
             transition={{ duration: 0.25 }}
             className="max-w-md mx-auto px-4 py-4"
           >
-            {categories.map((cat) => {
-              const expanded = openCategory === cat.id
-              return (
-                <div key={cat.id} className="border-b border-[#c9a96a]/20">
-                  {/* 分类标签:点一下展开/收起这一类 / category tag: tap to expand/collapse this category */}
-                  <button
-                    onClick={() => setOpenCategory(expanded ? null : cat.id)}
-                    className="w-full flex items-center justify-between py-4"
-                  >
-                    <span className="flex items-center gap-3">
-                      <span className="text-2xl">{cat.emoji}</span>
-                      <span className="flex flex-col items-start">
-                        <span className="text-lg font-serif tracking-wide text-[#e8dcc6]">{cat.name_zh}</span>
-                        <span className="text-xs text-[#c9a96a]/70">{cat.name_en}</span>
-                      </span>
-                    </span>
-                    {/* 展开时箭头转 180° / the chevron flips 180° when expanded */}
-                    <motion.span
-                      animate={{ rotate: expanded ? 180 : 0 }}
-                      transition={{ duration: 0.25 }}
-                      className="text-[#c9a96a]/70 text-sm"
-                    >
-                      ▾
-                    </motion.span>
-                  </button>
+            {/* 菜品 / 酒水 切换 / food ⇄ drinks toggle */}
+            <div className="flex justify-center gap-2 mb-2">
+              {[
+                { id: 'food', label: '菜品 · Food' },
+                { id: 'drinks', label: '酒水 · Drinks' },
+              ].map((t) => (
+                <button
+                  key={t.id}
+                  onClick={() => setTab(t.id)}
+                  className={
+                    'px-4 py-1.5 rounded-full text-sm border transition ' +
+                    (tab === t.id
+                      ? 'bg-[#c9a96a] text-[#14234a] border-[#c9a96a]'
+                      : 'text-[#c9a96a]/80 border-[#c9a96a]/40 hover:border-[#c9a96a]')
+                  }
+                >
+                  {t.label}
+                </button>
+              ))}
+            </div>
 
-                  {/* 展开区:这一类的菜 icon 网格 / the expanded panel: a grid of dish icons for this category */}
-                  <AnimatePresence initial={false}>
-                    {expanded && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: 'easeInOut' }}
-                        className="overflow-hidden"
+            {tab === 'drinks' ? (
+              <DrinksList onSelectDish={setSelected} />
+            ) : (
+              categories.map((cat) => {
+                const expanded = openCategory === cat.id
+                return (
+                  <div key={cat.id} className="border-b border-[#c9a96a]/20">
+                    {/* 分类标签:点一下展开/收起这一类 / category tag: tap to expand/collapse this category */}
+                    <button
+                      onClick={() => setOpenCategory(expanded ? null : cat.id)}
+                      className="w-full flex items-center justify-between py-4"
+                    >
+                      <span className="flex items-center gap-3">
+                        <span className="text-2xl">{cat.emoji}</span>
+                        <span className="flex flex-col items-start">
+                          <span className="text-lg font-serif tracking-wide text-[#e8dcc6]">{cat.name_zh}</span>
+                          <span className="text-xs text-[#c9a96a]/70">{cat.name_en}</span>
+                        </span>
+                      </span>
+                      {/* 展开时箭头转 180° / the chevron flips 180° when expanded */}
+                      <motion.span
+                        animate={{ rotate: expanded ? 180 : 0 }}
+                        transition={{ duration: 0.25 }}
+                        className="text-[#c9a96a]/70 text-sm"
                       >
-                        <div className="grid grid-cols-3 gap-3 pb-5 pt-1">
-                          {cat.dishes.map((d) => (
-                            <button
-                              key={d.data.id}
-                              onClick={() => setSelected(d)}
-                              className="flex flex-col items-center gap-2 group"
-                            >
-                              {/* 菜的小圆 icon:有成菜图用图(完整缩放进圆内,避免高瘦的杯子被裁),没有退回 emoji */}
-                              {/* small round dish icon: the photo scaled to fit inside the circle (object-contain so a
-                                  tall glass isn't cropped), or the emoji as a fallback */}
-                              <span className="w-20 h-20 rounded-full overflow-hidden bg-[#1b2b50] border border-[#c9a96a]/40 group-hover:border-[#c9a96a] transition flex items-center justify-center text-4xl shadow-md">
-                                {d.image ? (
-                                  <img src={d.image} alt={d.data.name_en} className="w-full h-full object-contain p-1.5" />
-                                ) : (
-                                  d.data.emoji
-                                )}
-                              </span>
-                              <span className="flex flex-col items-center">
-                                <span className="text-xs text-[#e8dcc6] leading-tight text-center">{d.data.name_zh}</span>
-                                <span className="text-[10px] text-[#c9a96a]/60 leading-tight text-center">{d.data.name_en}</span>
-                              </span>
-                            </button>
-                          ))}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              )
-            })}
+                        ▾
+                      </motion.span>
+                    </button>
+
+                    {/* 展开区:这一类的菜 icon 网格 / the expanded panel: a grid of dish icons for this category */}
+                    <AnimatePresence initial={false}>
+                      {expanded && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3, ease: 'easeInOut' }}
+                          className="overflow-hidden"
+                        >
+                          <div className="grid grid-cols-3 gap-3 pb-5 pt-1">
+                            {cat.dishes.map((d) => (
+                              <button
+                                key={d.data.id}
+                                onClick={() => setSelected(d)}
+                                className="flex flex-col items-center gap-2 group"
+                              >
+                                {/* 菜的小圆 icon:有成菜图用图(完整缩放进圆内,避免高瘦的杯子被裁),没有退回 emoji */}
+                                {/* small round dish icon: the photo scaled to fit inside the circle (object-contain so a
+                                    tall glass isn't cropped), or the emoji as a fallback */}
+                                <span className="w-20 h-20 rounded-full overflow-hidden bg-[#1b2b50] border border-[#c9a96a]/40 group-hover:border-[#c9a96a] transition flex items-center justify-center text-4xl shadow-md">
+                                  {d.image ? (
+                                    <img src={d.image} alt={d.data.name_en} className="w-full h-full object-contain p-1.5" />
+                                  ) : (
+                                    d.data.emoji
+                                  )}
+                                </span>
+                                <span className="flex flex-col items-center">
+                                  <span className="text-xs text-[#e8dcc6] leading-tight text-center">{d.data.name_zh}</span>
+                                  <span className="text-[10px] text-[#c9a96a]/60 leading-tight text-center">{d.data.name_en}</span>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                )
+              })
+            )}
           </motion.div>
         )}
       </AnimatePresence>
