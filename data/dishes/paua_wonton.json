@@ -1,0 +1,14 @@
+{
+  "id": "paua-wonton",
+  "name_zh": "脆皮鲍鱼炸云吞",
+  "name_en": "Crispy Pāua Wonton",
+  "category": "dim_sum",
+  "emoji": "🥟",
+  "cultural_note_en": "Pāua is New Zealand's own abalone, a treasured kaimoana. Here it meets a Cantonese classic: wontons fried golden and served with a spicy-sour sauce.",
+  "ingredients": [
+    {"name_zh": "新西兰鲍鱼", "name_en": "Pāua (NZ abalone)", "emoji": "🐚", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "猪肉", "name_en": "Pork", "emoji": "🐖", "category": "protein", "allergens": []},
+    {"name_zh": "云吞皮", "name_en": "Wonton wrapper", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]},
+    {"name_zh": "酸辣酱", "name_en": "Spicy & sour sauce", "emoji": "🌶️", "category": "sauce", "allergens": []}
+  ]
+}

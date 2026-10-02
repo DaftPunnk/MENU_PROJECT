@@ -1,20 +1,22 @@
-// DrinksList 是酒水单:分类手风琴(鸡尾酒/啤酒/葡萄酒/烈酒…),展开后是"名字 + 价格 + 描述"的价目列表。
-// 目前只有品项,没有成分拆解;带 dish 字段的品项(如 Flox-tail)已有拆解,点一下跳到详情。
-// DrinksList is the beverage list — a section accordion (cocktails / beer / wine / spirits…) that expands into
-// a "name + price + description" price list. Items only for now, no breakdowns; an item with a `dish` field
-// (e.g. Flox-tail) already has one, and tapping it opens the detail view.
+// MenuList 是通用价目单(菜品和酒水共用):分类手风琴,展开后是"名字 + 价格 + 描述"的价目列表。
+// 品项带 dish 字段(= data/dishes/ 里某道菜的 id)就能点进成分拆解;没有的只显示品项(如游水海鲜、大部分酒水)。
+// MenuList is the shared price list (food and drinks): a section accordion that expands into
+// "name + price + description" rows. An item with a `dish` field (the id of a breakdown in data/dishes/)
+// opens the breakdown when tapped; items without one are list-only (e.g. live seafood, most drinks).
+//
+// 展开哪个分类由 App 保管,这样从详情页返回时还停在原来的分类
+// App owns which section is open, so coming back from a detail view keeps the same section open.
 
-import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import beverages from '../../data/beverages.json'
 import { dishById } from '../menu'
+import { CodeBadges, CodeLegend } from './MenuCodes'
 
 // 价格显示:整数不带小数,其余保留两位 / whole prices without decimals, others with two
 const fmt = (n) => (Number.isInteger(n) ? `${n}` : n.toFixed(2))
 
 function Price({ item }) {
   if (item.prices) {
-    // 多规格(如 50ml / 500ml) / multiple sizes (e.g. 50ml / 500ml)
+    // 多规格(如 50ml / 500ml、整只 / 半只) / multiple sizes (e.g. 50ml / 500ml, whole / half)
     return (
       <span className="flex flex-col items-end">
         {item.prices.map((p) => (
@@ -26,6 +28,10 @@ function Price({ item }) {
       </span>
     )
   }
+  // 时价等文字价格 / a text price such as market price
+  if (item.price_text) return <span className="whitespace-nowrap">{item.price_text}</span>
+  // 套餐里的菜没有单价 / dishes inside a set menu have no price of their own
+  if (item.price == null) return null
   return (
     <span className="whitespace-nowrap">
       {fmt(item.price)}
@@ -34,19 +40,16 @@ function Price({ item }) {
   )
 }
 
-function DrinksList({ onSelectDish }) {
-  // 手风琴:一次开一个分类 / accordion — one section open at a time
-  const [openSection, setOpenSection] = useState(beverages.sections[0]?.id ?? null)
-
+function MenuList({ menu, openSection, onToggleSection, onSelectDish }) {
   return (
     <div>
-      {beverages.sections.map((sec) => {
+      {menu.sections.map((sec) => {
         const expanded = openSection === sec.id
         return (
           <div key={sec.id} className="border-b border-[#c9a96a]/20">
             {/* 分类标签 / section tag */}
             <button
-              onClick={() => setOpenSection(expanded ? null : sec.id)}
+              onClick={() => onToggleSection(expanded ? null : sec.id)}
               className="w-full flex items-center justify-between py-4"
             >
               <span className="flex items-center gap-3">
@@ -76,6 +79,7 @@ function DrinksList({ onSelectDish }) {
                   className="overflow-hidden"
                 >
                   <div className="pb-5">
+                    {sec.note_zh && <p className="text-xs text-[#c9a96a] leading-relaxed mb-1">{sec.note_zh}</p>}
                     {sec.note_en && (
                       <p className="text-xs italic text-[#e8dcc6]/50 leading-relaxed mb-3">{sec.note_en}</p>
                     )}
@@ -92,10 +96,24 @@ function DrinksList({ onSelectDish }) {
                             const row = (
                               <>
                                 <span className="flex flex-col min-w-0">
-                                  <span className="text-sm text-[#e8dcc6] leading-snug">
+                                  {/* 有中文名时中文在上、英文在下;酒水只有英文名 / Chinese name above English when present; drinks are English-only */}
+                                  {item.name_zh && (
+                                    <span className="text-sm text-[#e8dcc6] leading-snug">{item.name_zh}</span>
+                                  )}
+                                  <span
+                                    className={
+                                      'leading-snug ' +
+                                      (item.name_zh ? 'text-xs text-[#e8dcc6]/80' : 'text-sm text-[#e8dcc6]')
+                                    }
+                                  >
                                     {item.name}
+                                    {item.codes?.length > 0 && (
+                                      <span className="ml-1.5">
+                                        <CodeBadges codes={item.codes} />
+                                      </span>
+                                    )}
                                     {linked && (
-                                      <span className="ml-2 text-[10px] text-[#c9a96a] border border-[#c9a96a]/50 rounded-full px-1.5 py-px align-middle">
+                                      <span className="ml-2 text-[10px] text-[#c9a96a] border border-[#c9a96a]/50 rounded-full px-1.5 py-px align-middle whitespace-nowrap">
                                         成分 · Ingredients ›
                                       </span>
                                     )}
@@ -115,8 +133,9 @@ function DrinksList({ onSelectDish }) {
                             return (
                               <li key={ii} className="border-t border-[#c9a96a]/10 first:border-t-0">
                                 {linked ? (
+                                  // 把这一行的菜单标记一起带进详情页 / carry this row's menu codes into the detail view
                                   <button
-                                    onClick={() => onSelectDish(linked)}
+                                    onClick={() => onSelectDish({ ...linked, codes: item.codes })}
                                     className="w-full text-left flex justify-between gap-4 py-2"
                                   >
                                     {row}
@@ -138,10 +157,11 @@ function DrinksList({ onSelectDish }) {
         )
       })}
 
-      {/* 法定提示 / legal footer */}
-      <p className="text-[10px] text-center text-[#e8dcc6]/40 mt-6">{beverages.footer_en}</p>
+      {/* 过敏原图例 + 底部提示 / allergen legend + footer */}
+      {menu.allergen_legend && <CodeLegend />}
+      {menu.footer_en && <p className="text-[10px] text-center text-[#e8dcc6]/40 mt-4">{menu.footer_en}</p>}
     </div>
   )
 }
 
-export default DrinksList
+export default MenuList

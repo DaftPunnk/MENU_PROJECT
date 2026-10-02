@@ -1,0 +1,16 @@
+{
+  "id": "duck-aromatics",
+  "name_zh": "香酥鸭丝佐柚香梅酱",
+  "name_en": "First Impression – Duck & Aromatics",
+  "category": "starter",
+  "emoji": "🥗",
+  "cultural_note_en": "A bright, crunchy salad that sets off the richness of the duck: shredded crispy duck tossed with pomelo — a large, sweet Asian citrus — and a sweet-sour plum dressing.",
+  "ingredients": [
+    {"name_zh": "香酥鸭丝", "name_en": "Crispy shredded duck", "emoji": "🦆", "category": "protein", "allergens": []},
+    {"name_zh": "香草苗", "name_en": "Herb cress", "emoji": "🌱", "category": "herb", "allergens": []},
+    {"name_zh": "红葱头", "name_en": "Shallot", "emoji": "🧅", "category": "aromatic", "allergens": []},
+    {"name_zh": "柚子", "name_en": "Pomelo", "emoji": "🍈", "category": "fruit", "allergens": []},
+    {"name_zh": "松子", "name_en": "Pine nuts", "emoji": "🌰", "category": "nut", "allergens": ["tree nut"]},
+    {"name_zh": "梅子酱", "name_en": "Plum dressing", "emoji": "🫙", "category": "sauce", "allergens": []}
+  ]
+}

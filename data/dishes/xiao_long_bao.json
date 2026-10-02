@@ -1,0 +1,13 @@
+{
+  "id": "xiao-long-bao",
+  "name_zh": "上海小笼包",
+  "name_en": "Xiao Long Bao",
+  "category": "dim_sum",
+  "emoji": "🥟",
+  "cultural_note_en": "Soup dumplings from the Shanghai region. The filling includes a jellied broth that melts into hot soup as they steam — bite a small hole, sip the soup, then eat the dumpling (carefully, it's hot!).",
+  "ingredients": [
+    {"name_zh": "猪肉馅", "name_en": "Pork filling", "emoji": "🐖", "category": "protein", "allergens": []},
+    {"name_zh": "汤汁", "name_en": "Aromatic broth", "emoji": "🍲", "category": "broth", "allergens": []},
+    {"name_zh": "饺子皮", "name_en": "Dumpling wrapper", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]}
+  ]
+}

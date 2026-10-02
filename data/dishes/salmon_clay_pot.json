@@ -1,0 +1,15 @@
+{
+  "id": "salmon-clay-pot",
+  "name_zh": "川味三文鱼煲",
+  "name_en": "Sizzling Salmon Clay Pot",
+  "category": "seafood",
+  "emoji": "🍲",
+  "cultural_note_en": "Clay-pot dishes arrive at the table still sizzling. Sichuan green pepper adds a fresh, citrusy tingle, and chu hou sauce — a Cantonese fermented soybean paste — adds savoury depth.",
+  "ingredients": [
+    {"name_zh": "三文鱼", "name_en": "Salmon", "emoji": "🐟", "category": "protein", "allergens": ["fish"]},
+    {"name_zh": "青花椒", "name_en": "Sichuan green pepper", "emoji": "🌿", "category": "spice", "allergens": []},
+    {"name_zh": "柱侯酱", "name_en": "Chu hou sauce", "emoji": "🫙", "category": "sauce", "allergens": ["soy"]},
+    {"name_zh": "蒜", "name_en": "Garlic", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
+    {"name_zh": "红葱头", "name_en": "Shallot", "emoji": "🧅", "category": "aromatic", "allergens": []}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "mango-coconut",
+  "name_zh": "",
+  "name_en": "Mango Coconut Delight",
+  "category": "dessert",
+  "emoji": "🥭",
+  "cultural_note_en": "A light, tropical finish of mango, coconut and passionfruit.",
+  "ingredients": [
+    {"name_zh": "鲜芒果", "name_en": "Fresh mango", "emoji": "🥭", "category": "fruit", "allergens": []},
+    {"name_zh": "椰子慕斯", "name_en": "Coconut mousse", "emoji": "🥥", "category": "base", "allergens": []},
+    {"name_zh": "西米", "name_en": "Tapioca", "emoji": "⚪", "category": "base", "allergens": []},
+    {"name_zh": "百香果雪葩", "name_en": "Passionfruit sorbet", "emoji": "🍧", "category": "base", "allergens": []}
+  ]
+}

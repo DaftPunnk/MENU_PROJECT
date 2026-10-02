@@ -1,0 +1,14 @@
+{
+  "id": "gan-shao-prawns",
+  "name_zh": "干烧虾",
+  "name_en": "“Gan Shao” Dry-Fried Style Prawns",
+  "category": "seafood",
+  "emoji": "🦐",
+  "cultural_note_en": "'Gan shao' (dry-braising) is a Sichuan technique: the sauce is reduced right down until it clings to the prawns instead of pooling on the plate, for a concentrated, gently spicy flavour.",
+  "ingredients": [
+    {"name_zh": "虾", "name_en": "Prawns", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "马蹄", "name_en": "Water chestnut", "emoji": "🌰", "category": "vegetable", "allergens": []},
+    {"name_zh": "灯笼椒", "name_en": "Capsicum", "emoji": "🫑", "category": "vegetable", "allergens": []},
+    {"name_zh": "干烧酱", "name_en": "Dry-fried sauce", "emoji": "🥫", "category": "sauce", "allergens": []}
+  ]
+}

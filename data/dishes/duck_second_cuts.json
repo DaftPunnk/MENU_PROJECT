@@ -1,0 +1,15 @@
+{
+  "id": "duck-second-cuts",
+  "name_zh": "鸭肉炒米粉",
+  "name_en": "Transformation – Duck Second Cuts",
+  "category": "noodles",
+  "emoji": "🍜",
+  "cultural_note_en": "The duck's second course: the rest of the meat is shredded and wok-fried with rice vermicelli (ya si chao mi fen), so nothing from the bird goes to waste.",
+  "ingredients": [
+    {"name_zh": "鸭丝", "name_en": "Shredded duck", "emoji": "🦆", "category": "protein", "allergens": []},
+    {"name_zh": "米粉", "name_en": "Rice vermicelli", "emoji": "🍜", "category": "noodle", "allergens": []},
+    {"name_zh": "韭菜", "name_en": "Garlic chives", "emoji": "🌿", "category": "vegetable", "allergens": []},
+    {"name_zh": "香菇", "name_en": "Shiitake", "emoji": "🍄", "category": "vegetable", "allergens": []},
+    {"name_zh": "豆芽", "name_en": "Bean sprouts", "emoji": "🌱", "category": "vegetable", "allergens": []}
+  ]
+}

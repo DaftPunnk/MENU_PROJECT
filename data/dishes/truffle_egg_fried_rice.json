@@ -1,0 +1,15 @@
+{
+  "id": "truffle-egg-fried-rice",
+  "name_zh": "黑松露蛋炒饭",
+  "name_en": "Truffle Egg Fried Rice",
+  "category": "rice",
+  "emoji": "🍚",
+  "cultural_note_en": "Egg fried rice is the simplest test of a Chinese wok chef; this luxurious version is finished with black truffle.",
+  "ingredients": [
+    {"name_zh": "米饭", "name_en": "Rice", "emoji": "🍚", "category": "grain", "allergens": []},
+    {"name_zh": "走地鸡蛋", "name_en": "Free-range egg", "emoji": "🥚", "category": "protein", "allergens": ["egg"]},
+    {"name_zh": "黑松露", "name_en": "Black truffle", "emoji": "🍄", "image": "truffle", "category": "garnish", "allergens": []},
+    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "酱油", "name_en": "Premium soy", "emoji": "🍶", "image": "soy_sauce", "category": "sauce", "allergens": ["soy", "gluten"]}
+  ]
+}

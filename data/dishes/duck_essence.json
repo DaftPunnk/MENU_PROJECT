@@ -1,0 +1,15 @@
+{
+  "id": "duck-essence",
+  "name_zh": "酸菜鸭骨汤",
+  "name_en": "Prelude – Duck Essence",
+  "category": "soup",
+  "emoji": "🍲",
+  "cultural_note_en": "A clear soup made from the bones of the roast duck — the Chinese tradition of using the whole bird — brightened with pickled cabbage, ginger and goji berries.",
+  "ingredients": [
+    {"name_zh": "鸭骨汤", "name_en": "Duck bone broth", "emoji": "🍲", "category": "broth", "allergens": []},
+    {"name_zh": "酸菜", "name_en": "Pickled cabbage", "emoji": "🥬", "category": "vegetable", "allergens": []},
+    {"name_zh": "豆腐", "name_en": "Tofu", "emoji": "⬜", "category": "protein", "allergens": ["soy"]},
+    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "枸杞", "name_en": "Goji berries", "emoji": "🔴", "category": "garnish", "allergens": []}
+  ]
+}

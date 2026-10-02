@@ -1,0 +1,15 @@
+{
+  "id": "peking-duck",
+  "name_zh": "北京片皮鸭",
+  "name_en": "Classic Nectar Peking-Style Duck",
+  "category": "duck",
+  "emoji": "🦆",
+  "cultural_note_en": "Peking duck dates back to the imperial kitchens of Beijing. This one is smoked over orchard fruit wood and roasted until the skin is glass-crisp; at the table you wrap the skin and meat in a thin pancake with shredded vegetables and eat it by hand.",
+  "ingredients": [
+    {"name_zh": "果木烟熏鸭", "name_en": "Fruit wood-smoked duck", "emoji": "🦆", "category": "protein", "allergens": []},
+    {"name_zh": "脆鸭皮", "name_en": "Crispy duck skin", "emoji": "🍂", "category": "protein", "allergens": []},
+    {"name_zh": "鸭肉", "name_en": "Boneless duck meat", "emoji": "🍖", "category": "protein", "allergens": []},
+    {"name_zh": "薄饼", "name_en": "Thin pancakes", "emoji": "🫓", "category": "wrapper", "allergens": ["gluten"]},
+    {"name_zh": "时蔬丝", "name_en": "Shredded vegetables", "emoji": "🥒", "category": "vegetable", "allergens": []}
+  ]
+}

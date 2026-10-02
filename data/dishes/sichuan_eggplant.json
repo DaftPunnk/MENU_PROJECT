@@ -1,0 +1,15 @@
+{
+  "id": "sichuan-eggplant",
+  "name_zh": "川味脆皮茄子",
+  "name_en": "Sichuan Eggplant",
+  "category": "vegetarian",
+  "emoji": "🍆",
+  "cultural_note_en": "Crisp-fried eggplant glazed in a sweet, savoury and gently spicy Sichuan chilli caramel.",
+  "ingredients": [
+    {"name_zh": "茄子", "name_en": "Eggplant", "emoji": "🍆", "category": "vegetable", "allergens": []},
+    {"name_zh": "川味辣椒焦糖", "name_en": "Sichuan chilli caramel", "emoji": "🌶️", "category": "sauce", "allergens": []},
+    {"name_zh": "黑蒜", "name_en": "Black garlic", "emoji": "🧄", "category": "aromatic", "allergens": []},
+    {"name_zh": "芝麻", "name_en": "Sesame", "emoji": "⚪", "category": "garnish", "allergens": ["sesame"]},
+    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []}
+  ]
+}

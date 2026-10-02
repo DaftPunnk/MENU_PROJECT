@@ -1,0 +1,15 @@
+{
+  "id": "soft-shell-crab",
+  "name_zh": "川味软壳蟹",
+  "name_en": "Crispy Soft-Shell Crab",
+  "category": "starter",
+  "emoji": "🦀",
+  "cultural_note_en": "Soft-shell crabs are caught just after moulting, so the whole crab — shell and all — can be eaten. Fried crisp and tossed with Sichuan pepper, garlic and chilli.",
+  "ingredients": [
+    {"name_zh": "软壳蟹", "name_en": "Soft-shell crab", "emoji": "🦀", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "花椒", "name_en": "Sichuan pepper", "emoji": "🪻", "image": "peppercorn", "category": "spice", "allergens": []},
+    {"name_zh": "蒜", "name_en": "Garlic", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
+    {"name_zh": "辣椒", "name_en": "Chilli", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []},
+    {"name_zh": "发酵辣椒蛋黄酱", "name_en": "Fermented chilli mayo", "emoji": "🥫", "category": "sauce", "allergens": ["egg"]}
+  ]
+}

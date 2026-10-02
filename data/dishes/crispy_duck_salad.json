@@ -1,0 +1,16 @@
+{
+  "id": "crispy-duck-salad",
+  "name_zh": "香酥鸭丝佐柚香梅酱",
+  "name_en": "Crispy Duck Salad",
+  "category": "starter",
+  "emoji": "🥗",
+  "cultural_note_en": "A bright, crunchy salad that sets off the richness of the duck: shredded crispy duck tossed with pomelo — a large, sweet Asian citrus — and a sweet-sour plum dressing.",
+  "ingredients": [
+    {"name_zh": "香酥鸭丝", "name_en": "Crispy shredded duck", "emoji": "🦆", "category": "protein", "allergens": []},
+    {"name_zh": "柚子", "name_en": "Pomelo", "emoji": "🍈", "category": "fruit", "allergens": []},
+    {"name_zh": "萝卜", "name_en": "Radish", "emoji": "🥕", "category": "vegetable", "allergens": []},
+    {"name_zh": "松子", "name_en": "Pine nuts", "emoji": "🌰", "category": "nut", "allergens": ["tree nut"]},
+    {"name_zh": "香草", "name_en": "Mixed herbs", "emoji": "🌿", "category": "herb", "allergens": []},
+    {"name_zh": "梅子酱", "name_en": "Plum dressing", "emoji": "🫙", "category": "sauce", "allergens": []}
+  ]
+}

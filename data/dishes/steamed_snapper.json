@@ -1,0 +1,15 @@
+{
+  "id": "steamed-snapper",
+  "name_zh": "清蒸新西兰红鲷鱼",
+  "name_en": "Steamed Longline Whole Baby Snapper",
+  "category": "seafood",
+  "emoji": "🐟",
+  "cultural_note_en": "Steaming a whole fish is the purest Cantonese way to show off its freshness. A whole fish also symbolises abundance — 'yu' (fish) sounds like the word for 'surplus'.",
+  "ingredients": [
+    {"name_zh": "红鲷鱼", "name_en": "Baby snapper", "emoji": "🐟", "category": "protein", "allergens": ["fish"]},
+    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "生抽", "name_en": "Superior soy", "emoji": "🍶", "image": "soy_sauce", "category": "sauce", "allergens": ["soy", "gluten"]},
+    {"name_zh": "芫荽油", "name_en": "Coriander oil", "emoji": "🌿", "category": "sauce", "allergens": []}
+  ]
+}

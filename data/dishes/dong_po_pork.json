@@ -1,0 +1,12 @@
+{
+  "id": "dong-po-pork",
+  "name_zh": "东坡肉",
+  "name_en": "Dong Po Pork",
+  "category": "meat",
+  "emoji": "🥓",
+  "cultural_note_en": "Named after Su Dongpo, the Song-dynasty poet who, legend has it, perfected this slow braise. Pork belly is simmered for hours until meltingly tender in a glossy, aromatic soy sauce. Here it comes with soft bao buns to tuck it into.",
+  "ingredients": [
+    {"name_zh": "五花肉", "name_en": "Pork belly", "emoji": "🥓", "category": "protein", "allergens": []},
+    {"name_zh": "刈包", "name_en": "Bao buns", "emoji": "🍞", "category": "wrapper", "allergens": ["gluten"]}
+  ]
+}

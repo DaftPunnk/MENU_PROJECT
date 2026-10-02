@@ -1,0 +1,14 @@
+{
+  "id": "yangzhou-fried-rice",
+  "name_zh": "扬州叉烧蛋炒饭",
+  "name_en": "Yangzhou Fried Rice",
+  "category": "rice",
+  "emoji": "🍚",
+  "cultural_note_en": "Named after the city of Yangzhou on the Yangtze, this is the archetypal 'special fried rice' served in Chinese restaurants around the world.",
+  "ingredients": [
+    {"name_zh": "米饭", "name_en": "Rice", "emoji": "🍚", "category": "grain", "allergens": []},
+    {"name_zh": "叉烧", "name_en": "BBQ pork (char siu)", "emoji": "🍖", "category": "protein", "allergens": []},
+    {"name_zh": "鸡蛋", "name_en": "Egg", "emoji": "🥚", "category": "protein", "allergens": ["egg"]},
+    {"name_zh": "蔬菜", "name_en": "Vegetables", "emoji": "🥕", "category": "vegetable", "allergens": []}
+  ]
+}

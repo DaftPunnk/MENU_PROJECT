@@ -1,0 +1,13 @@
+{
+  "id": "spinach-dumpling",
+  "name_zh": "菠菜素饺",
+  "name_en": "Spinach Dumpling",
+  "category": "dim_sum",
+  "emoji": "🥟",
+  "cultural_note_en": "A vegetarian dumpling with a jade-green spinach filling and seasonal vegetables.",
+  "ingredients": [
+    {"name_zh": "菠菜", "name_en": "Spinach", "emoji": "🥬", "category": "vegetable", "allergens": []},
+    {"name_zh": "时令蔬菜", "name_en": "Seasonal vegetables", "emoji": "🥕", "category": "vegetable", "allergens": []},
+    {"name_zh": "饺子皮", "name_en": "Dumpling wrapper", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "chocolate-sphere",
+  "name_zh": "招牌黑金幻球",
+  "name_en": "Signature Chocolate Sphere",
+  "category": "dessert",
+  "emoji": "🍫",
+  "cultural_note_en": "A signature dessert that brings Chinese flavours to a Western form: sesame, a favourite in Chinese sweets, meets dark chocolate and mandarin — a symbol of good fortune.",
+  "ingredients": [
+    {"name_zh": "黑巧克力", "name_en": "Dark chocolate", "emoji": "🍫", "category": "base", "allergens": []},
+    {"name_zh": "柑橘", "name_en": "Mandarin", "emoji": "🍊", "image": "grapefruit", "category": "fruit", "allergens": []},
+    {"name_zh": "芝麻海绵蛋糕", "name_en": "Sesame sponge", "emoji": "🍰", "category": "base", "allergens": ["sesame"]},
+    {"name_zh": "芝麻冰淇淋", "name_en": "Sesame ice cream", "emoji": "🍨", "category": "base", "allergens": ["sesame", "dairy"]}
+  ]
+}

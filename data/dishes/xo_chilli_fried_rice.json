@@ -1,0 +1,16 @@
+{
+  "id": "xo-chilli-fried-rice",
+  "name_zh": "甘露海鲜炒饭",
+  "name_en": "X.O. Chilli Fried Rice",
+  "category": "rice",
+  "emoji": "🍚",
+  "cultural_note_en": "XO sauce was created in 1980s Hong Kong and named after XO cognac as a byword for luxury — a rich, savoury chilli relish traditionally made with dried scallop and dried shrimp.",
+  "ingredients": [
+    {"name_zh": "米饭", "name_en": "Rice", "emoji": "🍚", "category": "grain", "allergens": []},
+    {"name_zh": "虾", "name_en": "Prawns", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "带子", "name_en": "Scallops", "emoji": "🐚", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "鱿鱼", "name_en": "Squid", "emoji": "🦑", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "XO酱", "name_en": "X.O sauce", "emoji": "🫙", "category": "sauce", "allergens": ["shellfish"]}
+  ]
+}

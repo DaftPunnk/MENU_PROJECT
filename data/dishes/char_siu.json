@@ -1,0 +1,13 @@
+{
+  "id": "char-siu",
+  "name_zh": "香烤蜜汁叉烧",
+  "name_en": "Mānuka Honey-Glazed Barbecued Pork",
+  "category": "meat",
+  "emoji": "🍖",
+  "cultural_note_en": "Char siu, Cantonese barbecued pork, is roasted with a sweet, sticky glaze until lacquered and slightly charred at the edges. This one is glazed with New Zealand mānuka honey.",
+  "ingredients": [
+    {"name_zh": "猪肉", "name_en": "Pork", "emoji": "🐖", "category": "protein", "allergens": []},
+    {"name_zh": "麦卢卡蜂蜜", "name_en": "Mānuka honey", "emoji": "🍯", "category": "sweetener", "allergens": []},
+    {"name_zh": "芥末酱", "name_en": "Mustard sauce", "emoji": "🟡", "category": "sauce", "allergens": []}
+  ]
+}

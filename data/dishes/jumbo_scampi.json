@@ -1,0 +1,12 @@
+{
+  "id": "jumbo-scampi",
+  "name_zh": "南极冰鲜海蜇虾",
+  "name_en": "Antarctic Deep-Sea Jumbo Scampi",
+  "category": "seafood",
+  "emoji": "🦐",
+  "cultural_note_en": "Scampi are slender, sweet-fleshed lobsters from deep, cold waters. Have them raw to taste their natural sweetness, or fried crisp with salt and pepper.",
+  "ingredients": [
+    {"name_zh": "南极螯虾", "name_en": "Antarctic scampi", "emoji": "🦐", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "椒盐", "name_en": "Salt & pepper", "emoji": "🧂", "image": "salt", "category": "seasoning", "allergens": []}
+  ]
+}

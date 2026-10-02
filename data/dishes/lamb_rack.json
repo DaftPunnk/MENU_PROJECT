@@ -1,0 +1,12 @@
+{
+  "id": "lamb-rack",
+  "name_zh": "梅子酱酥炸羊排",
+  "name_en": "Wok-Fried NZ Lamb Rack",
+  "category": "meat",
+  "emoji": "🍖",
+  "cultural_note_en": "New Zealand lamb given a Cantonese treatment — wok-fried and coated in a sweet plum sauce, a classic Cantonese partner for rich meats.",
+  "ingredients": [
+    {"name_zh": "新西兰羊排", "name_en": "NZ lamb rack", "emoji": "🍖", "category": "protein", "allergens": []},
+    {"name_zh": "甘露梅子酱", "name_en": "Sweet plum sauce", "emoji": "🫙", "category": "sauce", "allergens": []}
+  ]
+}

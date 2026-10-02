@@ -1,0 +1,14 @@
+{
+  "id": "sichuan-lamb-cutlets",
+  "name_zh": "川味羊肩排",
+  "name_en": "Sichuan Lamb Cutlets",
+  "category": "wok",
+  "emoji": "🍖",
+  "cultural_note_en": "Lamb cooked the Sichuan way: dried chilli for heat and Sichuan pepper for its signature tingling, numbing 'ma la' sensation.",
+  "ingredients": [
+    {"name_zh": "新西兰羊排", "name_en": "NZ lamb cutlets", "emoji": "🍖", "category": "protein", "allergens": []},
+    {"name_zh": "辣椒", "name_en": "Chilli", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []},
+    {"name_zh": "花椒", "name_en": "Sichuan pepper", "emoji": "🪻", "image": "peppercorn", "category": "spice", "allergens": []},
+    {"name_zh": "脆炸大葱", "name_en": "Crispy leek", "emoji": "🧅", "category": "garnish", "allergens": []}
+  ]
+}

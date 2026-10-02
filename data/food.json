@@ -1,0 +1,262 @@
+{
+  "_comment": "菜品单(依据 2026-08 新菜单)。codes = 菜单上的过敏原标记 D/G/N/S/V;dish = 有成分拆解的菜品 id(data/dishes/),点击可跳详情;没有 dish 的只显示品项。/ Food list (from the Aug 2026 menu). `codes` = the menu's D/G/N/S/V markers; `dish` = id of a breakdown in data/dishes/ — items without one are list-only.",
+  "allergen_legend": true,
+  "footer_en": "We take all reasonable efforts to accommodate dietary needs, but cannot guarantee that our ingredients are allergen free — please tell our team about any allergies or dietary requirements. A 1.8% surcharge applies to credit card & contactless payments.",
+  "sections": [
+    {
+      "id": "tasting",
+      "name_zh": "甘露套餐",
+      "name_en": "Signature Tasting Menu",
+      "emoji": "🥢",
+      "note_zh": "每位 $108(全桌同点,至少 2 人起订)",
+      "note_en": "Taste of Nectar · $108 pp · Entire table only · Minimum two people · Beverage match +$65 pp",
+      "groups": [
+        {
+          "name_zh": "前菜",
+          "name_en": "To Start",
+          "items": [
+            {"name_zh": "鲜虾云吞汤", "name": "Prawn Wonton Soup", "desc_en": "Prawn wontons, aromatic broth, spring onion & coriander.", "codes": ["G", "S"], "dish": "prawn-wonton-soup"},
+            {"name_zh": "北京片皮鸭", "name": "Classic Nectar Peking-Style Duck", "desc_en": "Aromatic orchard fruit wood-smoked duck, crispy skin, boneless meat, thin pancakes & shredded vegetables.", "codes": ["G", "S"], "dish": "peking-duck"},
+            {"name_zh": "炸海鲜卷", "name": "Zha Hai Xian Juan", "desc_en": "Crispy seafood roll with chilli dipping sauce.", "codes": ["G", "S"], "dish": "zha-hai-xian-juan"}
+          ]
+        },
+        {
+          "name_zh": "主菜",
+          "name_en": "Mains",
+          "items": [
+            {"name_zh": "甘露海鲜炒饭", "name": "X.O. Chilli Fried Rice", "desc_en": "Prawns, scallops, squid, spring onion & X.O sauce.", "codes": ["G", "S"], "dish": "xo-chilli-fried-rice"},
+            {"name_zh": "东坡肉", "name": "“Dong Po” Style Braised Pork Belly", "desc_en": "Slow-braised pork belly, aromatic soy, ginger & spring onion.", "codes": ["G"], "dish": "dong-po-pork-belly"},
+            {"name_zh": "干烧虾", "name": "“Gan Shao” Dry-Fried Style Prawns", "desc_en": "Prawns, water chestnut, capsicum & aromatic dry-fried sauce.", "codes": ["G", "S"], "dish": "gan-shao-prawns"},
+            {"name_zh": "凉拌黑木耳", "name": "Wood Ear Salad", "desc_en": "Wood ear mushroom, garlic & spicy vinegar dressing, lotus root & dried chilli.", "codes": ["G", "V"], "dish": "wood-ear-salad"}
+          ]
+        },
+        {
+          "name_zh": "甜品",
+          "name_en": "Dessert",
+          "items": [
+            {"name_zh": "甘露龟苓仙草冻", "name": "Cincau Guiling Grass Jelly", "desc_en": "Chinese herb – liquorice, chuanxiong, mānuka honey.", "codes": ["G", "V"], "dish": "grass-jelly"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duck_set",
+      "name_zh": "果木烟熏鸭套餐",
+      "name_en": "Fruit Wood-Smoked Duck Set Menu",
+      "emoji": "🦆",
+      "note_zh": "每位 $88(全桌同点,至少 2 人起订)",
+      "note_en": "Our signature Peking duck experience: every duck is seasoned with our house spice blend and hung to dry, then roasted for 90 minutes over mānuka and cherry wood. $88 pp · Entire table only · Minimum two people",
+      "groups": [
+        {
+          "name_zh": "前菜",
+          "name_en": "To Start",
+          "items": [
+            {"name_zh": "酸菜鸭骨汤", "name": "Prelude – Duck Essence", "detail": "前奏 · 鸭香精华", "desc_en": "Duck bone broth, pickled cabbage, tofu, ginger & goji.", "codes": ["G"], "dish": "duck-essence"},
+            {"name_zh": "香酥鸭丝佐柚香梅酱", "name": "First Impression – Duck & Aromatics", "detail": "初印象 · 鸭香初绽", "desc_en": "Crispy duck salad, herb cress, shallot, pomelo, pine nuts & plum dressing.", "codes": ["G", "N"], "dish": "duck-aromatics"}
+          ]
+        },
+        {
+          "name_zh": "主菜",
+          "name_en": "Mains",
+          "items": [
+            {"name_zh": "北京片皮鸭", "name": "Heritage Course – Roast Duck", "detail": "传承经典 · 北京鸭", "desc_en": "Aromatic orchard fruit wood-smoked duck, crispy skin, boneless meat, thin pancakes & shredded vegetables.", "codes": ["G", "S"], "dish": "peking-duck"},
+            {"name_zh": "鸭肉炒米粉", "name": "Transformation – Duck Second Cuts", "detail": "蜕变 · 鸭二食", "desc_en": "Ya si chao mi fen — wok-fried vermicelli, garlic chives, shiitake, bean sprouts & duck.", "codes": ["G", "S"], "dish": "duck-second-cuts"}
+          ]
+        },
+        {
+          "name_zh": "甜品",
+          "name_en": "Dessert",
+          "items": [
+            {"name_zh": "甘露龟苓仙草冻", "name": "Cincau Guiling Grass Jelly", "desc_en": "Chinese herb – liquorice, chuanxiong, mānuka honey.", "codes": ["G", "V"], "dish": "grass-jelly"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "small_eats",
+      "name_zh": "小食冷盘",
+      "name_en": "Small Eats & Larder",
+      "emoji": "🥗",
+      "groups": [
+        {
+          "items": [
+            {"name_zh": "香酥鸭丝佐柚香梅酱", "name": "Crispy Duck Salad", "price": 36, "desc_en": "Shredded crispy duck, pomelo, radish, pine nuts, mixed herbs & plum dressing.", "codes": ["G", "N"], "dish": "crispy-duck-salad"},
+            {"name_zh": "新西兰黄尾鰤鱼生 · 广式口味", "name": "NZ Kingfish Yusheng – Cantonese Style", "price": 25, "desc_en": "Thinly sliced kingfish, ginger, spring onion, yuzu dressing, sesame, cashew, chilli.", "codes": ["G", "S"], "dish": "kingfish-yusheng"},
+            {"name_zh": "陈醋拌海蜇", "name": "Chilled Jellyfish with Black Vinegar", "price": 26, "desc_en": "House-made sauce-marinated jellyfish, chilli oil.", "codes": ["G", "S"], "dish": "jellyfish"},
+            {"name_zh": "脆炸虾伴柚子辣酱沙拉", "name": "Tabasco Prawns", "price": 36, "desc_en": "Crispy Tabasco prawns, pomelo salsa.", "codes": ["G", "S"], "dish": "tabasco-prawns"},
+            {"name_zh": "川味软壳蟹", "name": "Crispy Soft-Shell Crab", "price": 32, "desc_en": "Golden-fried soft-shell crab, Sichuan pepper, garlic, chilli & fermented chilli mayo.", "codes": ["G", "S"], "dish": "soft-shell-crab"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dim_sum",
+      "name_zh": "点心",
+      "name_en": "Dim Sum & Handcrafted Specialities",
+      "emoji": "🥟",
+      "groups": [
+        {
+          "items": [
+            {"name_zh": "上海煎锅贴", "name": "Shanghai-Style Pan-Fried Dumplings", "price": 17, "desc_en": "Traditional pan-fried dumplings with a crispy base & savoury pork filling.", "codes": ["G"], "dish": "shanghai-dumplings"},
+            {"name_zh": "上海小笼包", "name": "Xiao Long Bao", "price": 17, "desc_en": "Steamed soup dumplings filled with pork & aromatic broth.", "codes": ["G"], "dish": "xiao-long-bao"},
+            {"name_zh": "极品酱烧卖", "name": "Prawn & Chicken Siu Mai", "price": 28, "desc_en": "Open-faced steamed dumplings with prawn, chicken & seasonal garnish.", "codes": ["G", "S"], "dish": "siu-mai"},
+            {"name_zh": "黑松露虾饺", "name": "Prawn & Truffle Har Gau", "price": 28, "desc_en": "Crystal prawn dumplings finished with premium black truffle.", "codes": ["G", "S"], "dish": "ha-kao"},
+            {"name_zh": "脆皮鲍鱼炸云吞", "name": "Crispy Pāua Wonton", "price": 28, "desc_en": "NZ pāua wonton, golden-fried with aromatic seasoning, pork, spicy & sour sauce.", "codes": ["G", "S"], "dish": "paua-wonton"},
+            {"name_zh": "菠菜素饺", "name": "Spinach Dumpling", "price": 28, "desc_en": "Vegetarian dumpling with spinach & seasonal vegetables.", "codes": ["G", "V"], "dish": "spinach-dumpling"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meats",
+      "name_zh": "烧味肉类",
+      "name_en": "Premium Meats & BBQ",
+      "emoji": "🍖",
+      "groups": [
+        {
+          "items": [
+            {"name_zh": "北京片皮鸭", "name": "Classic Nectar Peking-Style Duck", "prices": [{"label": "Whole", "price": 99}, {"label": "Half", "price": 55}], "desc_en": "Aromatic orchard fruit wood-smoked duck, crispy skin, boneless meat, thin pancakes & shredded vegetables.", "codes": ["G", "S"], "dish": "peking-duck"},
+            {"name_zh": "香烤蜜汁叉烧", "name": "Mānuka Honey-Glazed Barbecued Pork", "price": 42, "desc_en": "Chargrilled pork glazed with mānuka honey & served with mustard sauce.", "codes": ["G"], "dish": "char-siu"},
+            {"name_zh": "梅子酱酥炸羊排", "name": "Wok-Fried NZ Lamb Rack", "price": 59, "desc_en": "NZ lamb rack wok-fried with our sweet plum sauce.", "codes": ["G", "S"], "dish": "lamb-rack"},
+            {"name_zh": "东坡肉", "name": "Dong Po Pork", "price": 42, "desc_en": "“Dong Po” style braised pork belly served with bao buns.", "codes": ["G"], "dish": "dong-po-pork"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seafood",
+      "name_zh": "海鲜",
+      "name_en": "Premium Seafood",
+      "emoji": "🦞",
+      "groups": [
+        {
+          "items": [
+            {"name_zh": "清蒸新西兰红鲷鱼", "name": "Steamed Longline Whole Baby Snapper", "price": 78, "desc_en": "Steamed baby snapper with ginger, spring onion, superior soy & coriander oil.", "codes": ["G", "S"], "dish": "steamed-snapper"},
+            {"name_zh": "川味三文鱼煲", "name": "Sizzling Salmon Clay Pot", "price": 88, "desc_en": "Salmon pieces, Sichuan green pepper, chu hou sauce, garlic, shallot.", "codes": ["G", "S"], "dish": "salmon-clay-pot"},
+            {"name_zh": "干烧双虾", "name": "“Dry-Fried” Style Crayfish & Prawns", "price": 88, "desc_en": "Chilli bean paste, fermented rice wine, spring onion, ginger, garlic, shallot, water chestnut & capsicum.", "codes": ["G", "S"], "dish": "crayfish-prawns"},
+            {"name_zh": "南极冰鲜海蜇虾", "name": "Antarctic Deep-Sea Jumbo Scampi", "detail": "Raw or crispy salt & pepper · 4 scampi per portion", "price": 148, "desc_en": "Premium Antarctic scampi served raw or crispy with salt & pepper seasoning.", "codes": ["G", "S"], "dish": "jumbo-scampi"},
+            {"name_zh": "极品XO酱爆炒带子", "name": "Sautéed XO Scallops", "price": 58, "codes": ["G", "S"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "live_seafood",
+      "name_zh": "游水海鲜",
+      "name_en": "Live Ocean Cuisine",
+      "emoji": "🦀",
+      "note_zh": "时价 · 请从下列烹调方式中任选",
+      "note_en": "Market price · please choose from the following cooking preparations for live seafood.",
+      "groups": [
+        {
+          "items": [
+            {"name_zh": "新西兰活龙虾", "name": "New Zealand Crayfish", "price_text": "MP", "codes": ["G", "S"]},
+            {"name_zh": "深海笋壳鱼", "name": "Blue Cod", "price_text": "MP", "codes": ["S"]},
+            {"name_zh": "新西兰黑金鲍鱼", "name": "Abalone", "price_text": "MP", "codes": ["S"]}
+          ]
+        },
+        {
+          "name_zh": "清蒸",
+          "name_en": "Steamed",
+          "items": [
+            {"name_zh": "生抽皇", "name": "Light soya sauce", "codes": ["G"]},
+            {"name_zh": "京葱豆豉", "name": "Spring onion, garlic & black bean sauce", "codes": ["G"]},
+            {"name_zh": "蒜蓉酱", "name": "House-made garlic sauce", "codes": ["G"]}
+          ]
+        },
+        {
+          "name_zh": "炒 / 爆炒",
+          "name_en": "Wok Stir-Fried",
+          "items": [
+            {"name_zh": "姜葱", "name": "Ginger & spring onion", "codes": ["D", "G"]},
+            {"name_zh": "极品XO辣椒酱", "name": "X.O chilli sauce", "codes": ["G"]},
+            {"name_zh": "椒盐", "name": "Salt & pepper", "codes": ["G"]},
+            {"name_zh": "麻婆豆腐", "name": "Mapo tofu", "codes": ["G"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wok",
+      "name_zh": "小炒",
+      "name_en": "Wok & Cantonese Classics",
+      "emoji": "🔥",
+      "groups": [
+        {
+          "items": [
+            {"name_zh": "驰名黑椒牛肉", "name": "Black Pepper Beef", "price": 48, "desc_en": "Premium NZ Angus beef, black pepper sauce, onion & aromatic spices.", "codes": ["G"], "dish": "black-pepper-beef"},
+            {"name_zh": "川味羊肩排", "name": "Sichuan Lamb Cutlets", "price": 59, "desc_en": "NZ lamb cutlets, chilli, Sichuan pepper & crispy leek.", "codes": ["G"], "dish": "sichuan-lamb-cutlets"},
+            {"name_zh": "宫保鸡丁", "name": "Kung Pao Chicken", "price": 36, "desc_en": "Free-range chicken, cashew, dried chilli & aged vinegar.", "codes": ["G", "N"], "dish": "kung-pao-chicken"},
+            {"name_zh": "麻婆豆腐", "name": "Mapo Tofu", "price": 28, "desc_en": "Silken tofu, fermented chilli bean, pork mince & Sichuan pepper.", "codes": ["G", "S"], "dish": "mapo-tofu"},
+            {"name_zh": "清炒时令蔬", "name": "Wok-Fried Seasonal Greens", "price": 28, "desc_en": "Chinese greens, garlic, vegetarian oyster sauce & crispy shallots.", "codes": ["G", "V"], "dish": "seasonal-greens"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rice_noodles",
+      "name_zh": "饭面",
+      "name_en": "Rice & Noodles",
+      "emoji": "🍚",
+      "groups": [
+        {
+          "items": [
+            {"name_zh": "黑松露蛋炒饭", "name": "Truffle Egg Fried Rice", "price": 28, "desc_en": "Free-range egg, black truffle, spring onion & premium soy.", "codes": ["G", "D"], "dish": "truffle-egg-fried-rice"},
+            {"name_zh": "XO鸭肉炒饭", "name": "X.O Duck Fried Rice", "price": 32, "desc_en": "Roast duck, seasonal vegetables, egg & X.O sauce.", "codes": ["G"], "dish": "xo-duck-fried-rice"},
+            {"name_zh": "扬州叉烧蛋炒饭", "name": "Yangzhou Fried Rice", "price": 28, "desc_en": "Traditional Yangzhou-style fried rice with egg, vegetables & savoury seasoning.", "codes": ["G", "S"], "dish": "yangzhou-fried-rice"},
+            {"name_zh": "炒粿条(鸡肉、中式香肠)", "name": "Char Kway Teow", "price": 32, "desc_en": "Flat rice noodles, Chinese sausage, egg, chicken, Chinese chive, bean sprouts & dark soy.", "codes": ["G", "S"], "dish": "char-kway-teow"},
+            {"name_zh": "甘露XO酱海鲜蛋炒饭", "name": "XO Seafood Fried Rice", "price": 32, "desc_en": "Seasonal vegetables, seafood, egg, X.O sauce & spring onion.", "codes": ["G", "S"], "dish": "xo-seafood-fried-rice"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vegetarian",
+      "name_zh": "素菜",
+      "name_en": "Vegetarian Specialities",
+      "emoji": "🥬",
+      "groups": [
+        {
+          "items": [
+            {"name_zh": "川味脆皮茄子", "name": "Sichuan Eggplant", "price": 26, "desc_en": "Sweet & savoury Sichuan chilli caramel with black garlic, sesame & spring onion.", "codes": ["G", "V"], "dish": "sichuan-eggplant"},
+            {"name_zh": "金酥翡翠豆腐", "name": "Spinach Tofu", "price": 30, "desc_en": "Silken egg tofu, spinach & mushrooms, mushroom sauce.", "codes": ["G", "V"], "dish": "spinach-tofu"},
+            {"name_zh": "凉拌黑木耳", "name": "Mushroom Salad", "price": 18, "desc_en": "Wood ear salad, garlic & spicy vinegar dressing, lotus root & dried chilli.", "codes": ["G", "V"], "dish": "wood-ear-salad"},
+            {"name_zh": "炒芥兰", "name": "Gai Lan", "price": 28, "desc_en": "Chinese broccoli with garlic, ginger & vegetarian mushroom sauce.", "codes": ["G", "V"], "dish": "gai-lan"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name_zh": "甜品",
+      "name_en": "Desserts",
+      "emoji": "🍮",
+      "groups": [
+        {
+          "items": [
+            {"name_zh": "招牌黑金幻球", "name": "Signature Chocolate Sphere", "price": 26, "desc_en": "Dark chocolate, mandarin, sesame sponge & sesame ice cream.", "codes": ["D", "N"], "dish": "chocolate-sphere"},
+            {"name": "Mango Coconut Delight", "price": 22, "desc_en": "Fresh mango, coconut mousse, tapioca & passionfruit sorbet.", "codes": ["D"], "dish": "mango-coconut"},
+            {"name_zh": "甘露龟苓仙草冻", "name": "Cincau Guiling Grass Jelly", "price": 18, "desc_en": "Chinese herb – liquorice, chuanxiong, mānuka honey.", "codes": ["G", "V"], "dish": "grass-jelly"},
+            {"name_zh": "时节冻冰沙", "name": "Sorbet selection", "price": 18, "codes": ["V"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kids",
+      "name_zh": "儿童餐",
+      "name_en": "Kids Menu",
+      "emoji": "🧒",
+      "groups": [
+        {
+          "items": [
+            {"name_zh": "鲜虾云吞汤米粉", "name": "Prawn wonton soup", "price": 16, "codes": ["G", "S"]},
+            {"name_zh": "清炒鸡丁配白米饭", "name": "Stir-fried chicken with rice", "price": 16, "codes": ["G"]},
+            {"name_zh": "炸鸡翅", "name": "Crispy chicken wings", "price": 16, "codes": ["G"]},
+            {"name_zh": "炸鸡肉春卷", "name": "Crispy chicken spring roll", "price": 12, "codes": ["G"]}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "dong-po-pork-belly",
+  "name_zh": "东坡肉",
+  "name_en": "“Dong Po” Style Braised Pork Belly",
+  "category": "meat",
+  "emoji": "🥓",
+  "cultural_note_en": "Named after Su Dongpo, the Song-dynasty poet who, legend has it, perfected this slow braise. Pork belly is simmered for hours until meltingly tender in a glossy, aromatic soy sauce.",
+  "ingredients": [
+    {"name_zh": "五花肉", "name_en": "Pork belly", "emoji": "🥓", "category": "protein", "allergens": []},
+    {"name_zh": "酱油", "name_en": "Aromatic soy", "emoji": "🍶", "image": "soy_sauce", "category": "sauce", "allergens": ["soy", "gluten"]},
+    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []}
+  ]
+}

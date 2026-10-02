@@ -1,0 +1,17 @@
+{
+  "id": "kingfish-yusheng",
+  "name_zh": "新西兰黄尾鰤鱼生 · 广式口味",
+  "name_en": "NZ Kingfish Yusheng – Cantonese Style",
+  "category": "starter",
+  "emoji": "🐟",
+  "cultural_note_en": "Yusheng is a Cantonese raw-fish salad, famously tossed high at Lunar New Year for luck and abundance — the higher the toss, the greater the fortune. Here it is made with New Zealand kingfish.",
+  "ingredients": [
+    {"name_zh": "黄尾鰤", "name_en": "Kingfish", "emoji": "🐟", "category": "protein", "allergens": ["fish"]},
+    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "柚子汁", "name_en": "Yuzu dressing", "emoji": "🍋", "image": "lime", "category": "sauce", "allergens": []},
+    {"name_zh": "芝麻", "name_en": "Sesame", "emoji": "⚪", "category": "garnish", "allergens": ["sesame"]},
+    {"name_zh": "腰果", "name_en": "Cashew", "emoji": "🥜", "image": "cashew", "category": "nut", "allergens": ["tree nut"]},
+    {"name_zh": "辣椒", "name_en": "Chilli", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []}
+  ]
+}

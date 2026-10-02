@@ -1,0 +1,12 @@
+{
+  "id": "shanghai-dumplings",
+  "name_zh": "上海煎锅贴",
+  "name_en": "Shanghai-Style Pan-Fried Dumplings",
+  "category": "dim_sum",
+  "emoji": "🥟",
+  "cultural_note_en": "Shanghai's beloved street-food dumpling: pan-fried so the base turns golden and crunchy while the top stays soft and steamed.",
+  "ingredients": [
+    {"name_zh": "猪肉馅", "name_en": "Pork filling", "emoji": "🐖", "category": "protein", "allergens": []},
+    {"name_zh": "饺子皮", "name_en": "Dumpling wrapper", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]}
+  ]
+}

@@ -99,12 +99,14 @@ The slicer auto-detects the background colour and keeps only the largest connect
 ## 📁 项目结构 / Project Structure
 
 ```
-data/                      菜品数据 / dish data (JSON)
+data/                      菜品单、酒水单、成分拆解 / food list, drinks list, ingredient breakdowns (JSON)
 scripts/                   图像处理脚本 / image-processing scripts (Python)
 src/
   App.jsx                  根组件 + 页头(在此改品牌名) / root component + header (rebrand here)
+  menu.js                  菜品注册表 / dish registry
   ingredientImages.js      食材图映射 / ingredient image map
   components/
+    MenuList.jsx           价目单(菜品/酒水) / price list (food / drinks)
     DishCard.jsx           分解/复原交互 / decompose-reassemble interaction
     IngredientChip.jsx     单个食材零件 / a single ingredient piece
   assets/                  成菜图、食材图 / dish image, ingredient art
@@ -114,8 +116,8 @@ src/
 
 ## 📌 状态 / Status
 
-当前是 **可扫码演示阶段**：已上线部署，含三道菜——松露虾饺（点心）、宫保鸡丁（主菜）、Flox Tail（鸡尾酒），按分类手风琴浏览，点开放大进入「点击炸开食材」详情。数据结构和组件都已抽象成"任意菜品"通用，后续可继续加菜、做过敏原筛选。
-Now a **live, scannable demo**: deployed and online, with three dishes — Truffle Ha Kao (dim sum), Kung Pao Chicken (main) and the Flox Tail cocktail — browsed via a category accordion that zooms into the tap-to-decompose detail view. The data model and components are generalised for any dish, so it can keep growing with more dishes and an allergen filter.
+当前是 **可扫码演示阶段**：已上线部署。菜品单按新版菜单收录了全部约 60 道菜（套餐、点心、海鲜、小炒、甜品……），中英双语并带菜单的过敏原标记；其中有写明食材的 40 多道可以点进「点击炸开食材」详情，游水海鲜、儿童餐等只显示品项。酒水单同理，Flox Tail 鸡尾酒可点进拆解。目前只有三道菜有真实成菜图和食材图，其余先用 emoji 占位。
+Now a **live, scannable demo**: deployed and online. The food list covers the whole new menu — about 60 dishes across set menus, dim sum, seafood, wok dishes, desserts and more — bilingual and carrying the menu's allergen markers. The 40-odd dishes with listed ingredients open the tap-to-decompose detail view; items such as live seafood and the kids menu are list-only. The drinks list works the same way, with the Flox Tail cocktail opening its breakdown. Only three dishes have real dish/ingredient art so far; the rest use emoji placeholders.
 
 ---
 

@@ -1,0 +1,14 @@
+{
+  "id": "grass-jelly",
+  "name_zh": "甘露龟苓仙草冻",
+  "name_en": "Cincau Guiling Grass Jelly",
+  "category": "dessert",
+  "emoji": "🍮",
+  "cultural_note_en": "Guilinggao is a traditional Chinese herbal jelly, long valued in Chinese medicine as a 'cooling' tonic. It is dark, smooth and lightly bitter, balanced here with mānuka honey.",
+  "ingredients": [
+    {"name_zh": "仙草冻", "name_en": "Grass jelly (cincau)", "emoji": "🟫", "category": "base", "allergens": []},
+    {"name_zh": "甘草", "name_en": "Liquorice", "emoji": "🌿", "category": "herb", "allergens": []},
+    {"name_zh": "川芎", "name_en": "Chuanxiong (lovage root)", "emoji": "🪵", "category": "herb", "allergens": []},
+    {"name_zh": "麦卢卡蜂蜜", "name_en": "Mānuka honey", "emoji": "🍯", "category": "sweetener", "allergens": []}
+  ]
+}

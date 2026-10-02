@@ -5,6 +5,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import IngredientChip from './IngredientChip'
+import { CodeBadges } from './MenuCodes'
 import { ingredientImages } from '../ingredientImages'
 
 // 盘子中心的位置(百分比):合拢时零件都收在这里、成菜图也摆在这附近;展开时零件从这里飞出
@@ -37,24 +38,30 @@ function CoupeGlass() {
   )
 }
 
-function DishCard({ dish, image }) {
+function DishCard({ dish, image, codes }) {
   // isOpen 控制菜是否已"分解" / isOpen controls whether the dish is decomposed
   const [isOpen, setIsOpen] = useState(false)
   // 鸡尾酒从酒杯里飞出,其余从盘子里 / cocktails burst out of a glass, everything else out of the plate
   const isDrink = dish.category === 'cocktail'
   const pileTop = isDrink ? GLASS_TOP : PLATE_TOP
 
-  // 展开态:把食材排进盘子上方的网格(4 列,自动分行)
-  // open state: lay the ingredients into a grid above the plate (4 columns, wrapping into rows)
+  // 展开态:把食材排进盘子上方的网格(4 列,自动分行;不满 4 个的那一行居中)
+  // open state: lay the ingredients into a grid above the plate (4 columns, wrapping into rows; a short row is centered)
+  // 行距要够放下两行的名字 + 过敏原标签:1–2 行时加大行距,3 行时把舞台拉高(位置都是百分比)
+  // rows need room for a two-line name + allergen badge: wider gaps for 1–2 rows, a taller stage for 3 (positions are %)
   const cols = 4
+  const count = dish.ingredients.length
+  const rows = Math.ceil(count / cols)
+  const rowGap = rows <= 2 ? 28 : 20.5
   const layout = dish.ingredients.map((ing, index) => {
     const col = index % cols
     const row = Math.floor(index / cols)
+    const inRow = Math.min(cols, count - row * cols)
     return {
       ing,
       index,
-      openLeft: 16 + col * 22.7,
-      openTop: 12 + row * 22,
+      openLeft: 50 + (col - (inRow - 1) / 2) * 22.7,
+      openTop: 12 + row * rowGap,
     }
   })
 
@@ -62,14 +69,22 @@ function DishCard({ dish, image }) {
     <div className="max-w-md mx-auto px-4 py-6">
       {/* 菜名 / dish title */}
       <div className="text-center mb-4">
-        <h1 className="text-2xl font-serif tracking-wide text-[#e8dcc6]">{dish.name_zh}</h1>
-        <h2 className="text-base text-[#c9a96a]/70">{dish.name_en}</h2>
+        {/* 没有中文名的菜只显示英文名 / dishes without a Chinese name show just the English one */}
+        <h1 className="text-2xl font-serif tracking-wide text-[#e8dcc6]">{dish.name_zh || dish.name_en}</h1>
+        {dish.name_zh && <h2 className="text-base text-[#c9a96a]/70">{dish.name_en}</h2>}
+        {/* 菜单上的过敏原标记(以菜单为准;食材上的红边只标得出明显的那部分) */}
+        {/* the printed menu's allergen markers — authoritative; the red rings on ingredients only catch the obvious ones */}
+        {codes?.length > 0 && (
+          <div className="mt-3">
+            <CodeBadges codes={codes} full />
+          </div>
+        )}
       </div>
 
       {/* 舞台:竖向布局,盘子在下方,食材飞到上方 / portrait stage — plate at the bottom, pieces fly up */}
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="relative w-full aspect-[4/5] cursor-pointer select-none"
+        className={'relative w-full cursor-pointer select-none ' + (rows <= 2 ? 'aspect-[4/5]' : 'aspect-[2/3]')}
       >
         {/* 空盘子(代码画的椭圆):展开后才显形(成菜图淡出、盘子空了);合拢时被成菜图盖住 */}
         {/* the empty plate (CSS ellipse): appears once opened (dish faded out, plate now empty); hidden behind the dish when closed */}

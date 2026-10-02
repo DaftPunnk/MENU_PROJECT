@@ -1,0 +1,15 @@
+{
+  "id": "xo-duck-fried-rice",
+  "name_zh": "XO鸭肉炒饭",
+  "name_en": "X.O Duck Fried Rice",
+  "category": "rice",
+  "emoji": "🍚",
+  "cultural_note_en": "XO sauce was created in 1980s Hong Kong and named after XO cognac as a byword for luxury — a rich, savoury chilli relish traditionally made with dried scallop and dried shrimp.",
+  "ingredients": [
+    {"name_zh": "米饭", "name_en": "Rice", "emoji": "🍚", "category": "grain", "allergens": []},
+    {"name_zh": "烧鸭", "name_en": "Roast duck", "emoji": "🦆", "category": "protein", "allergens": []},
+    {"name_zh": "时令蔬菜", "name_en": "Seasonal vegetables", "emoji": "🥕", "category": "vegetable", "allergens": []},
+    {"name_zh": "鸡蛋", "name_en": "Egg", "emoji": "🥚", "category": "protein", "allergens": ["egg"]},
+    {"name_zh": "XO酱", "name_en": "X.O sauce", "emoji": "🫙", "category": "sauce", "allergens": ["shellfish"]}
+  ]
+}

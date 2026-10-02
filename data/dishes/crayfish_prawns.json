@@ -1,0 +1,20 @@
+{
+  "id": "crayfish-prawns",
+  "name_zh": "干烧双虾",
+  "name_en": "“Dry-Fried” Style Crayfish & Prawns",
+  "category": "seafood",
+  "emoji": "🦞",
+  "cultural_note_en": "Two kinds of shellfish cooked in the Sichuan 'gan shao' style — a sauce of chilli bean paste and fermented rice wine is reduced until it clings to every piece.",
+  "ingredients": [
+    {"name_zh": "龙虾", "name_en": "Crayfish", "emoji": "🦞", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "虾", "name_en": "Prawns", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "豆瓣酱", "name_en": "Chilli bean paste", "emoji": "🌶️", "category": "sauce", "allergens": ["gluten"]},
+    {"name_zh": "酒酿", "name_en": "Fermented rice wine", "emoji": "🍶", "image": "cooking_wine", "category": "seasoning", "allergens": ["alcohol"]},
+    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "蒜", "name_en": "Garlic", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
+    {"name_zh": "红葱头", "name_en": "Shallot", "emoji": "🧅", "category": "aromatic", "allergens": []},
+    {"name_zh": "马蹄", "name_en": "Water chestnut", "emoji": "🌰", "category": "vegetable", "allergens": []},
+    {"name_zh": "灯笼椒", "name_en": "Capsicum", "emoji": "🫑", "category": "vegetable", "allergens": []}
+  ]
+}

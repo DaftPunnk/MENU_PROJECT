@@ -1,0 +1,14 @@
+{
+  "id": "seasonal-greens",
+  "name_zh": "清炒时令蔬",
+  "name_en": "Wok-Fried Seasonal Greens",
+  "category": "vegetarian",
+  "emoji": "🥬",
+  "cultural_note_en": "Quick-fried in a very hot wok to keep the greens bright and crisp — a staple of every Cantonese meal.",
+  "ingredients": [
+    {"name_zh": "中式青菜", "name_en": "Chinese greens", "emoji": "🥬", "category": "vegetable", "allergens": []},
+    {"name_zh": "蒜", "name_en": "Garlic", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
+    {"name_zh": "素蚝油", "name_en": "Vegetarian oyster sauce", "emoji": "🍄", "category": "sauce", "allergens": []},
+    {"name_zh": "脆葱酥", "name_en": "Crispy shallots", "emoji": "🧅", "category": "garnish", "allergens": []}
+  ]
+}

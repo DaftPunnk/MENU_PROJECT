@@ -1,0 +1,14 @@
+{
+  "id": "jellyfish",
+  "name_zh": "陈醋拌海蜇",
+  "name_en": "Chilled Jellyfish with Black Vinegar",
+  "category": "starter",
+  "emoji": "🪼",
+  "cultural_note_en": "Jellyfish is a classic Chinese cold starter, loved for its crunchy, almost cartilage-like bite rather than any strong taste; it carries the sharp black vinegar and chilli oil.",
+  "ingredients": [
+    {"name_zh": "海蜇", "name_en": "Jellyfish", "emoji": "🪼", "category": "protein", "allergens": ["seafood"]},
+    {"name_zh": "陈醋", "name_en": "Black vinegar", "emoji": "🧴", "image": "vinegar", "category": "sauce", "allergens": []},
+    {"name_zh": "秘制酱汁", "name_en": "House-made marinade", "emoji": "🫙", "category": "sauce", "allergens": []},
+    {"name_zh": "辣椒油", "name_en": "Chilli oil", "emoji": "🌶️", "category": "sauce", "allergens": []}
+  ]
+}
