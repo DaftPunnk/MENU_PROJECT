@@ -2,19 +2,22 @@
   "id": "crayfish-prawns",
   "name_zh": "干烧双虾",
   "name_en": "“Dry-Fried” Style Crayfish & Prawns",
+  "name_fr": "Langouste et crevettes sautées à sec",
   "category": "seafood",
   "emoji": "🦞",
   "cultural_note_en": "Two kinds of shellfish cooked in the Sichuan 'gan shao' style — a sauce of chilli bean paste and fermented rice wine is reduced until it clings to every piece.",
+  "cultural_note_zh": "龙虾和大虾两种海鲜，用川式干烧法烹制——豆瓣酱和酒酿调成的酱汁收至浓稠，紧紧裹住每一块。",
+  "cultural_note_fr": "Deux crustacés cuisinés à la mode « gan shao » du Sichuan : une sauce à la pâte de piment et au vin de riz fermenté est réduite jusqu'à enrober chaque morceau.",
   "ingredients": [
-    {"name_zh": "龙虾", "name_en": "Crayfish", "emoji": "🦞", "category": "protein", "allergens": ["shellfish"]},
-    {"name_zh": "虾", "name_en": "Prawns", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
-    {"name_zh": "豆瓣酱", "name_en": "Chilli bean paste", "emoji": "🌶️", "category": "sauce", "allergens": ["gluten"]},
-    {"name_zh": "酒酿", "name_en": "Fermented rice wine", "emoji": "🍶", "image": "cooking_wine", "category": "seasoning", "allergens": ["alcohol"]},
-    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
-    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
-    {"name_zh": "蒜", "name_en": "Garlic", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
-    {"name_zh": "红葱头", "name_en": "Shallot", "emoji": "🧅", "category": "aromatic", "allergens": []},
-    {"name_zh": "马蹄", "name_en": "Water chestnut", "emoji": "🌰", "category": "vegetable", "allergens": []},
-    {"name_zh": "灯笼椒", "name_en": "Capsicum", "emoji": "🫑", "category": "vegetable", "allergens": []}
+    {"name_zh": "龙虾", "name_en": "Crayfish", "name_fr": "Langouste", "emoji": "🦞", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "虾", "name_en": "Prawns", "name_fr": "Crevettes", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "豆瓣酱", "name_en": "Chilli bean paste", "name_fr": "Pâte de piment aux fèves", "emoji": "🌶️", "category": "sauce", "allergens": ["gluten"]},
+    {"name_zh": "酒酿", "name_en": "Fermented rice wine", "name_fr": "Vin de riz fermenté", "emoji": "🍶", "image": "cooking_wine", "category": "seasoning", "allergens": ["alcohol"]},
+    {"name_zh": "葱", "name_en": "Spring onion", "name_fr": "Oignon nouveau", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "姜", "name_en": "Ginger", "name_fr": "Gingembre", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "蒜", "name_en": "Garlic", "name_fr": "Ail", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
+    {"name_zh": "红葱头", "name_en": "Shallot", "name_fr": "Échalote", "emoji": "🧅", "category": "aromatic", "allergens": []},
+    {"name_zh": "马蹄", "name_en": "Water chestnut", "name_fr": "Châtaigne d'eau", "emoji": "🌰", "category": "vegetable", "allergens": []},
+    {"name_zh": "灯笼椒", "name_en": "Capsicum", "name_fr": "Poivron", "emoji": "🫑", "category": "vegetable", "allergens": []}
   ]
 }

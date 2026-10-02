@@ -2,14 +2,17 @@
   "id": "wood-ear-salad",
   "name_zh": "凉拌黑木耳",
   "name_en": "Wood Ear Salad",
+  "name_fr": "Salade d'oreilles-de-Judas",
   "category": "vegetarian",
   "emoji": "🍄",
   "cultural_note_en": "Wood ear is a mushroom prized in Chinese cooking less for its flavour than for its crunchy, springy texture; served cold, it soaks up the tangy, spicy dressing.",
+  "cultural_note_zh": "黑木耳在中餐里受青睐，不在于味道，而在于它爽脆弹牙的口感；凉拌之后，充分吸收酸辣酱汁的味道。",
+  "cultural_note_fr": "L'oreille-de-Judas est un champignon apprécié en cuisine chinoise moins pour son goût que pour sa texture croquante et élastique ; servi froid, il s'imprègne de la vinaigrette acidulée et pimentée.",
   "ingredients": [
-    {"name_zh": "黑木耳", "name_en": "Wood ear mushroom", "emoji": "🍄", "category": "vegetable", "allergens": []},
-    {"name_zh": "蒜", "name_en": "Garlic", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
-    {"name_zh": "香辣醋汁", "name_en": "Spicy vinegar dressing", "emoji": "🧴", "image": "vinegar", "category": "sauce", "allergens": []},
-    {"name_zh": "莲藕", "name_en": "Lotus root", "emoji": "🪷", "category": "vegetable", "allergens": []},
-    {"name_zh": "干辣椒", "name_en": "Dried chilli", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []}
+    {"name_zh": "黑木耳", "name_en": "Wood ear mushroom", "name_fr": "Oreille-de-Judas", "emoji": "🍄", "category": "vegetable", "allergens": []},
+    {"name_zh": "蒜", "name_en": "Garlic", "name_fr": "Ail", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
+    {"name_zh": "香辣醋汁", "name_en": "Spicy vinegar dressing", "name_fr": "Vinaigrette pimentée", "emoji": "🧴", "image": "vinegar", "category": "sauce", "allergens": []},
+    {"name_zh": "莲藕", "name_en": "Lotus root", "name_fr": "Racine de lotus", "emoji": "🪷", "category": "vegetable", "allergens": []},
+    {"name_zh": "干辣椒", "name_en": "Dried chilli", "name_fr": "Piment séché", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []}
   ]
 }

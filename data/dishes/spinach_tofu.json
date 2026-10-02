@@ -2,13 +2,16 @@
   "id": "spinach-tofu",
   "name_zh": "金酥翡翠豆腐",
   "name_en": "Spinach Tofu",
+  "name_fr": "Tofu aux épinards",
   "category": "vegetarian",
   "emoji": "🥬",
   "cultural_note_en": "'Jade' (feicui) in the Chinese name refers to the vivid green of the spinach. Egg tofu is silkier and richer than ordinary tofu.",
+  "cultural_note_zh": "菜名里的「翡翠」指的是菠菜鲜亮的绿色。玉子豆腐比普通豆腐更嫩滑、更香浓。",
+  "cultural_note_fr": "Le « jade » (feicui) du nom chinois évoque le vert éclatant des épinards. Le tofu à l'œuf est plus soyeux et plus riche qu'un tofu ordinaire.",
   "ingredients": [
-    {"name_zh": "玉子豆腐", "name_en": "Silken egg tofu", "emoji": "🟨", "category": "protein", "allergens": ["egg", "soy"]},
-    {"name_zh": "菠菜", "name_en": "Spinach", "emoji": "🥬", "category": "vegetable", "allergens": []},
-    {"name_zh": "蘑菇", "name_en": "Mushrooms", "emoji": "🍄", "category": "vegetable", "allergens": []},
-    {"name_zh": "蘑菇酱", "name_en": "Mushroom sauce", "emoji": "🫙", "category": "sauce", "allergens": []}
+    {"name_zh": "玉子豆腐", "name_en": "Silken egg tofu", "name_fr": "Tofu soyeux à l'œuf", "emoji": "🟨", "category": "protein", "allergens": ["egg", "soy"]},
+    {"name_zh": "菠菜", "name_en": "Spinach", "name_fr": "Épinards", "emoji": "🥬", "category": "vegetable", "allergens": []},
+    {"name_zh": "蘑菇", "name_en": "Mushrooms", "name_fr": "Champignons", "emoji": "🍄", "category": "vegetable", "allergens": []},
+    {"name_zh": "蘑菇酱", "name_en": "Mushroom sauce", "name_fr": "Sauce aux champignons", "emoji": "🫙", "category": "sauce", "allergens": []}
   ]
 }

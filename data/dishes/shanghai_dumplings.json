@@ -2,11 +2,14 @@
   "id": "shanghai-dumplings",
   "name_zh": "上海煎锅贴",
   "name_en": "Shanghai-Style Pan-Fried Dumplings",
+  "name_fr": "Raviolis poêlés de Shanghai",
   "category": "dim_sum",
   "emoji": "🥟",
   "cultural_note_en": "Shanghai's beloved street-food dumpling: pan-fried so the base turns golden and crunchy while the top stays soft and steamed.",
+  "cultural_note_zh": "上海人最爱的街头小吃：煎得底部金黄香脆，上面仍保持松软的蒸饺口感。",
+  "cultural_note_fr": "Le ravioli de rue préféré des Shanghaïens : poêlé pour que la base devienne dorée et croustillante, tandis que le dessus reste moelleux, cuit à la vapeur.",
   "ingredients": [
-    {"name_zh": "猪肉馅", "name_en": "Pork filling", "emoji": "🐖", "category": "protein", "allergens": []},
-    {"name_zh": "饺子皮", "name_en": "Dumpling wrapper", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]}
+    {"name_zh": "猪肉馅", "name_en": "Pork filling", "name_fr": "Farce au porc", "emoji": "🐖", "category": "protein", "allergens": []},
+    {"name_zh": "饺子皮", "name_en": "Dumpling wrapper", "name_fr": "Pâte à raviolis", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]}
   ]
 }

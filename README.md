@@ -42,8 +42,10 @@ The idea: a **QR-code, flipbook-style digital menu**. No ordering needed — a g
   The closed state is a beautiful plated-dish image; tap to explode it into ingredient pieces, tap again to reassemble.
 - 🥜 **过敏原标记 / Allergen markers** — 含过敏原的食材描红边、带 ⚠️ 标签（如 tree nut、soy、gluten、alcohol）。
   Allergenic ingredients get a red ring and a ⚠️ badge.
-- 🌏 **中英双语 / Bilingual** — 每个食材同时显示中文名和英文名。
-  Every ingredient shows both its Chinese and English name.
+- 🌏 **中 / 英 / 法三语 / Chinese · English · French** — 默认跟随手机系统语言，右上角可切换；菜名、描述、食材、过敏原都随之切换，另附参照名方便和服务员沟通。
+  Follows the phone's language, switchable in the corner; dish names, descriptions, ingredients and allergens all follow, with a reference name for talking to staff.
+- ✨ **帮我选(AI Test,开发中)/ Help me pick (AI Test, in development)** — 选口味、人数、忌口和酒水偏好，推荐一桌菜（含甜品）和酒水搭配；忌口由代码过滤，AI 只负责挑选和写理由。本地运行时用 Claude，静态部署时退回规则推荐。
+  Pick a mood, party size, things to avoid and drink preferences to get a suggested meal with dessert and drink pairings; allergens are filtered in code and the AI only chooses and explains. Uses Claude when run locally, rule-based on static hosting.
 - 🎨 **品牌视觉 / On-brand design** — 藏青蓝 + 金的 fine-dining 配色，徽标为纯代码绘制的占位标识。
   A navy-and-gold fine-dining palette; the crest is a code-drawn placeholder.
 - 🖼️ **真实食材插画 / Real ingredient art** — AI 生成、透明背景的食材图，没有图时自动退回 emoji 占位。

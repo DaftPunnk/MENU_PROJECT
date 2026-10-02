@@ -2,14 +2,17 @@
   "id": "sichuan-eggplant",
   "name_zh": "川味脆皮茄子",
   "name_en": "Sichuan Eggplant",
+  "name_fr": "Aubergine du Sichuan",
   "category": "vegetarian",
   "emoji": "🍆",
   "cultural_note_en": "Crisp-fried eggplant glazed in a sweet, savoury and gently spicy Sichuan chilli caramel.",
+  "cultural_note_zh": "酥炸茄子裹上甜、咸、微辣的川味辣椒焦糖。",
+  "cultural_note_fr": "Des aubergines frites et croustillantes, glacées d'un caramel pimenté du Sichuan sucré, salé et légèrement épicé.",
   "ingredients": [
-    {"name_zh": "茄子", "name_en": "Eggplant", "emoji": "🍆", "category": "vegetable", "allergens": []},
-    {"name_zh": "川味辣椒焦糖", "name_en": "Sichuan chilli caramel", "emoji": "🌶️", "category": "sauce", "allergens": []},
-    {"name_zh": "黑蒜", "name_en": "Black garlic", "emoji": "🧄", "category": "aromatic", "allergens": []},
-    {"name_zh": "芝麻", "name_en": "Sesame", "emoji": "⚪", "category": "garnish", "allergens": ["sesame"]},
-    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []}
+    {"name_zh": "茄子", "name_en": "Eggplant", "name_fr": "Aubergine", "emoji": "🍆", "category": "vegetable", "allergens": []},
+    {"name_zh": "川味辣椒焦糖", "name_en": "Sichuan chilli caramel", "name_fr": "Caramel pimenté du Sichuan", "emoji": "🌶️", "category": "sauce", "allergens": []},
+    {"name_zh": "黑蒜", "name_en": "Black garlic", "name_fr": "Ail noir", "emoji": "🧄", "category": "aromatic", "allergens": []},
+    {"name_zh": "芝麻", "name_en": "Sesame", "name_fr": "Sésame", "emoji": "⚪", "category": "garnish", "allergens": ["sesame"]},
+    {"name_zh": "葱", "name_en": "Spring onion", "name_fr": "Oignon nouveau", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []}
   ]
 }

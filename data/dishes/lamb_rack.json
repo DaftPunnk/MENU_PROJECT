@@ -2,11 +2,14 @@
   "id": "lamb-rack",
   "name_zh": "梅子酱酥炸羊排",
   "name_en": "Wok-Fried NZ Lamb Rack",
+  "name_fr": "Carré d'agneau néo-zélandais sauté au wok",
   "category": "meat",
   "emoji": "🍖",
   "cultural_note_en": "New Zealand lamb given a Cantonese treatment — wok-fried and coated in a sweet plum sauce, a classic Cantonese partner for rich meats.",
+  "cultural_note_zh": "新西兰羊排的粤式做法——镬炒后裹上甜梅子酱，梅子酱正是粤菜里搭配浓郁肉类的经典酱料。",
+  "cultural_note_fr": "De l'agneau néo-zélandais à la cantonaise : sauté au wok et nappé d'une sauce sucrée aux prunes, accompagnement classique des viandes riches en cuisine cantonaise.",
   "ingredients": [
-    {"name_zh": "新西兰羊排", "name_en": "NZ lamb rack", "emoji": "🍖", "category": "protein", "allergens": []},
-    {"name_zh": "甘露梅子酱", "name_en": "Sweet plum sauce", "emoji": "🫙", "category": "sauce", "allergens": []}
+    {"name_zh": "新西兰羊排", "name_en": "NZ lamb rack", "name_fr": "Carré d'agneau néo-zélandais", "emoji": "🍖", "category": "protein", "allergens": []},
+    {"name_zh": "甘露梅子酱", "name_en": "Sweet plum sauce", "name_fr": "Sauce sucrée aux prunes", "emoji": "🫙", "category": "sauce", "allergens": []}
   ]
 }

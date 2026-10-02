@@ -2,14 +2,17 @@
   "id": "prawn-wonton-soup",
   "name_zh": "鲜虾云吞汤",
   "name_en": "Prawn Wonton Soup",
+  "name_fr": "Soupe de wontons aux crevettes",
   "category": "soup",
   "emoji": "🥣",
   "cultural_note_en": "Wontons — 'swallowing clouds' in Cantonese — are delicate dumplings that float in broth like little clouds. These are filled with prawn and served in a light, aromatic broth.",
+  "cultural_note_zh": "云吞在粤语里有「吞下云朵」之意——这种精致的小馄饨浮在汤中，宛如朵朵白云。这里包的是鲜虾馅，配清香高汤。",
+  "cultural_note_fr": "« Wonton » signifie « avaler des nuages » en cantonais : de délicats raviolis qui flottent dans le bouillon comme de petits nuages. Ceux-ci sont farcis aux crevettes et servis dans un bouillon léger et parfumé.",
   "ingredients": [
-    {"name_zh": "虾", "name_en": "Prawns", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
-    {"name_zh": "云吞皮", "name_en": "Wonton wrapper", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]},
-    {"name_zh": "高汤", "name_en": "Aromatic broth", "emoji": "🍲", "category": "broth", "allergens": []},
-    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
-    {"name_zh": "芫荽", "name_en": "Coriander", "emoji": "🌿", "category": "herb", "allergens": []}
+    {"name_zh": "虾", "name_en": "Prawns", "name_fr": "Crevettes", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "云吞皮", "name_en": "Wonton wrapper", "name_fr": "Pâte à wonton", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]},
+    {"name_zh": "高汤", "name_en": "Aromatic broth", "name_fr": "Bouillon aromatique", "emoji": "🍲", "category": "broth", "allergens": []},
+    {"name_zh": "葱", "name_en": "Spring onion", "name_fr": "Oignon nouveau", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "芫荽", "name_en": "Coriander", "name_fr": "Coriandre", "emoji": "🌿", "category": "herb", "allergens": []}
   ]
 }

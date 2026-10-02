@@ -2,13 +2,16 @@
   "id": "gai-lan",
   "name_zh": "炒芥兰",
   "name_en": "Gai Lan",
+  "name_fr": "Gai lan (brocoli chinois)",
   "category": "vegetarian",
   "emoji": "🥦",
   "cultural_note_en": "Gai lan, or Chinese broccoli, has thick, tender stems and a pleasantly bittersweet flavour — one of the most popular greens in Cantonese cooking.",
+  "cultural_note_zh": "芥兰又叫中国西兰花，茎粗而嫩，带有怡人的甘苦味，是粤菜里最受欢迎的青菜之一。",
+  "cultural_note_fr": "Le gai lan, ou brocoli chinois, a des tiges épaisses et tendres et une agréable saveur douce-amère — l'un des légumes verts les plus appréciés de la cuisine cantonaise.",
   "ingredients": [
-    {"name_zh": "芥兰", "name_en": "Chinese broccoli", "emoji": "🥦", "category": "vegetable", "allergens": []},
-    {"name_zh": "蒜", "name_en": "Garlic", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
-    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
-    {"name_zh": "素蘑菇酱", "name_en": "Vegetarian mushroom sauce", "emoji": "🍄", "category": "sauce", "allergens": []}
+    {"name_zh": "芥兰", "name_en": "Chinese broccoli", "name_fr": "Brocoli chinois", "emoji": "🥦", "category": "vegetable", "allergens": []},
+    {"name_zh": "蒜", "name_en": "Garlic", "name_fr": "Ail", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
+    {"name_zh": "姜", "name_en": "Ginger", "name_fr": "Gingembre", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "素蘑菇酱", "name_en": "Vegetarian mushroom sauce", "name_fr": "Sauce végétarienne aux champignons", "emoji": "🍄", "category": "sauce", "allergens": []}
   ]
 }

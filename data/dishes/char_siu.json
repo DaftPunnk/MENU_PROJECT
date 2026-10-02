@@ -2,12 +2,15 @@
   "id": "char-siu",
   "name_zh": "香烤蜜汁叉烧",
   "name_en": "Mānuka Honey-Glazed Barbecued Pork",
+  "name_fr": "Porc laqué au miel de mānuka",
   "category": "meat",
   "emoji": "🍖",
   "cultural_note_en": "Char siu, Cantonese barbecued pork, is roasted with a sweet, sticky glaze until lacquered and slightly charred at the edges. This one is glazed with New Zealand mānuka honey.",
+  "cultural_note_zh": "叉烧是粤式烧味，刷上甜而黏的酱汁烤至油亮、边缘微焦。这里用的是新西兰麦卢卡蜂蜜。",
+  "cultural_note_fr": "Le char siu, porc laqué cantonais, est rôti avec un glaçage sucré et collant jusqu'à être brillant et légèrement caramélisé sur les bords. Celui-ci est laqué au miel de mānuka néo-zélandais.",
   "ingredients": [
-    {"name_zh": "猪肉", "name_en": "Pork", "emoji": "🐖", "category": "protein", "allergens": []},
-    {"name_zh": "麦卢卡蜂蜜", "name_en": "Mānuka honey", "emoji": "🍯", "category": "sweetener", "allergens": []},
-    {"name_zh": "芥末酱", "name_en": "Mustard sauce", "emoji": "🟡", "category": "sauce", "allergens": []}
+    {"name_zh": "猪肉", "name_en": "Pork", "name_fr": "Porc", "emoji": "🐖", "category": "protein", "allergens": []},
+    {"name_zh": "麦卢卡蜂蜜", "name_en": "Mānuka honey", "name_fr": "Miel de mānuka", "emoji": "🍯", "category": "sweetener", "allergens": []},
+    {"name_zh": "芥末酱", "name_en": "Mustard sauce", "name_fr": "Sauce moutarde", "emoji": "🟡", "category": "sauce", "allergens": []}
   ]
 }

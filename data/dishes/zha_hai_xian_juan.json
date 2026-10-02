@@ -2,12 +2,15 @@
   "id": "zha-hai-xian-juan",
   "name_zh": "炸海鲜卷",
   "name_en": "Zha Hai Xian Juan",
+  "name_fr": "Zha Hai Xian Juan",
   "category": "starter",
   "emoji": "🌯",
   "cultural_note_en": "Zha hai xian juan simply means 'fried seafood roll' — a seafood filling wrapped and fried until golden and crisp, served with a chilli dipping sauce.",
+  "cultural_note_zh": "炸海鲜卷，顾名思义：海鲜馅料裹起后炸至金黄酥脆，配辣椒蘸酱食用。",
+  "cultural_note_fr": "Zha hai xian juan signifie simplement « rouleau de fruits de mer frit » : une farce aux fruits de mer enroulée puis frite jusqu'à être dorée et croustillante, servie avec une sauce pimentée.",
   "ingredients": [
-    {"name_zh": "海鲜馅", "name_en": "Seafood filling", "emoji": "🦐", "category": "protein", "allergens": ["seafood"]},
-    {"name_zh": "酥皮", "name_en": "Crispy wrapper", "emoji": "🌯", "category": "wrapper", "allergens": ["gluten"]},
-    {"name_zh": "辣椒蘸酱", "name_en": "Chilli dipping sauce", "emoji": "🌶️", "category": "sauce", "allergens": []}
+    {"name_zh": "海鲜馅", "name_en": "Seafood filling", "name_fr": "Farce aux fruits de mer", "emoji": "🦐", "category": "protein", "allergens": ["seafood"]},
+    {"name_zh": "酥皮", "name_en": "Crispy wrapper", "name_fr": "Pâte croustillante", "emoji": "🌯", "category": "wrapper", "allergens": ["gluten"]},
+    {"name_zh": "辣椒蘸酱", "name_en": "Chilli dipping sauce", "name_fr": "Sauce pimentée", "emoji": "🌶️", "category": "sauce", "allergens": []}
   ]
 }

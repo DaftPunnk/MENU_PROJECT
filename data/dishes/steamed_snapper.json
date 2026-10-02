@@ -2,14 +2,17 @@
   "id": "steamed-snapper",
   "name_zh": "清蒸新西兰红鲷鱼",
   "name_en": "Steamed Longline Whole Baby Snapper",
+  "name_fr": "Jeune vivaneau entier à la vapeur",
   "category": "seafood",
   "emoji": "🐟",
   "cultural_note_en": "Steaming a whole fish is the purest Cantonese way to show off its freshness. A whole fish also symbolises abundance — 'yu' (fish) sounds like the word for 'surplus'.",
+  "cultural_note_zh": "清蒸整鱼是最能体现鱼鲜的粤式做法。整条鱼也寓意富足——「鱼」与「余」同音，象征年年有余。",
+  "cultural_note_fr": "La cuisson vapeur d'un poisson entier est la façon cantonaise la plus pure d'en révéler la fraîcheur. Un poisson entier symbolise aussi l'abondance : « yu » (poisson) se prononce comme le mot « surplus ».",
   "ingredients": [
-    {"name_zh": "红鲷鱼", "name_en": "Baby snapper", "emoji": "🐟", "category": "protein", "allergens": ["fish"]},
-    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
-    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
-    {"name_zh": "生抽", "name_en": "Superior soy", "emoji": "🍶", "image": "soy_sauce", "category": "sauce", "allergens": ["soy", "gluten"]},
-    {"name_zh": "芫荽油", "name_en": "Coriander oil", "emoji": "🌿", "category": "sauce", "allergens": []}
+    {"name_zh": "红鲷鱼", "name_en": "Baby snapper", "name_fr": "Jeune vivaneau", "emoji": "🐟", "category": "protein", "allergens": ["fish"]},
+    {"name_zh": "姜", "name_en": "Ginger", "name_fr": "Gingembre", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "葱", "name_en": "Spring onion", "name_fr": "Oignon nouveau", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "生抽", "name_en": "Superior soy", "name_fr": "Sauce soja supérieure", "emoji": "🍶", "image": "soy_sauce", "category": "sauce", "allergens": ["soy", "gluten"]},
+    {"name_zh": "芫荽油", "name_en": "Coriander oil", "name_fr": "Huile de coriandre", "emoji": "🌿", "category": "sauce", "allergens": []}
   ]
 }

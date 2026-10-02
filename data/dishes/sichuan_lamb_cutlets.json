@@ -2,13 +2,16 @@
   "id": "sichuan-lamb-cutlets",
   "name_zh": "川味羊肩排",
   "name_en": "Sichuan Lamb Cutlets",
+  "name_fr": "Côtelettes d'agneau du Sichuan",
   "category": "wok",
   "emoji": "🍖",
   "cultural_note_en": "Lamb cooked the Sichuan way: dried chilli for heat and Sichuan pepper for its signature tingling, numbing 'ma la' sensation.",
+  "cultural_note_zh": "川式做法的羊排：干辣椒带来辣，花椒带来标志性的麻——这就是「麻辣」。",
+  "cultural_note_fr": "De l'agneau à la mode du Sichuan : du piment séché pour le piquant et du poivre du Sichuan pour sa sensation fourmillante et engourdissante caractéristique, le « ma la ».",
   "ingredients": [
-    {"name_zh": "新西兰羊排", "name_en": "NZ lamb cutlets", "emoji": "🍖", "category": "protein", "allergens": []},
-    {"name_zh": "辣椒", "name_en": "Chilli", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []},
-    {"name_zh": "花椒", "name_en": "Sichuan pepper", "emoji": "🪻", "image": "peppercorn", "category": "spice", "allergens": []},
-    {"name_zh": "脆炸大葱", "name_en": "Crispy leek", "emoji": "🧅", "category": "garnish", "allergens": []}
+    {"name_zh": "新西兰羊排", "name_en": "NZ lamb cutlets", "name_fr": "Côtelettes d'agneau néo-zélandais", "emoji": "🍖", "category": "protein", "allergens": []},
+    {"name_zh": "辣椒", "name_en": "Chilli", "name_fr": "Piment", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []},
+    {"name_zh": "花椒", "name_en": "Sichuan pepper", "name_fr": "Poivre du Sichuan", "emoji": "🪻", "image": "peppercorn", "category": "spice", "allergens": []},
+    {"name_zh": "脆炸大葱", "name_en": "Crispy leek", "name_fr": "Poireau croustillant", "emoji": "🧅", "category": "garnish", "allergens": []}
   ]
 }

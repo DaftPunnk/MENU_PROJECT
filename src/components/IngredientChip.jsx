@@ -3,6 +3,7 @@
 // and flown up with its label revealed when opened.
 
 import { motion } from 'framer-motion'
+import { allergenLabel, names, useLang } from '../i18n'
 
 // props:
 //   ing                   —— 单个食材对象 / one ingredient object
@@ -14,6 +15,8 @@ function IngredientChip({ ing, index, isOpen, openLeft, openTop, pileLeft, pileT
   // 这个食材有没有过敏原,决定是否显示红色警告
   // Does this ingredient carry allergens? Controls the red warning.
   const hasAllergen = ing.allergens.length > 0
+  const lang = useLang()
+  const label = names(ing, lang)
 
   return (
     <motion.div
@@ -49,7 +52,7 @@ function IngredientChip({ ing, index, isOpen, openLeft, openTop, pileLeft, pileT
         }
       >
         {image ? (
-          <img src={image} alt={ing.name_en} className="w-full h-full object-contain p-0.5" />
+          <img src={image} alt={label.primary} className="w-full h-full object-contain p-0.5" />
         ) : (
           ing.emoji
         )}
@@ -62,11 +65,14 @@ function IngredientChip({ ing, index, isOpen, openLeft, openTop, pileLeft, pileT
         animate={{ opacity: isOpen ? 1 : 0 }}
         transition={{ duration: 0.2, delay: isOpen ? index * 0.04 + 0.1 : 0 }}
       >
-        <span className="text-[11px] font-medium leading-tight text-[#e8dcc6]">{ing.name_en}</span>
-        <span className="text-[10px] text-[#c9a96a]/70 leading-tight">{ing.name_zh}</span>
+        <span className="text-[11px] font-medium leading-tight text-[#e8dcc6]">{label.primary}</span>
+        {/* 法语食材名较长,只留一个名字,不再显示参照名 / French names run long, so French shows no reference name */}
+        {label.ref && lang !== 'fr' && (
+          <span className="text-[10px] text-[#c9a96a]/70 leading-tight">{label.ref}</span>
+        )}
         {hasAllergen && (
-          <span className="mt-0.5 px-1.5 py-px rounded-full bg-[#3a1512] text-[#e6a8a2] border border-[#b9433b]/50 text-[9px] font-semibold whitespace-nowrap">
-            ⚠️ {ing.allergens.join(', ')}
+          <span className="mt-0.5 px-1.5 py-px rounded-full bg-[#3a1512] text-[#e6a8a2] border border-[#b9433b]/50 text-[9px] font-semibold leading-tight max-w-[84px]">
+            ⚠️ {ing.allergens.map((a) => allergenLabel(a, lang)).join(', ')}
           </span>
         )}
       </motion.div>

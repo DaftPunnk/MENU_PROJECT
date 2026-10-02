@@ -2,13 +2,16 @@
   "id": "mango-coconut",
   "name_zh": "",
   "name_en": "Mango Coconut Delight",
+  "name_fr": "Délice mangue-coco",
   "category": "dessert",
   "emoji": "🥭",
   "cultural_note_en": "A light, tropical finish of mango, coconut and passionfruit.",
+  "cultural_note_zh": "芒果、椰子与百香果，以清爽的热带风味收尾。",
+  "cultural_note_fr": "Une touche finale légère et tropicale : mangue, coco et fruit de la passion.",
   "ingredients": [
-    {"name_zh": "鲜芒果", "name_en": "Fresh mango", "emoji": "🥭", "category": "fruit", "allergens": []},
-    {"name_zh": "椰子慕斯", "name_en": "Coconut mousse", "emoji": "🥥", "category": "base", "allergens": []},
-    {"name_zh": "西米", "name_en": "Tapioca", "emoji": "⚪", "category": "base", "allergens": []},
-    {"name_zh": "百香果雪葩", "name_en": "Passionfruit sorbet", "emoji": "🍧", "category": "base", "allergens": []}
+    {"name_zh": "鲜芒果", "name_en": "Fresh mango", "name_fr": "Mangue fraîche", "emoji": "🥭", "category": "fruit", "allergens": []},
+    {"name_zh": "椰子慕斯", "name_en": "Coconut mousse", "name_fr": "Mousse de coco", "emoji": "🥥", "category": "base", "allergens": []},
+    {"name_zh": "西米", "name_en": "Tapioca", "name_fr": "Tapioca", "emoji": "⚪", "category": "base", "allergens": []},
+    {"name_zh": "百香果雪葩", "name_en": "Passionfruit sorbet", "name_fr": "Sorbet passion", "emoji": "🍧", "category": "base", "allergens": []}
   ]
 }

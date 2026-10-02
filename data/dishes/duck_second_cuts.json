@@ -2,14 +2,17 @@
   "id": "duck-second-cuts",
   "name_zh": "鸭肉炒米粉",
   "name_en": "Transformation – Duck Second Cuts",
+  "name_fr": "Transformation – Le canard en second service",
   "category": "noodles",
   "emoji": "🍜",
   "cultural_note_en": "The duck's second course: the rest of the meat is shredded and wok-fried with rice vermicelli (ya si chao mi fen), so nothing from the bird goes to waste.",
+  "cultural_note_zh": "鸭子的「第二吃」：把剩下的鸭肉撕成丝，与米粉同炒（鸭丝炒米粉），整只鸭不浪费分毫。",
+  "cultural_note_fr": "Le second service du canard : le reste de la chair est effiloché et sauté au wok avec des vermicelles de riz (ya si chao mi fen), pour que rien de l'oiseau ne se perde.",
   "ingredients": [
-    {"name_zh": "鸭丝", "name_en": "Shredded duck", "emoji": "🦆", "category": "protein", "allergens": []},
-    {"name_zh": "米粉", "name_en": "Rice vermicelli", "emoji": "🍜", "category": "noodle", "allergens": []},
-    {"name_zh": "韭菜", "name_en": "Garlic chives", "emoji": "🌿", "category": "vegetable", "allergens": []},
-    {"name_zh": "香菇", "name_en": "Shiitake", "emoji": "🍄", "category": "vegetable", "allergens": []},
-    {"name_zh": "豆芽", "name_en": "Bean sprouts", "emoji": "🌱", "category": "vegetable", "allergens": []}
+    {"name_zh": "鸭丝", "name_en": "Shredded duck", "name_fr": "Canard effiloché", "emoji": "🦆", "category": "protein", "allergens": []},
+    {"name_zh": "米粉", "name_en": "Rice vermicelli", "name_fr": "Vermicelles de riz", "emoji": "🍜", "category": "noodle", "allergens": []},
+    {"name_zh": "韭菜", "name_en": "Garlic chives", "name_fr": "Ciboulette chinoise", "emoji": "🌿", "category": "vegetable", "allergens": []},
+    {"name_zh": "香菇", "name_en": "Shiitake", "name_fr": "Shiitakés", "emoji": "🍄", "category": "vegetable", "allergens": []},
+    {"name_zh": "豆芽", "name_en": "Bean sprouts", "name_fr": "Pousses de soja", "emoji": "🌱", "category": "vegetable", "allergens": []}
   ]
 }

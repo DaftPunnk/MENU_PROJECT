@@ -2,13 +2,16 @@
   "id": "jellyfish",
   "name_zh": "陈醋拌海蜇",
   "name_en": "Chilled Jellyfish with Black Vinegar",
+  "name_fr": "Méduse froide au vinaigre noir",
   "category": "starter",
   "emoji": "🪼",
   "cultural_note_en": "Jellyfish is a classic Chinese cold starter, loved for its crunchy, almost cartilage-like bite rather than any strong taste; it carries the sharp black vinegar and chilli oil.",
+  "cultural_note_zh": "海蜇是经典的中式凉菜，人们爱的不是它的味道，而是那种爽脆、近似软骨的口感；香醋的酸和辣椒油的香都靠它来承载。",
+  "cultural_note_fr": "La méduse est une entrée froide classique de la cuisine chinoise, appréciée pour sa texture croquante, presque cartilagineuse, plutôt que pour son goût ; elle porte le vinaigre noir et l'huile pimentée.",
   "ingredients": [
-    {"name_zh": "海蜇", "name_en": "Jellyfish", "emoji": "🪼", "category": "protein", "allergens": ["seafood"]},
-    {"name_zh": "陈醋", "name_en": "Black vinegar", "emoji": "🧴", "image": "vinegar", "category": "sauce", "allergens": []},
-    {"name_zh": "秘制酱汁", "name_en": "House-made marinade", "emoji": "🫙", "category": "sauce", "allergens": []},
-    {"name_zh": "辣椒油", "name_en": "Chilli oil", "emoji": "🌶️", "category": "sauce", "allergens": []}
+    {"name_zh": "海蜇", "name_en": "Jellyfish", "name_fr": "Méduse", "emoji": "🪼", "category": "protein", "allergens": ["seafood"]},
+    {"name_zh": "陈醋", "name_en": "Black vinegar", "name_fr": "Vinaigre noir", "emoji": "🧴", "image": "vinegar", "category": "sauce", "allergens": []},
+    {"name_zh": "秘制酱汁", "name_en": "House-made marinade", "name_fr": "Marinade maison", "emoji": "🫙", "category": "sauce", "allergens": []},
+    {"name_zh": "辣椒油", "name_en": "Chilli oil", "name_fr": "Huile pimentée", "emoji": "🌶️", "category": "sauce", "allergens": []}
   ]
 }

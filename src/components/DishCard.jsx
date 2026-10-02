@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import IngredientChip from './IngredientChip'
 import { CodeBadges } from './MenuCodes'
+import { names, pick, t, useLang } from '../i18n'
 import { ingredientImages } from '../ingredientImages'
 
 // 盘子中心的位置(百分比):合拢时零件都收在这里、成菜图也摆在这附近;展开时零件从这里飞出
@@ -41,6 +42,9 @@ function CoupeGlass() {
 function DishCard({ dish, image, codes }) {
   // isOpen 控制菜是否已"分解" / isOpen controls whether the dish is decomposed
   const [isOpen, setIsOpen] = useState(false)
+  const lang = useLang()
+  const title = names(dish, lang)
+  const note = pick(dish, 'cultural_note', lang)
   // 鸡尾酒从酒杯里飞出,其余从盘子里 / cocktails burst out of a glass, everything else out of the plate
   const isDrink = dish.category === 'cocktail'
   const pileTop = isDrink ? GLASS_TOP : PLATE_TOP
@@ -69,9 +73,9 @@ function DishCard({ dish, image, codes }) {
     <div className="max-w-md mx-auto px-4 py-6">
       {/* 菜名 / dish title */}
       <div className="text-center mb-4">
-        {/* 没有中文名的菜只显示英文名 / dishes without a Chinese name show just the English one */}
-        <h1 className="text-2xl font-serif tracking-wide text-[#e8dcc6]">{dish.name_zh || dish.name_en}</h1>
-        {dish.name_zh && <h2 className="text-base text-[#c9a96a]/70">{dish.name_en}</h2>}
+        {/* 所选语言的菜名 + 参照名(见 i18n.js 的 names) / the chosen-language name + a reference name (see names in i18n.js) */}
+        <h1 className="text-2xl font-serif tracking-wide text-[#e8dcc6]">{title.primary}</h1>
+        {title.ref && <h2 className="text-base text-[#c9a96a]/70">{title.ref}</h2>}
         {/* 菜单上的过敏原标记(以菜单为准;食材上的红边只标得出明显的那部分) */}
         {/* the printed menu's allergen markers — authoritative; the red rings on ingredients only catch the obvious ones */}
         {codes?.length > 0 && (
@@ -151,14 +155,12 @@ function DishCard({ dish, image, codes }) {
 
       {/* 操作提示 / tap hint */}
       <p className="text-center text-sm text-[#c9a96a]/60 mt-2">
-        {isOpen ? '点击复原 · Tap to reassemble' : '点击分解 · Tap to break apart'}
+        {t(isOpen ? 'tapClose' : 'tapOpen', lang)}
       </p>
 
-      {/* 文化小知识(英文),帮外国客人理解这道菜 / a cultural note to help non-Chinese guests */}
-      {dish.cultural_note_en && (
-        <p className="text-xs text-[#e8dcc6]/55 leading-relaxed mt-6 border-t border-[#c9a96a]/20 pt-4">
-          {dish.cultural_note_en}
-        </p>
+      {/* 文化小知识,帮客人理解这道菜 / a cultural note to help guests understand the dish */}
+      {note && (
+        <p className="text-xs text-[#e8dcc6]/55 leading-relaxed mt-6 border-t border-[#c9a96a]/20 pt-4">{note}</p>
       )}
     </div>
   )

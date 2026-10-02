@@ -2,14 +2,17 @@
   "id": "duck-essence",
   "name_zh": "酸菜鸭骨汤",
   "name_en": "Prelude – Duck Essence",
+  "name_fr": "Prélude – Essence de canard",
   "category": "soup",
   "emoji": "🍲",
   "cultural_note_en": "A clear soup made from the bones of the roast duck — the Chinese tradition of using the whole bird — brightened with pickled cabbage, ginger and goji berries.",
+  "cultural_note_zh": "用烤鸭的鸭骨熬成的清汤——体现中餐「一鸭多吃」、物尽其用的传统——加入酸菜、姜和枸杞提味。",
+  "cultural_note_fr": "Un bouillon clair préparé avec les os du canard rôti — selon la tradition chinoise qui veut qu'on utilise l'oiseau entier — relevé de chou fermenté, de gingembre et de baies de goji.",
   "ingredients": [
-    {"name_zh": "鸭骨汤", "name_en": "Duck bone broth", "emoji": "🍲", "category": "broth", "allergens": []},
-    {"name_zh": "酸菜", "name_en": "Pickled cabbage", "emoji": "🥬", "category": "vegetable", "allergens": []},
-    {"name_zh": "豆腐", "name_en": "Tofu", "emoji": "⬜", "category": "protein", "allergens": ["soy"]},
-    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
-    {"name_zh": "枸杞", "name_en": "Goji berries", "emoji": "🔴", "category": "garnish", "allergens": []}
+    {"name_zh": "鸭骨汤", "name_en": "Duck bone broth", "name_fr": "Bouillon d'os de canard", "emoji": "🍲", "category": "broth", "allergens": []},
+    {"name_zh": "酸菜", "name_en": "Pickled cabbage", "name_fr": "Chou fermenté", "emoji": "🥬", "category": "vegetable", "allergens": []},
+    {"name_zh": "豆腐", "name_en": "Tofu", "name_fr": "Tofu", "emoji": "⬜", "category": "protein", "allergens": ["soy"]},
+    {"name_zh": "姜", "name_en": "Ginger", "name_fr": "Gingembre", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "枸杞", "name_en": "Goji berries", "name_fr": "Baies de goji", "emoji": "🔴", "category": "garnish", "allergens": []}
   ]
 }

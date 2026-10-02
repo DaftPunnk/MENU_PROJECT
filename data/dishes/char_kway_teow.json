@@ -2,16 +2,19 @@
   "id": "char-kway-teow",
   "name_zh": "炒粿条",
   "name_en": "Char Kway Teow",
+  "name_fr": "Char Kway Teow",
   "category": "noodles",
   "emoji": "🍜",
   "cultural_note_en": "A hawker-stall favourite from Southeast Asia's Chinese communities: flat rice noodles fried over fierce heat to pick up 'wok hei' — the smoky 'breath of the wok'.",
+  "cultural_note_zh": "炒粿条是东南亚华人社区的大排档名菜：宽河粉在猛火上快炒，带出那股烟熏般的「镬气」。",
+  "cultural_note_fr": "Un grand classique des étals de rue des communautés chinoises d'Asie du Sud-Est : des nouilles de riz plates sautées à feu vif pour capter le « wok hei », le « souffle du wok » fumé.",
   "ingredients": [
-    {"name_zh": "河粉", "name_en": "Flat rice noodles", "emoji": "🍜", "category": "noodle", "allergens": []},
-    {"name_zh": "中式香肠", "name_en": "Chinese sausage", "emoji": "🌭", "category": "protein", "allergens": []},
-    {"name_zh": "鸡蛋", "name_en": "Egg", "emoji": "🥚", "category": "protein", "allergens": ["egg"]},
-    {"name_zh": "鸡肉", "name_en": "Chicken", "emoji": "🍗", "image": "chicken", "category": "protein", "allergens": []},
-    {"name_zh": "韭菜", "name_en": "Chinese chive", "emoji": "🌿", "category": "vegetable", "allergens": []},
-    {"name_zh": "豆芽", "name_en": "Bean sprouts", "emoji": "🌱", "category": "vegetable", "allergens": []},
-    {"name_zh": "老抽", "name_en": "Dark soy", "emoji": "🍶", "image": "soy_sauce", "category": "sauce", "allergens": ["soy", "gluten"]}
+    {"name_zh": "河粉", "name_en": "Flat rice noodles", "name_fr": "Nouilles de riz plates", "emoji": "🍜", "category": "noodle", "allergens": []},
+    {"name_zh": "中式香肠", "name_en": "Chinese sausage", "name_fr": "Saucisse chinoise", "emoji": "🌭", "category": "protein", "allergens": []},
+    {"name_zh": "鸡蛋", "name_en": "Egg", "name_fr": "Œuf", "emoji": "🥚", "category": "protein", "allergens": ["egg"]},
+    {"name_zh": "鸡肉", "name_en": "Chicken", "name_fr": "Poulet", "emoji": "🍗", "image": "chicken", "category": "protein", "allergens": []},
+    {"name_zh": "韭菜", "name_en": "Chinese chive", "name_fr": "Ciboulette chinoise", "emoji": "🌿", "category": "vegetable", "allergens": []},
+    {"name_zh": "豆芽", "name_en": "Bean sprouts", "name_fr": "Pousses de soja", "emoji": "🌱", "category": "vegetable", "allergens": []},
+    {"name_zh": "老抽", "name_en": "Dark soy", "name_fr": "Sauce soja foncée", "emoji": "🍶", "image": "soy_sauce", "category": "sauce", "allergens": ["soy", "gluten"]}
   ]
 }

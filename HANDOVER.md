@@ -102,6 +102,32 @@ location = /menu/index.html {
 改完任何内容都要**重新 build 并上传 `dist/`**。
 After any content change, **rebuild and re-upload `dist/`**.
 
+### 4.0 多语言 / Languages
+
+菜单支持中文 / English / Français，默认跟随手机系统语言（中文、法语手机直接显示对应语言，其余显示英文），右上角可随时切换，本次访问内记住。界面文字在 `src/i18n.js`；菜单内容用后缀字段：
+The menu supports Chinese / English / French. It defaults to the phone's system language (Chinese or French phones get their language, everything else English) and can be switched in the corner, remembered for the visit. UI strings live in `src/i18n.js`; menu content uses suffixed fields:
+
+- `name_zh` / `name`（英文 / English）/ `name_fr`，同理 `desc_*`、`note_*`、`detail_*`、`price_text_*`、`footer_*`；菜品 JSON 里是 `name_en`、`cultural_note_zh/_en/_fr`，食材有 `name_fr`。
+  Same pattern for `desc_*`, `note_*`, `detail_*`, `price_text_*`, `footer_*`; dish JSONs use `name_en`, `cultural_note_zh/_en/_fr`, and ingredients have `name_fr`.
+- 缺某种语言时自动退回英文。Any missing language falls back to English.
+- 选中语言的名字为主，下面小字给参照名，方便客人指给服务员看：中文→英文，English→中文，Français→英文（纸质菜单上的名字）。
+  The chosen-language name is primary, with a small reference name for pointing it out to staff: zh→English, en→Chinese, fr→English (the printed name).
+- 酒水的品名、产区、描述不翻译，只翻分类和小标题。Drink names, regions and descriptions aren't translated — only section and group headings.
+
+### 4.0.1 AI Test(开发中)/ AI Test (in development)
+
+左上角「AI Test」开关(或网址加 `#ai`)打开预览版：右下角多一个「帮我选」，客人选口味、人数、忌口并写一句想法，由 Claude 推荐一桌菜。
+The top-left "AI Test" toggle (or `#ai` in the URL) adds a "help me pick" corner button: the guest picks a mood, party size and things to avoid, writes a line, and Claude suggests a meal.
+
+- **安全 / Safety** — 忌口过滤由代码完成(`src/picker.js`)，AI 只能从剩下的菜里挑；输出被 JSON schema 锁定为「菜品 + 一句理由」，服务器和网页各再校验一遍。
+  Allergen filtering is done in code (`src/picker.js`); the AI only picks from what's left. Output is locked by a JSON schema to "dish + one reason" and re-checked on both server and page.
+- **接口 / Endpoint** — `POST /api/recommend`(`server/recommend.js`)，目前只挂在本地开发服务器上(`npm run dev`)。API key 放在 `.env.local` 的 `ANTHROPIC_API_KEY`(不提交)；可选 `MENU_AI_MODEL` 换模型，默认 `claude-sonnet-5-5`。每 IP 每分钟 6 次、每天 300 次上限。
+  Mounted on the local dev server only (`npm run dev`). Key: `ANTHROPIC_API_KEY` in `.env.local` (never committed); optional `MENU_AI_MODEL` overrides the model (default `claude-sonnet-5-5`). Limits: 6/min per IP, 300/day.
+- **静态部署 / Static hosting** — GitHub Pages 等没有后端，「帮我选」会自动退回规则推荐。要正式上线 AI，需把 `server/recommend.js` 放进一个云函数(Cloudflare Worker / Vercel 等)。
+  Static hosts have no backend, so "help me pick" falls back to rule-based suggestions. Going live with AI means moving `server/recommend.js` into a serverless function.
+- 口味标签在 `data/picker.json`，新菜要被推荐需按英文菜名加一行。关掉开关就是原来的菜单，不受影响。
+  Taste tags live in `data/picker.json` — add a line per new dish by English name. With the toggle off, the menu is unchanged.
+
 ### 4.1 改菜品单 / Edit the food list
 
 全部在 `data/food.json`，结构和酒水单一样：`sections`（大类）→ `groups`（小组，可无标题）→ `items`（品项）。
@@ -185,17 +211,22 @@ data/
   food.json              菜品单 / food list
   beverages.json         酒水单 / drinks list
   dishes/                成分拆解(每道菜一个 JSON) / ingredient breakdowns (one JSON per dish)
+  picker.json            「帮我选」口味标签 / taste tags for "help me pick"
 src/
   App.jsx                页头 + 菜品/酒水切换 / header, food/drinks tabs
+  i18n.js                多语言:界面文字 + 取对应语言字段 / languages: UI strings + picking the right field
+  picker.js              「帮我选」安全过滤 + 规则推荐 / "help me pick" safety filter + rules
   menu.js                菜品注册表(自动载入 data/dishes/) + 成菜图 / dish registry (auto-loads data/dishes/) + hero images
   ingredientImages.js    食材图映射 / ingredient image map
   components/
     DishCard.jsx         成分拆解动画(盘子/酒杯) / breakdown animation (plate / glass)
     IngredientChip.jsx   单个食材 / one ingredient piece
     MenuList.jsx         价目单(菜品和酒水共用) / price list (shared by food and drinks)
+    HelpMePick.jsx       「帮我选」浮动按钮和面板 / "help me pick" button and panel
     MenuCodes.jsx        菜单过敏原标记 D/G/N/S/V / the menu's D/G/N/S/V allergen markers
   assets/                图片 / images
 public/                  原样复制的静态文件(favicon) / copied as-is (favicon)
 scripts/                 图片处理工具 / image helpers
-vite.config.js           构建配置(VITE_BASE) / build config (VITE_BASE)
+server/recommend.js      AI 推荐接口 / the AI recommendation endpoint
+vite.config.js           构建配置(VITE_BASE)+ 挂载 AI 接口 / build config (VITE_BASE) + mounts the AI endpoint
 ```

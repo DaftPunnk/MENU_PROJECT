@@ -2,14 +2,17 @@
   "id": "salmon-clay-pot",
   "name_zh": "川味三文鱼煲",
   "name_en": "Sizzling Salmon Clay Pot",
+  "name_fr": "Saumon en pot de terre grésillant",
   "category": "seafood",
   "emoji": "🍲",
   "cultural_note_en": "Clay-pot dishes arrive at the table still sizzling. Sichuan green pepper adds a fresh, citrusy tingle, and chu hou sauce — a Cantonese fermented soybean paste — adds savoury depth.",
+  "cultural_note_zh": "煲仔菜上桌时仍滋滋作响。青花椒带来清新的柑橘香和麻感，柱侯酱——一种粤式发酵豆酱——增添鲜香层次。",
+  "cultural_note_fr": "Les plats en pot de terre arrivent à table encore grésillants. Le poivre vert du Sichuan apporte un picotement frais et citronné, et la sauce chu hou — une pâte de soja fermentée cantonaise — une profondeur savoureuse.",
   "ingredients": [
-    {"name_zh": "三文鱼", "name_en": "Salmon", "emoji": "🐟", "category": "protein", "allergens": ["fish"]},
-    {"name_zh": "青花椒", "name_en": "Sichuan green pepper", "emoji": "🌿", "category": "spice", "allergens": []},
-    {"name_zh": "柱侯酱", "name_en": "Chu hou sauce", "emoji": "🫙", "category": "sauce", "allergens": ["soy"]},
-    {"name_zh": "蒜", "name_en": "Garlic", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
-    {"name_zh": "红葱头", "name_en": "Shallot", "emoji": "🧅", "category": "aromatic", "allergens": []}
+    {"name_zh": "三文鱼", "name_en": "Salmon", "name_fr": "Saumon", "emoji": "🐟", "category": "protein", "allergens": ["fish"]},
+    {"name_zh": "青花椒", "name_en": "Sichuan green pepper", "name_fr": "Poivre vert du Sichuan", "emoji": "🌿", "category": "spice", "allergens": []},
+    {"name_zh": "柱侯酱", "name_en": "Chu hou sauce", "name_fr": "Sauce chu hou", "emoji": "🫙", "category": "sauce", "allergens": ["soy"]},
+    {"name_zh": "蒜", "name_en": "Garlic", "name_fr": "Ail", "emoji": "🧄", "image": "garlic", "category": "aromatic", "allergens": []},
+    {"name_zh": "红葱头", "name_en": "Shallot", "name_fr": "Échalote", "emoji": "🧅", "category": "aromatic", "allergens": []}
   ]
 }

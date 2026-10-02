@@ -2,12 +2,15 @@
   "id": "tabasco-prawns",
   "name_zh": "脆炸虾伴柚子辣酱沙拉",
   "name_en": "Tabasco Prawns",
+  "name_fr": "Crevettes au Tabasco",
   "category": "starter",
   "emoji": "🦐",
   "cultural_note_en": "A modern East-meets-West starter: crisp-fried prawns tossed in Tabasco and cooled with a fresh pomelo salsa.",
+  "cultural_note_zh": "一道中西合璧的现代前菜：香炸大虾裹上 Tabasco 辣汁，再以清新的柚子莎莎解辣。",
+  "cultural_note_fr": "Une entrée moderne entre Orient et Occident : des crevettes frites et croustillantes enrobées de Tabasco, rafraîchies par une salsa de pomélo.",
   "ingredients": [
-    {"name_zh": "虾", "name_en": "Prawns", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
-    {"name_zh": "辣椒仔", "name_en": "Tabasco", "emoji": "🌶️", "category": "sauce", "allergens": []},
-    {"name_zh": "柚子莎莎", "name_en": "Pomelo salsa", "emoji": "🍈", "category": "fruit", "allergens": []}
+    {"name_zh": "虾", "name_en": "Prawns", "name_fr": "Crevettes", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "辣椒仔", "name_en": "Tabasco", "name_fr": "Tabasco", "emoji": "🌶️", "category": "sauce", "allergens": []},
+    {"name_zh": "柚子莎莎", "name_en": "Pomelo salsa", "name_fr": "Salsa de pomélo", "emoji": "🍈", "category": "fruit", "allergens": []}
   ]
 }

@@ -2,11 +2,14 @@
   "id": "dong-po-pork",
   "name_zh": "东坡肉",
   "name_en": "Dong Po Pork",
+  "name_fr": "Porc Dong Po",
   "category": "meat",
   "emoji": "🥓",
   "cultural_note_en": "Named after Su Dongpo, the Song-dynasty poet who, legend has it, perfected this slow braise. Pork belly is simmered for hours until meltingly tender in a glossy, aromatic soy sauce. Here it comes with soft bao buns to tuck it into.",
+  "cultural_note_zh": "东坡肉相传由宋代诗人苏东坡改良而成。五花肉以酱汁慢火炖煮数小时，直至入口即化、色泽红亮。这里配松软的刈包，夹着吃。",
+  "cultural_note_fr": "Ce plat porte le nom de Su Dongpo, poète de la dynastie Song qui, selon la légende, aurait perfectionné ce braisage lent. La poitrine de porc mijote pendant des heures dans une sauce soja brillante et parfumée, jusqu'à devenir fondante. Elle est servie ici avec de moelleux petits pains bao pour la garnir.",
   "ingredients": [
-    {"name_zh": "五花肉", "name_en": "Pork belly", "emoji": "🥓", "category": "protein", "allergens": []},
-    {"name_zh": "刈包", "name_en": "Bao buns", "emoji": "🍞", "category": "wrapper", "allergens": ["gluten"]}
+    {"name_zh": "五花肉", "name_en": "Pork belly", "name_fr": "Poitrine de porc", "emoji": "🥓", "category": "protein", "allergens": []},
+    {"name_zh": "刈包", "name_en": "Bao buns", "name_fr": "Petits pains bao", "emoji": "🍞", "category": "wrapper", "allergens": ["gluten"]}
   ]
 }

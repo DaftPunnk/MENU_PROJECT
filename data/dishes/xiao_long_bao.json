@@ -2,12 +2,15 @@
   "id": "xiao-long-bao",
   "name_zh": "上海小笼包",
   "name_en": "Xiao Long Bao",
+  "name_fr": "Xiao Long Bao",
   "category": "dim_sum",
   "emoji": "🥟",
   "cultural_note_en": "Soup dumplings from the Shanghai region. The filling includes a jellied broth that melts into hot soup as they steam — bite a small hole, sip the soup, then eat the dumpling (carefully, it's hot!).",
+  "cultural_note_zh": "来自上海一带的灌汤包。馅料里拌有肉冻，蒸的时候化成热汤——先咬一个小口、吸掉汤汁，再吃包子（小心烫！）。",
+  "cultural_note_fr": "Des raviolis à soupe originaires de la région de Shanghai. La farce contient un bouillon gélifié qui fond en soupe chaude à la cuisson : croquez un petit trou, aspirez la soupe, puis mangez le ravioli (attention, c'est brûlant !).",
   "ingredients": [
-    {"name_zh": "猪肉馅", "name_en": "Pork filling", "emoji": "🐖", "category": "protein", "allergens": []},
-    {"name_zh": "汤汁", "name_en": "Aromatic broth", "emoji": "🍲", "category": "broth", "allergens": []},
-    {"name_zh": "饺子皮", "name_en": "Dumpling wrapper", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]}
+    {"name_zh": "猪肉馅", "name_en": "Pork filling", "name_fr": "Farce au porc", "emoji": "🐖", "category": "protein", "allergens": []},
+    {"name_zh": "汤汁", "name_en": "Aromatic broth", "name_fr": "Bouillon aromatique", "emoji": "🍲", "category": "broth", "allergens": []},
+    {"name_zh": "饺子皮", "name_en": "Dumpling wrapper", "name_fr": "Pâte à raviolis", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]}
   ]
 }

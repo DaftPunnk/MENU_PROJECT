@@ -2,16 +2,19 @@
   "id": "kingfish-yusheng",
   "name_zh": "新西兰黄尾鰤鱼生 · 广式口味",
   "name_en": "NZ Kingfish Yusheng – Cantonese Style",
+  "name_fr": "Yusheng de sériole néo-zélandaise, à la cantonaise",
   "category": "starter",
   "emoji": "🐟",
   "cultural_note_en": "Yusheng is a Cantonese raw-fish salad, famously tossed high at Lunar New Year for luck and abundance — the higher the toss, the greater the fortune. Here it is made with New Zealand kingfish.",
+  "cultural_note_zh": "鱼生是粤式生鱼沙拉，农历新年时大家一起高高「捞起」，寓意好运和年年有余——捞得越高，福气越旺。这里用的是新西兰黄尾鰤。",
+  "cultural_note_fr": "Le yusheng est une salade cantonaise de poisson cru, que l'on mélange en la soulevant bien haut au Nouvel An chinois en signe de chance et d'abondance — plus on la lance haut, plus la fortune sera grande. Elle est préparée ici avec de la sériole de Nouvelle-Zélande.",
   "ingredients": [
-    {"name_zh": "黄尾鰤", "name_en": "Kingfish", "emoji": "🐟", "category": "protein", "allergens": ["fish"]},
-    {"name_zh": "姜", "name_en": "Ginger", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
-    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
-    {"name_zh": "柚子汁", "name_en": "Yuzu dressing", "emoji": "🍋", "image": "lime", "category": "sauce", "allergens": []},
-    {"name_zh": "芝麻", "name_en": "Sesame", "emoji": "⚪", "category": "garnish", "allergens": ["sesame"]},
-    {"name_zh": "腰果", "name_en": "Cashew", "emoji": "🥜", "image": "cashew", "category": "nut", "allergens": ["tree nut"]},
-    {"name_zh": "辣椒", "name_en": "Chilli", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []}
+    {"name_zh": "黄尾鰤", "name_en": "Kingfish", "name_fr": "Sériole", "emoji": "🐟", "category": "protein", "allergens": ["fish"]},
+    {"name_zh": "姜", "name_en": "Ginger", "name_fr": "Gingembre", "emoji": "🫚", "image": "ginger", "category": "aromatic", "allergens": []},
+    {"name_zh": "葱", "name_en": "Spring onion", "name_fr": "Oignon nouveau", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "柚子汁", "name_en": "Yuzu dressing", "name_fr": "Sauce au yuzu", "emoji": "🍋", "image": "lime", "category": "sauce", "allergens": []},
+    {"name_zh": "芝麻", "name_en": "Sesame", "name_fr": "Sésame", "emoji": "⚪", "category": "garnish", "allergens": ["sesame"]},
+    {"name_zh": "腰果", "name_en": "Cashew", "name_fr": "Noix de cajou", "emoji": "🥜", "image": "cashew", "category": "nut", "allergens": ["tree nut"]},
+    {"name_zh": "辣椒", "name_en": "Chilli", "name_fr": "Piment", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []}
   ]
 }

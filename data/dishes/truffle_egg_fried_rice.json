@@ -2,14 +2,17 @@
   "id": "truffle-egg-fried-rice",
   "name_zh": "黑松露蛋炒饭",
   "name_en": "Truffle Egg Fried Rice",
+  "name_fr": "Riz sauté aux œufs et à la truffe",
   "category": "rice",
   "emoji": "🍚",
   "cultural_note_en": "Egg fried rice is the simplest test of a Chinese wok chef; this luxurious version is finished with black truffle.",
+  "cultural_note_zh": "蛋炒饭最考验中餐厨师的镬功；这一版加入黑松露，更显奢华。",
+  "cultural_note_fr": "Le riz sauté aux œufs est le test le plus simple du savoir-faire d'un cuisinier au wok ; cette version luxueuse est rehaussée de truffe noire.",
   "ingredients": [
-    {"name_zh": "米饭", "name_en": "Rice", "emoji": "🍚", "category": "grain", "allergens": []},
-    {"name_zh": "走地鸡蛋", "name_en": "Free-range egg", "emoji": "🥚", "category": "protein", "allergens": ["egg"]},
-    {"name_zh": "黑松露", "name_en": "Black truffle", "emoji": "🍄", "image": "truffle", "category": "garnish", "allergens": []},
-    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
-    {"name_zh": "酱油", "name_en": "Premium soy", "emoji": "🍶", "image": "soy_sauce", "category": "sauce", "allergens": ["soy", "gluten"]}
+    {"name_zh": "米饭", "name_en": "Rice", "name_fr": "Riz", "emoji": "🍚", "category": "grain", "allergens": []},
+    {"name_zh": "走地鸡蛋", "name_en": "Free-range egg", "name_fr": "Œuf fermier", "emoji": "🥚", "category": "protein", "allergens": ["egg"]},
+    {"name_zh": "黑松露", "name_en": "Black truffle", "name_fr": "Truffe noire", "emoji": "🍄", "image": "truffle", "category": "garnish", "allergens": []},
+    {"name_zh": "葱", "name_en": "Spring onion", "name_fr": "Oignon nouveau", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "酱油", "name_en": "Premium soy", "name_fr": "Sauce soja de qualité", "emoji": "🍶", "image": "soy_sauce", "category": "sauce", "allergens": ["soy", "gluten"]}
   ]
 }

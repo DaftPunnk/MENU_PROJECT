@@ -2,14 +2,17 @@
   "id": "peking-duck",
   "name_zh": "北京片皮鸭",
   "name_en": "Classic Nectar Peking-Style Duck",
+  "name_fr": "Canard laqué de Pékin, façon Nectar",
   "category": "duck",
   "emoji": "🦆",
   "cultural_note_en": "Peking duck dates back to the imperial kitchens of Beijing. This one is smoked over orchard fruit wood and roasted until the skin is glass-crisp; at the table you wrap the skin and meat in a thin pancake with shredded vegetables and eat it by hand.",
+  "cultural_note_zh": "北京烤鸭源自北京的宫廷御膳。这里的鸭子以果木烟熏，烤至鸭皮如琉璃般酥脆；上桌后用薄饼卷起鸭皮、鸭肉和时蔬丝，用手拿着吃。",
+  "cultural_note_fr": "Le canard laqué trouve son origine dans les cuisines impériales de Pékin. Celui-ci est fumé au bois d'arbres fruitiers et rôti jusqu'à ce que la peau soit croustillante comme du verre ; à table, on enroule la peau et la chair dans une fine crêpe avec des légumes émincés, et on le mange avec les doigts.",
   "ingredients": [
-    {"name_zh": "果木烟熏鸭", "name_en": "Fruit wood-smoked duck", "emoji": "🦆", "category": "protein", "allergens": []},
-    {"name_zh": "脆鸭皮", "name_en": "Crispy duck skin", "emoji": "🍂", "category": "protein", "allergens": []},
-    {"name_zh": "鸭肉", "name_en": "Boneless duck meat", "emoji": "🍖", "category": "protein", "allergens": []},
-    {"name_zh": "薄饼", "name_en": "Thin pancakes", "emoji": "🫓", "category": "wrapper", "allergens": ["gluten"]},
-    {"name_zh": "时蔬丝", "name_en": "Shredded vegetables", "emoji": "🥒", "category": "vegetable", "allergens": []}
+    {"name_zh": "果木烟熏鸭", "name_en": "Fruit wood-smoked duck", "name_fr": "Canard fumé au bois fruitier", "emoji": "🦆", "category": "protein", "allergens": []},
+    {"name_zh": "脆鸭皮", "name_en": "Crispy duck skin", "name_fr": "Peau de canard croustillante", "emoji": "🍂", "category": "protein", "allergens": []},
+    {"name_zh": "鸭肉", "name_en": "Boneless duck meat", "name_fr": "Chair de canard désossée", "emoji": "🍖", "category": "protein", "allergens": []},
+    {"name_zh": "薄饼", "name_en": "Thin pancakes", "name_fr": "Crêpes fines", "emoji": "🫓", "category": "wrapper", "allergens": ["gluten"]},
+    {"name_zh": "时蔬丝", "name_en": "Shredded vegetables", "name_fr": "Légumes émincés", "emoji": "🥒", "category": "vegetable", "allergens": []}
   ]
 }

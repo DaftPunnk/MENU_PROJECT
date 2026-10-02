@@ -2,13 +2,16 @@
   "id": "mapo-tofu",
   "name_zh": "麻婆豆腐",
   "name_en": "Mapo Tofu",
+  "name_fr": "Mapo tofu",
   "category": "wok",
   "emoji": "🌶️",
   "cultural_note_en": "A Sichuan classic said to be named after a pockmarked ('ma') old woman ('po') who served it in 19th-century Chengdu: soft tofu in a fiery, numbing sauce of chilli bean paste and Sichuan pepper.",
+  "cultural_note_zh": "川菜经典，相传得名于清末成都一位脸上有麻子的老妇（「麻婆」）。嫩豆腐浸在由豆瓣酱和花椒调成的麻辣酱汁里。",
+  "cultural_note_fr": "Un classique du Sichuan qui devrait son nom à une vieille femme (« po ») au visage grêlé (« ma ») qui le servait à Chengdu au XIXe siècle : un tofu tendre dans une sauce ardente et engourdissante à la pâte de piment et au poivre du Sichuan.",
   "ingredients": [
-    {"name_zh": "嫩豆腐", "name_en": "Silken tofu", "emoji": "⬜", "category": "protein", "allergens": ["soy"]},
-    {"name_zh": "豆瓣酱", "name_en": "Fermented chilli bean paste", "emoji": "🌶️", "category": "sauce", "allergens": ["gluten"]},
-    {"name_zh": "猪肉末", "name_en": "Pork mince", "emoji": "🐖", "category": "protein", "allergens": []},
-    {"name_zh": "花椒", "name_en": "Sichuan pepper", "emoji": "🪻", "image": "peppercorn", "category": "spice", "allergens": []}
+    {"name_zh": "嫩豆腐", "name_en": "Silken tofu", "name_fr": "Tofu soyeux", "emoji": "⬜", "category": "protein", "allergens": ["soy"]},
+    {"name_zh": "豆瓣酱", "name_en": "Fermented chilli bean paste", "name_fr": "Pâte de piment aux fèves fermentées", "emoji": "🌶️", "category": "sauce", "allergens": ["gluten"]},
+    {"name_zh": "猪肉末", "name_en": "Pork mince", "name_fr": "Porc haché", "emoji": "🐖", "category": "protein", "allergens": []},
+    {"name_zh": "花椒", "name_en": "Sichuan pepper", "name_fr": "Poivre du Sichuan", "emoji": "🪻", "image": "peppercorn", "category": "spice", "allergens": []}
   ]
 }

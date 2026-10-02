@@ -2,12 +2,15 @@
   "id": "spinach-dumpling",
   "name_zh": "菠菜素饺",
   "name_en": "Spinach Dumpling",
+  "name_fr": "Raviolis aux épinards",
   "category": "dim_sum",
   "emoji": "🥟",
   "cultural_note_en": "A vegetarian dumpling with a jade-green spinach filling and seasonal vegetables.",
+  "cultural_note_zh": "翠绿菠菜馅配时令蔬菜的素饺。",
+  "cultural_note_fr": "Un ravioli végétarien à la farce d'épinards vert jade et aux légumes de saison.",
   "ingredients": [
-    {"name_zh": "菠菜", "name_en": "Spinach", "emoji": "🥬", "category": "vegetable", "allergens": []},
-    {"name_zh": "时令蔬菜", "name_en": "Seasonal vegetables", "emoji": "🥕", "category": "vegetable", "allergens": []},
-    {"name_zh": "饺子皮", "name_en": "Dumpling wrapper", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]}
+    {"name_zh": "菠菜", "name_en": "Spinach", "name_fr": "Épinards", "emoji": "🥬", "category": "vegetable", "allergens": []},
+    {"name_zh": "时令蔬菜", "name_en": "Seasonal vegetables", "name_fr": "Légumes de saison", "emoji": "🥕", "category": "vegetable", "allergens": []},
+    {"name_zh": "饺子皮", "name_en": "Dumpling wrapper", "name_fr": "Pâte à raviolis", "emoji": "🥟", "category": "wrapper", "allergens": ["gluten"]}
   ]
 }

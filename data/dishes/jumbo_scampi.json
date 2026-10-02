@@ -2,11 +2,14 @@
   "id": "jumbo-scampi",
   "name_zh": "南极冰鲜海蜇虾",
   "name_en": "Antarctic Deep-Sea Jumbo Scampi",
+  "name_fr": "Langoustines géantes de l'Antarctique",
   "category": "seafood",
   "emoji": "🦐",
   "cultural_note_en": "Scampi are slender, sweet-fleshed lobsters from deep, cold waters. Have them raw to taste their natural sweetness, or fried crisp with salt and pepper.",
+  "cultural_note_zh": "螯虾是生长在深海冷水里的修长小龙虾，肉质鲜甜。可以刺身生吃，品尝它天然的清甜；也可以椒盐炸至酥脆。",
+  "cultural_note_fr": "Les langoustines sont de fins homards des eaux froides et profondes, à la chair douce. Dégustez-les crues pour leur douceur naturelle, ou frites et croustillantes au sel et poivre.",
   "ingredients": [
-    {"name_zh": "南极螯虾", "name_en": "Antarctic scampi", "emoji": "🦐", "category": "protein", "allergens": ["shellfish"]},
-    {"name_zh": "椒盐", "name_en": "Salt & pepper", "emoji": "🧂", "image": "salt", "category": "seasoning", "allergens": []}
+    {"name_zh": "南极螯虾", "name_en": "Antarctic scampi", "name_fr": "Langoustine d'Antarctique", "emoji": "🦐", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "椒盐", "name_en": "Salt & pepper", "name_fr": "Sel et poivre", "emoji": "🧂", "image": "salt", "category": "seasoning", "allergens": []}
   ]
 }

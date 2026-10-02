@@ -2,15 +2,18 @@
   "id": "xo-chilli-fried-rice",
   "name_zh": "甘露海鲜炒饭",
   "name_en": "X.O. Chilli Fried Rice",
+  "name_fr": "Riz sauté au piment X.O.",
   "category": "rice",
   "emoji": "🍚",
   "cultural_note_en": "XO sauce was created in 1980s Hong Kong and named after XO cognac as a byword for luxury — a rich, savoury chilli relish traditionally made with dried scallop and dried shrimp.",
+  "cultural_note_zh": "XO酱诞生于 1980 年代的香港，借 XO 干邑之名象征奢华——这是一种浓郁鲜香的辣味酱，传统上以干贝和虾米制成。",
+  "cultural_note_fr": "La sauce XO est née à Hong Kong dans les années 1980 et doit son nom au cognac XO, synonyme de luxe : un condiment pimenté, riche et savoureux, traditionnellement préparé avec des Saint-Jacques et des crevettes séchées.",
   "ingredients": [
-    {"name_zh": "米饭", "name_en": "Rice", "emoji": "🍚", "category": "grain", "allergens": []},
-    {"name_zh": "虾", "name_en": "Prawns", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
-    {"name_zh": "带子", "name_en": "Scallops", "emoji": "🐚", "category": "protein", "allergens": ["shellfish"]},
-    {"name_zh": "鱿鱼", "name_en": "Squid", "emoji": "🦑", "category": "protein", "allergens": ["shellfish"]},
-    {"name_zh": "葱", "name_en": "Spring onion", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
-    {"name_zh": "XO酱", "name_en": "X.O sauce", "emoji": "🫙", "category": "sauce", "allergens": ["shellfish"]}
+    {"name_zh": "米饭", "name_en": "Rice", "name_fr": "Riz", "emoji": "🍚", "category": "grain", "allergens": []},
+    {"name_zh": "虾", "name_en": "Prawns", "name_fr": "Crevettes", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "带子", "name_en": "Scallops", "name_fr": "Saint-Jacques", "emoji": "🐚", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "鱿鱼", "name_en": "Squid", "name_fr": "Calamar", "emoji": "🦑", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "葱", "name_en": "Spring onion", "name_fr": "Oignon nouveau", "emoji": "🧅", "image": "scallion", "category": "vegetable", "allergens": []},
+    {"name_zh": "XO酱", "name_en": "X.O sauce", "name_fr": "Sauce X.O", "emoji": "🫙", "category": "sauce", "allergens": ["shellfish"]}
   ]
 }

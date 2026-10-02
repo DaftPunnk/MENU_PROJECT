@@ -2,13 +2,16 @@
   "id": "black-pepper-beef",
   "name_zh": "驰名黑椒牛肉",
   "name_en": "Black Pepper Beef",
+  "name_fr": "Bœuf au poivre noir",
   "category": "wok",
   "emoji": "🥩",
   "cultural_note_en": "A Cantonese-restaurant favourite: tender beef seared in a very hot wok with a bold, peppery sauce.",
+  "cultural_note_zh": "粤菜馆的人气菜：嫩牛肉在猛火镬中快炒，配浓郁辛香的黑椒汁。",
+  "cultural_note_fr": "Un grand favori des restaurants cantonais : du bœuf tendre saisi dans un wok très chaud avec une sauce généreusement poivrée.",
   "ingredients": [
-    {"name_zh": "新西兰安格斯牛肉", "name_en": "NZ Angus beef", "emoji": "🥩", "category": "protein", "allergens": []},
-    {"name_zh": "黑椒汁", "name_en": "Black pepper sauce", "emoji": "🫙", "category": "sauce", "allergens": []},
-    {"name_zh": "洋葱", "name_en": "Onion", "emoji": "🧅", "category": "vegetable", "allergens": []},
-    {"name_zh": "香料", "name_en": "Aromatic spices", "emoji": "✴️", "image": "star_anise", "category": "spice", "allergens": []}
+    {"name_zh": "新西兰安格斯牛肉", "name_en": "NZ Angus beef", "name_fr": "Bœuf Angus néo-zélandais", "emoji": "🥩", "category": "protein", "allergens": []},
+    {"name_zh": "黑椒汁", "name_en": "Black pepper sauce", "name_fr": "Sauce au poivre noir", "emoji": "🫙", "category": "sauce", "allergens": []},
+    {"name_zh": "洋葱", "name_en": "Onion", "name_fr": "Oignon", "emoji": "🧅", "category": "vegetable", "allergens": []},
+    {"name_zh": "香料", "name_en": "Aromatic spices", "name_fr": "Épices aromatiques", "emoji": "✴️", "image": "star_anise", "category": "spice", "allergens": []}
   ]
 }

@@ -2,15 +2,18 @@
   "id": "crispy-duck-salad",
   "name_zh": "香酥鸭丝佐柚香梅酱",
   "name_en": "Crispy Duck Salad",
+  "name_fr": "Salade de canard croustillant",
   "category": "starter",
   "emoji": "🥗",
   "cultural_note_en": "A bright, crunchy salad that sets off the richness of the duck: shredded crispy duck tossed with pomelo — a large, sweet Asian citrus — and a sweet-sour plum dressing.",
+  "cultural_note_zh": "一道清爽爽脆的沙拉，正好平衡鸭肉的丰腴：香酥鸭丝拌上柚子——一种个大味甜的亚洲柑橘——再淋上酸甜梅子酱。",
+  "cultural_note_fr": "Une salade fraîche et croquante qui équilibre la richesse du canard : du canard croustillant effiloché mêlé à du pomélo — un grand agrume asiatique, doux et juteux — et une sauce aigre-douce aux prunes.",
   "ingredients": [
-    {"name_zh": "香酥鸭丝", "name_en": "Crispy shredded duck", "emoji": "🦆", "category": "protein", "allergens": []},
-    {"name_zh": "柚子", "name_en": "Pomelo", "emoji": "🍈", "category": "fruit", "allergens": []},
-    {"name_zh": "萝卜", "name_en": "Radish", "emoji": "🥕", "category": "vegetable", "allergens": []},
-    {"name_zh": "松子", "name_en": "Pine nuts", "emoji": "🌰", "category": "nut", "allergens": ["tree nut"]},
-    {"name_zh": "香草", "name_en": "Mixed herbs", "emoji": "🌿", "category": "herb", "allergens": []},
-    {"name_zh": "梅子酱", "name_en": "Plum dressing", "emoji": "🫙", "category": "sauce", "allergens": []}
+    {"name_zh": "香酥鸭丝", "name_en": "Crispy shredded duck", "name_fr": "Canard croustillant effiloché", "emoji": "🦆", "category": "protein", "allergens": []},
+    {"name_zh": "柚子", "name_en": "Pomelo", "name_fr": "Pomélo", "emoji": "🍈", "category": "fruit", "allergens": []},
+    {"name_zh": "萝卜", "name_en": "Radish", "name_fr": "Radis", "emoji": "🥕", "category": "vegetable", "allergens": []},
+    {"name_zh": "松子", "name_en": "Pine nuts", "name_fr": "Pignons de pin", "emoji": "🌰", "category": "nut", "allergens": ["tree nut"]},
+    {"name_zh": "香草", "name_en": "Mixed herbs", "name_fr": "Herbes fraîches", "emoji": "🌿", "category": "herb", "allergens": []},
+    {"name_zh": "梅子酱", "name_en": "Plum dressing", "name_fr": "Sauce aux prunes", "emoji": "🫙", "category": "sauce", "allergens": []}
   ]
 }

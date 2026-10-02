@@ -2,13 +2,16 @@
   "id": "yangzhou-fried-rice",
   "name_zh": "扬州叉烧蛋炒饭",
   "name_en": "Yangzhou Fried Rice",
+  "name_fr": "Riz cantonais (façon Yangzhou)",
   "category": "rice",
   "emoji": "🍚",
   "cultural_note_en": "Named after the city of Yangzhou on the Yangtze, this is the archetypal 'special fried rice' served in Chinese restaurants around the world.",
+  "cultural_note_zh": "扬州炒饭得名于长江边的扬州，是全世界中餐馆里「招牌炒饭」的原型。",
+  "cultural_note_fr": "Baptisé d'après la ville de Yangzhou, sur le Yangtsé, c'est l'archétype du « riz cantonais » servi dans les restaurants chinois du monde entier.",
   "ingredients": [
-    {"name_zh": "米饭", "name_en": "Rice", "emoji": "🍚", "category": "grain", "allergens": []},
-    {"name_zh": "叉烧", "name_en": "BBQ pork (char siu)", "emoji": "🍖", "category": "protein", "allergens": []},
-    {"name_zh": "鸡蛋", "name_en": "Egg", "emoji": "🥚", "category": "protein", "allergens": ["egg"]},
-    {"name_zh": "蔬菜", "name_en": "Vegetables", "emoji": "🥕", "category": "vegetable", "allergens": []}
+    {"name_zh": "米饭", "name_en": "Rice", "name_fr": "Riz", "emoji": "🍚", "category": "grain", "allergens": []},
+    {"name_zh": "叉烧", "name_en": "BBQ pork (char siu)", "name_fr": "Porc laqué (char siu)", "emoji": "🍖", "category": "protein", "allergens": []},
+    {"name_zh": "鸡蛋", "name_en": "Egg", "name_fr": "Œuf", "emoji": "🥚", "category": "protein", "allergens": ["egg"]},
+    {"name_zh": "蔬菜", "name_en": "Vegetables", "name_fr": "Légumes", "emoji": "🥕", "category": "vegetable", "allergens": []}
   ]
 }

@@ -2,13 +2,16 @@
   "id": "gan-shao-prawns",
   "name_zh": "干烧虾",
   "name_en": "“Gan Shao” Dry-Fried Style Prawns",
+  "name_fr": "Crevettes sautées à sec façon « Gan Shao »",
   "category": "seafood",
   "emoji": "🦐",
   "cultural_note_en": "'Gan shao' (dry-braising) is a Sichuan technique: the sauce is reduced right down until it clings to the prawns instead of pooling on the plate, for a concentrated, gently spicy flavour.",
+  "cultural_note_zh": "干烧是川菜的一种烹调技法：把酱汁收到几乎全干，紧紧裹在虾上而不是汪在盘底，味道浓缩，微辣鲜香。",
+  "cultural_note_fr": "Le « gan shao » (braisé à sec) est une technique du Sichuan : la sauce est réduite jusqu'à napper les crevettes plutôt que de rester au fond de l'assiette, pour une saveur concentrée et légèrement épicée.",
   "ingredients": [
-    {"name_zh": "虾", "name_en": "Prawns", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
-    {"name_zh": "马蹄", "name_en": "Water chestnut", "emoji": "🌰", "category": "vegetable", "allergens": []},
-    {"name_zh": "灯笼椒", "name_en": "Capsicum", "emoji": "🫑", "category": "vegetable", "allergens": []},
-    {"name_zh": "干烧酱", "name_en": "Dry-fried sauce", "emoji": "🥫", "category": "sauce", "allergens": []}
+    {"name_zh": "虾", "name_en": "Prawns", "name_fr": "Crevettes", "emoji": "🦐", "image": "shrimp", "category": "protein", "allergens": ["shellfish"]},
+    {"name_zh": "马蹄", "name_en": "Water chestnut", "name_fr": "Châtaigne d'eau", "emoji": "🌰", "category": "vegetable", "allergens": []},
+    {"name_zh": "灯笼椒", "name_en": "Capsicum", "name_fr": "Poivron", "emoji": "🫑", "category": "vegetable", "allergens": []},
+    {"name_zh": "干烧酱", "name_en": "Dry-fried sauce", "name_fr": "Sauce « gan shao »", "emoji": "🥫", "category": "sauce", "allergens": []}
   ]
 }

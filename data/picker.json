@@ -1,0 +1,50 @@
+{
+  "_comment": "「帮我选」用的菜品标签(按 food.json 里品项的英文名 name 对应)。course = 上菜位置;tags = 口味/特点。只收单点菜,套餐、游水海鲜、儿童餐不在内。过敏原不在这里,直接用 food.json 的 codes 和成分数据。/ Tags for the 'help me pick' feature, keyed by the item's English `name` in food.json. course = where it sits in a meal; tags = flavour/traits. À la carte only. Allergens are NOT here — they come from food.json codes and the dish breakdowns.",
+  "courses": ["starter", "dim_sum", "main", "veg", "rice", "dessert"],
+  "tags": ["light", "bold", "spicy", "seafood", "meat", "veg", "signature", "adventurous"],
+  "items": {
+    "Crispy Duck Salad": { "course": "starter", "tags": ["light", "meat", "signature"] },
+    "NZ Kingfish Yusheng – Cantonese Style": { "course": "starter", "tags": ["light", "seafood", "adventurous"] },
+    "Chilled Jellyfish with Black Vinegar": { "course": "starter", "tags": ["light", "seafood", "adventurous"] },
+    "Tabasco Prawns": { "course": "starter", "tags": ["spicy", "seafood"] },
+    "Crispy Soft-Shell Crab": { "course": "starter", "tags": ["spicy", "bold", "seafood"] },
+    "Mushroom Salad": { "course": "starter", "tags": ["light", "veg", "spicy"] },
+
+    "Shanghai-Style Pan-Fried Dumplings": { "course": "dim_sum", "tags": ["meat"] },
+    "Xiao Long Bao": { "course": "dim_sum", "tags": ["meat", "signature"] },
+    "Prawn & Chicken Siu Mai": { "course": "dim_sum", "tags": ["seafood", "meat"] },
+    "Prawn & Truffle Har Gau": { "course": "dim_sum", "tags": ["light", "seafood", "signature"] },
+    "Crispy Pāua Wonton": { "course": "dim_sum", "tags": ["bold", "seafood", "adventurous"] },
+    "Spinach Dumpling": { "course": "dim_sum", "tags": ["light", "veg"] },
+
+    "Classic Nectar Peking-Style Duck": { "course": "main", "tags": ["meat", "signature", "bold"] },
+    "Mānuka Honey-Glazed Barbecued Pork": { "course": "main", "tags": ["meat", "bold"] },
+    "Wok-Fried NZ Lamb Rack": { "course": "main", "tags": ["meat", "bold"] },
+    "Dong Po Pork": { "course": "main", "tags": ["meat", "bold"] },
+    "Steamed Longline Whole Baby Snapper": { "course": "main", "tags": ["light", "seafood"] },
+    "Sizzling Salmon Clay Pot": { "course": "main", "tags": ["spicy", "bold", "seafood"] },
+    "“Dry-Fried” Style Crayfish & Prawns": { "course": "main", "tags": ["spicy", "bold", "seafood"] },
+    "Antarctic Deep-Sea Jumbo Scampi": { "course": "main", "tags": ["light", "seafood", "adventurous"] },
+    "Sautéed XO Scallops": { "course": "main", "tags": ["bold", "seafood"] },
+    "Black Pepper Beef": { "course": "main", "tags": ["meat", "bold"] },
+    "Sichuan Lamb Cutlets": { "course": "main", "tags": ["meat", "spicy", "bold"] },
+    "Kung Pao Chicken": { "course": "main", "tags": ["meat", "spicy"] },
+    "Mapo Tofu": { "course": "main", "tags": ["spicy", "bold", "adventurous"] },
+
+    "Wok-Fried Seasonal Greens": { "course": "veg", "tags": ["light", "veg"] },
+    "Sichuan Eggplant": { "course": "veg", "tags": ["veg", "spicy", "bold"] },
+    "Spinach Tofu": { "course": "veg", "tags": ["light", "veg"] },
+    "Gai Lan": { "course": "veg", "tags": ["light", "veg"] },
+
+    "Truffle Egg Fried Rice": { "course": "rice", "tags": ["light", "signature"] },
+    "X.O Duck Fried Rice": { "course": "rice", "tags": ["meat", "bold"] },
+    "Yangzhou Fried Rice": { "course": "rice", "tags": ["light"] },
+    "Char Kway Teow": { "course": "rice", "tags": ["bold", "meat"] },
+    "XO Seafood Fried Rice": { "course": "rice", "tags": ["bold", "seafood"] },
+
+    "Signature Chocolate Sphere": { "course": "dessert", "tags": ["signature"] },
+    "Mango Coconut Delight": { "course": "dessert", "tags": ["light"] },
+    "Cincau Guiling Grass Jelly": { "course": "dessert", "tags": ["adventurous"] },
+    "Sorbet selection": { "course": "dessert", "tags": ["light"] }
+  }
+}

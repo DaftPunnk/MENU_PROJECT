@@ -2,13 +2,16 @@
   "id": "grass-jelly",
   "name_zh": "甘露龟苓仙草冻",
   "name_en": "Cincau Guiling Grass Jelly",
+  "name_fr": "Gelée d'herbes Guiling (cincau)",
   "category": "dessert",
   "emoji": "🍮",
   "cultural_note_en": "Guilinggao is a traditional Chinese herbal jelly, long valued in Chinese medicine as a 'cooling' tonic. It is dark, smooth and lightly bitter, balanced here with mānuka honey.",
+  "cultural_note_zh": "龟苓膏是传统中式草本甜品，在中医里一向被视为「清热降火」的滋补品。色泽深黑、口感顺滑、微带甘苦，这里以麦卢卡蜂蜜调和。",
+  "cultural_note_fr": "Le guilinggao est une gelée d'herbes traditionnelle chinoise, réputée en médecine chinoise pour ses vertus « rafraîchissantes ». Sombre, lisse et légèrement amère, elle est adoucie ici au miel de mānuka.",
   "ingredients": [
-    {"name_zh": "仙草冻", "name_en": "Grass jelly (cincau)", "emoji": "🟫", "category": "base", "allergens": []},
-    {"name_zh": "甘草", "name_en": "Liquorice", "emoji": "🌿", "category": "herb", "allergens": []},
-    {"name_zh": "川芎", "name_en": "Chuanxiong (lovage root)", "emoji": "🪵", "category": "herb", "allergens": []},
-    {"name_zh": "麦卢卡蜂蜜", "name_en": "Mānuka honey", "emoji": "🍯", "category": "sweetener", "allergens": []}
+    {"name_zh": "仙草冻", "name_en": "Grass jelly (cincau)", "name_fr": "Gelée d'herbes (cincau)", "emoji": "🟫", "category": "base", "allergens": []},
+    {"name_zh": "甘草", "name_en": "Liquorice", "name_fr": "Réglisse", "emoji": "🌿", "category": "herb", "allergens": []},
+    {"name_zh": "川芎", "name_en": "Chuanxiong (lovage root)", "name_fr": "Chuanxiong (racine de livèche)", "emoji": "🪵", "category": "herb", "allergens": []},
+    {"name_zh": "麦卢卡蜂蜜", "name_en": "Mānuka honey", "name_fr": "Miel de mānuka", "emoji": "🍯", "category": "sweetener", "allergens": []}
   ]
 }
