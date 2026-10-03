@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "worker:build": "vite build --config worker/vite.config.js",
+    "worker:deploy": "npm run worker:build && wrangler deploy"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",
@@ -26,6 +28,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
-    "vite": "^8.0.10"
+    "vite": "^8.0.10",
+    "wrangler": "^4.147.0"
   }
 }

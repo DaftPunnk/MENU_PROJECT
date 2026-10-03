@@ -30,6 +30,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          # 「帮我选」的 AI 接口(Cloudflare Worker 地址),可在仓库 Settings → Variables 用 AI_URL 覆盖
+          # the 'help me pick' AI endpoint (Cloudflare Worker URL); override with AI_URL under repo Settings → Variables
+          VITE_AI_URL: ${{ vars.AI_URL || 'https://huami-menu-ai.menu-project.workers.dev/api/recommend' }}
       - uses: actions/configure-pages@v5
         with:
           # 自动启用 Pages 并把源设为 GitHub Actions,省去手动开启

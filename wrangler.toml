@@ -1,0 +1,11 @@
+# Cloudflare Worker:「帮我选」AI 接口 / the 'help me pick' AI endpoint
+# 部署:npm run worker:deploy;API key:npx wrangler secret put ANTHROPIC_API_KEY(见 HANDOVER.md)
+# Deploy: npm run worker:deploy; API key: npx wrangler secret put ANTHROPIC_API_KEY (see HANDOVER.md)
+name = "huami-menu-ai"
+main = "worker/dist/index.js"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# 允许调用的网站(逗号分隔) / sites allowed to call it (comma-separated)
+ALLOWED_ORIGINS = "https://daftpunnk.github.io,http://localhost:5173"

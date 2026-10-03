@@ -1,8 +1,7 @@
-// 「帮我选」的 AI 接口:POST /api/recommend。在服务器上运行(现在挂在 Vite 开发服务器上,见 vite.config.js),
-// API key 只在这里用,网页端拿不到。正式部署时这个文件可以原样搬进一个云函数(Cloudflare Worker / Vercel 等)。
-// The AI endpoint for 'help me pick': POST /api/recommend. Runs server-side (currently on the Vite dev
-// server, see vite.config.js) so the API key never reaches the page. For real deployment this file can
-// move as-is into a serverless function (Cloudflare Worker, Vercel, ...).
+// 「帮我选」的 AI 接口:POST /api/recommend。在服务器上运行,API key 只在这里用,网页端拿不到:
+// 本地挂在 Vite 开发服务器上(vite.config.js),线上作为 Cloudflare Worker 运行(worker/)。
+// The AI endpoint for 'help me pick': POST /api/recommend. Runs server-side so the API key never reaches
+// the page: on the Vite dev server locally (vite.config.js), and as a Cloudflare Worker online (worker/).
 //
 // 安全设计 / safety design:
 //   - 忌口过滤由代码完成(picker.js 的 candidatesFor),AI 只能从过滤后的菜里挑;
@@ -112,20 +111,20 @@ function send(res, status, data) {
   res.end(JSON.stringify(data))
 }
 
-// loadPicker:取到 picker.js 模块(开发时由 Vite 加载) / loadPicker: returns the picker.js module (loaded by Vite in dev)
-export function createRecommendHandler({ apiKey, model, loadPicker }) {
+// 与运行环境无关的核心:返回 [状态码, 数据]。Node(Vite)和 Cloudflare Worker 各自包一层。
+// The runtime-independent core: returns [status, data]. Node (Vite) and the Cloudflare Worker each wrap it.
+// loadPicker:取到 picker.js 模块 / loadPicker: returns the picker.js module
+export function createRecommender({ apiKey, model, loadPicker }) {
   const client = apiKey ? new Anthropic({ apiKey, timeout: 25_000, maxRetries: 1 }) : null
 
-  return async function handler(req, res) {
-    if (req.method !== 'POST') return send(res, 405, { error: 'POST only' })
-    if (!client) return send(res, 503, { error: 'AI not configured' })
-    const ip = req.socket?.remoteAddress ?? 'unknown'
-    if (rateLimited(ip)) return send(res, 429, { error: 'Too many requests' })
+  return async function recommend(readInput, ip) {
+    if (!client) return [503, { error: 'AI not configured' }]
+    if (rateLimited(ip)) return [429, { error: 'Too many requests' }]
 
     try {
       const { allCandidates, candidatesFor, planCounts, allDrinks, drinksFor, drinkCount, MOODS, PARTY, AVOID, DRINK_PREFS } =
         await loadPicker()
-      const input = await readJson(req)
+      const input = await readInput()
 
       // 只接受已知的选项 / accept known options only
       const lang = ['zh', 'en', 'fr'].includes(input.lang) ? input.lang : 'en'
@@ -137,7 +136,7 @@ export function createRecommendHandler({ apiKey, model, loadPicker }) {
       const previous = (Array.isArray(input.previous) ? input.previous : []).filter((n) => typeof n === 'string').slice(0, 20)
 
       const allowed = candidatesFor(avoid).map((c) => c.item.name)
-      if (!allowed.length) return send(res, 200, { message: '', picks: [], drinks: [] })
+      if (!allowed.length) return [200, { message: '', picks: [], drinks: [] }]
       const allowedDrinks = drinksFor(drinkPrefs).map((d) => d.id)
       const nDrinks = allowedDrinks.length ? drinkCount(party) : 0
       const plan = Object.entries(planCounts(party))
@@ -211,7 +210,7 @@ export function createRecommendHandler({ apiKey, model, loadPicker }) {
       })
 
       if (response.stop_reason === 'refusal' || response.stop_reason === 'max_tokens') {
-        return send(res, 502, { error: `AI stopped: ${response.stop_reason}` })
+        return [502, { error: `AI stopped: ${response.stop_reason}` }]
       }
       const text = response.content.find((b) => b.type === 'text')?.text ?? ''
       const out = JSON.parse(text)
@@ -240,10 +239,20 @@ export function createRecommendHandler({ apiKey, model, loadPicker }) {
         `[ai] ${model} in=${u.input_tokens} cache_read=${u.cache_read_input_tokens ?? 0} ` +
           `cache_write=${u.cache_creation_input_tokens ?? 0} out=${u.output_tokens} picks=${picks.length} drinks=${drinks.length}`,
       )
-      return send(res, 200, { message: String(out.message ?? '').slice(0, 200), picks, drinks })
+      return [200, { message: String(out.message ?? '').slice(0, 200), picks, drinks }]
     } catch (err) {
       console.error('[ai] error:', err?.status ?? '', err?.message ?? err)
-      return send(res, 502, { error: 'AI request failed' })
+      return [502, { error: 'AI request failed' }]
     }
+  }
+}
+
+// Node 中间件版(挂在 Vite 开发服务器上) / Node middleware version (mounted on the Vite dev server)
+export function createRecommendHandler(options) {
+  const recommend = createRecommender(options)
+  return async function handler(req, res) {
+    if (req.method !== 'POST') return send(res, 405, { error: 'POST only' })
+    const [status, data] = await recommend(() => readJson(req), req.socket?.remoteAddress ?? 'unknown')
+    send(res, status, data)
   }
 }

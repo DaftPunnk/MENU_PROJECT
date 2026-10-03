@@ -121,10 +121,19 @@ The top-left "AI Test" toggle (or `#ai` in the URL) adds a "help me pick" corner
 
 - **安全 / Safety** — 忌口过滤由代码完成(`src/picker.js`)，AI 只能从剩下的菜里挑；输出被 JSON schema 锁定为「菜品 + 一句理由」，服务器和网页各再校验一遍。
   Allergen filtering is done in code (`src/picker.js`); the AI only picks from what's left. Output is locked by a JSON schema to "dish + one reason" and re-checked on both server and page.
-- **接口 / Endpoint** — `POST /api/recommend`(`server/recommend.js`)，目前只挂在本地开发服务器上(`npm run dev`)。API key 放在 `.env.local` 的 `ANTHROPIC_API_KEY`(不提交)；可选 `MENU_AI_MODEL` 换模型，默认 `claude-sonnet-5-5`。每 IP 每分钟 6 次、每天 300 次上限。
-  Mounted on the local dev server only (`npm run dev`). Key: `ANTHROPIC_API_KEY` in `.env.local` (never committed); optional `MENU_AI_MODEL` overrides the model (default `claude-sonnet-5-5`). Limits: 6/min per IP, 300/day.
-- **静态部署 / Static hosting** — GitHub Pages 等没有后端，「帮我选」会自动退回规则推荐。要正式上线 AI，需把 `server/recommend.js` 放进一个云函数(Cloudflare Worker / Vercel 等)。
-  Static hosts have no backend, so "help me pick" falls back to rule-based suggestions. Going live with AI means moving `server/recommend.js` into a serverless function.
+- **接口 / Endpoint** — `POST /api/recommend`，核心在 `server/recommend.js`。本地挂在开发服务器上(`npm run dev`)，API key 放在 `.env.local` 的 `ANTHROPIC_API_KEY`(不提交)；可选 `MENU_AI_MODEL` 换模型，默认 `claude-sonnet-5-5`。每 IP 每分钟 6 次、每天 300 次上限。
+  Core in `server/recommend.js`. Locally it's mounted on the dev server (`npm run dev`) with the key in `.env.local` (never committed); optional `MENU_AI_MODEL` (default `claude-sonnet-5-5`). Limits: 6/min per IP, 300/day.
+- **线上 / Live (Cloudflare Worker)** — 扫码的 GitHub Pages 版本调用 Cloudflare Worker(`worker/`、`wrangler.toml`)：
+  The QR (GitHub Pages) build calls a Cloudflare Worker (`worker/`, `wrangler.toml`):
+  1. `npx wrangler login`（第一次 / once）
+  2. `npx wrangler secret put ANTHROPIC_API_KEY`（粘贴 key / paste the key）
+  3. `npm run worker:deploy` → 得到 `https://huami-menu-ai.<子域>.workers.dev` / prints the Worker URL
+  4. 已默认写在 `.github/workflows/deploy.yml`；Worker 地址变了再到 GitHub 仓库 Settings → Secrets and variables → Actions → Variables 新建 `AI_URL` = `<Worker 地址>/api/recommend`，再重新跑一次 Pages 部署。
+     In the repo's Settings → Secrets and variables → Actions → Variables, add `AI_URL` = `<Worker URL>/api/recommend`, then re-run the Pages deploy.
+  换了网站域名要同步改 `wrangler.toml` 里的 `ALLOWED_ORIGINS`。本地测试 Worker:`.dev.vars` 写 key(不提交)后 `npm run worker:build && npx wrangler dev`。
+  If the site's domain changes, update `ALLOWED_ORIGINS` in `wrangler.toml`. To test the Worker locally put the key in `.dev.vars` (never committed) and run `npm run worker:build && npx wrangler dev`.
+  没设 `AI_URL` 或 Worker 出错时，「帮我选」会自动退回规则推荐。限速在 Worker 里是按实例计的，建议同时在 Anthropic 控制台设每月花费上限。
+  Without `AI_URL`, or if the Worker fails, "help me pick" falls back to rule-based suggestions. Rate limits are per Worker instance, so also set a monthly spend limit in the Anthropic console.
 - 口味标签在 `data/picker.json`，新菜要被推荐需按英文菜名加一行。关掉开关就是原来的菜单，不受影响。
   Taste tags live in `data/picker.json` — add a line per new dish by English name. With the toggle off, the menu is unchanged.
 
@@ -229,4 +238,6 @@ public/                  原样复制的静态文件(favicon) / copied as-is (fa
 scripts/                 图片处理工具 / image helpers
 server/recommend.js      AI 推荐接口 / the AI recommendation endpoint
 vite.config.js           构建配置(VITE_BASE)+ 挂载 AI 接口 / build config (VITE_BASE) + mounts the AI endpoint
+worker/                  AI 接口的 Cloudflare Worker 版 / Cloudflare Worker version of the AI endpoint
+wrangler.toml            Worker 配置 / Worker config
 ```

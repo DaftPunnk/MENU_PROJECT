@@ -14,6 +14,10 @@ import { dishById } from '../menu'
 import { names, pick, t, useLang } from '../i18n'
 import { CodeBadges } from './MenuCodes'
 
+// AI 接口地址:线上(GitHub Pages)构建时由 VITE_AI_URL 指向 Cloudflare Worker;本地开发用 Vite 自带的接口
+// AI endpoint: the live (GitHub Pages) build points VITE_AI_URL at the Cloudflare Worker; local dev uses Vite's own
+const AI_URL = import.meta.env.VITE_AI_URL || '/api/recommend'
+
 const STR = {
   button: { zh: '✨ 帮我选', en: '✨ Help me pick', fr: '✨ Aidez-moi à choisir' },
   title: { zh: '帮我选', en: 'Help me pick', fr: 'Aidez-moi à choisir' },
@@ -158,7 +162,7 @@ function HelpMePick({ hidden, onSelectDish }) {
     try {
       const ctrl = new AbortController()
       const timer = setTimeout(() => ctrl.abort(), 30_000)
-      const res = await fetch('/api/recommend', {
+      const res = await fetch(AI_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...q, lang, previous }),

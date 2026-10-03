@@ -43,3 +43,5 @@ src/assets/*.jpg
 
 # 餐厅原始菜单 PDF(含真实店名,公开仓库不上传) / source menu PDFs from the restaurant (real name — keep out of the public repo)
 data/*.pdf
+.dev.vars
+.wrangler/
