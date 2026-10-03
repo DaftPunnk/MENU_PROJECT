@@ -1,0 +1,21 @@
+{
+  "id": "monkey-business",
+  "name_zh": "Monkey Business",
+  "name_en": "Monkey Business",
+  "name_fr": "Monkey Business",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "A banana-and-ginger whisky sour. Monkey Shoulder Scotch, crème de banane and Domaine de Canton ginger liqueur are shaken with lemon and sugar, dry and wet shaken for a thick foam, and served in a sour glass with a bitters design and a dehydrated lemon.",
+  "cultural_note_zh": "香蕉与生姜风味的威士忌酸酒。三只猴子苏格兰威士忌、香蕉利口酒和 Domaine de Canton 姜味利口酒，加入柠檬和糖浆，干摇再湿摇出绵密泡沫，盛于酸酒杯，以苦精图案和柠檬干片点缀。",
+  "cultural_note_fr": "Un whisky sour banane-gingembre. Scotch Monkey Shoulder, crème de banane et liqueur de gingembre Domaine de Canton sont shakés avec citron et sucre, à sec puis sur glace pour une mousse épaisse, servis en verre à sour avec un motif d'amer et un citron séché.",
+  "ingredients": [
+    {"name_zh": "三只猴子威士忌", "name_en": "Monkey Shoulder Scotch", "name_fr": "Scotch Monkey Shoulder", "emoji": "🥃", "image": "whisky", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "香蕉利口酒", "name_en": "Crème de banane", "name_fr": "Crème de banane", "emoji": "🍌", "image": "banana", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "姜味利口酒", "name_en": "Domaine de Canton ginger liqueur", "name_fr": "Liqueur de gingembre Domaine de Canton", "emoji": "🫚", "image": "ginger", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "柠檬汁", "name_en": "Lemon juice", "name_fr": "Jus de citron", "emoji": "🍋", "image": "lemon", "category": "citrus", "allergens": []},
+    {"name_zh": "糖浆", "name_en": "Sugar syrup", "name_fr": "Sirop de sucre", "emoji": "🍬", "image": "sugar", "category": "sweetener", "allergens": []},
+    {"name_zh": "起泡剂", "name_en": "Cocktail foamer", "name_fr": "Agent moussant", "emoji": "🫧", "image": "foamer", "category": "foam", "allergens": []},
+    {"name_zh": "苦精", "name_en": "Bitters", "name_fr": "Amer", "emoji": "💧", "image": "bitters", "category": "bitters", "allergens": ["alcohol"]},
+    {"name_zh": "柠檬干片", "name_en": "Dehydrated lemon", "name_fr": "Citron séché", "emoji": "🍋", "image": "lemon", "category": "garnish", "allergens": []}
+  ]
+}

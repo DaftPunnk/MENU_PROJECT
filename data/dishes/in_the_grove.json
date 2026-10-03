@@ -1,0 +1,19 @@
+{
+  "id": "in-the-grove",
+  "name_zh": "In the Grove",
+  "name_en": "In the Grove",
+  "name_fr": "In the Grove",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "Alcohol-free. Seedlip Grove 42 is shaken with grapefruit juice, blood orange purée and agave, dry and wet shaken for a light foam, and served over a large cube in a fancy rocks glass with a grapefruit segment. Bright, bittersweet citrus.",
+  "cultural_note_zh": "无酒精。Seedlip Grove 42 无醇蒸馏饮，加入西柚汁、血橙果泥和龙舌兰糖浆，干摇再湿摇出轻盈泡沫，加大冰块盛于古典杯，以西柚果肉点缀。明亮的苦甜柑橘风味。",
+  "cultural_note_fr": "Sans alcool. Le Seedlip Grove 42 est shaké avec jus de pamplemousse, purée d'orange sanguine et agave, à sec puis sur glace pour une mousse légère, servi sur un gros glaçon avec un quartier de pamplemousse. Agrumes vifs et doux-amers.",
+  "ingredients": [
+    {"name_zh": "Seedlip Grove 无醇蒸馏饮", "name_en": "Seedlip Grove 42", "name_fr": "Seedlip Grove 42", "emoji": "🍊", "image": "seedlip", "category": "non_alcoholic", "allergens": []},
+    {"name_zh": "西柚汁", "name_en": "Grapefruit juice", "name_fr": "Jus de pamplemousse", "emoji": "🍊", "image": "grapefruit", "category": "citrus", "allergens": []},
+    {"name_zh": "血橙果泥", "name_en": "Blood orange purée", "name_fr": "Purée d'orange sanguine", "emoji": "🍊", "image": "blood_orange", "category": "fruit", "allergens": []},
+    {"name_zh": "龙舌兰糖浆", "name_en": "Agave syrup", "name_fr": "Sirop d'agave", "emoji": "🍯", "image": "agave", "category": "sweetener", "allergens": []},
+    {"name_zh": "起泡剂", "name_en": "Cocktail foamer", "name_fr": "Agent moussant", "emoji": "🫧", "image": "foamer", "category": "foam", "allergens": []},
+    {"name_zh": "西柚果肉", "name_en": "Grapefruit segment", "name_fr": "Quartier de pamplemousse", "emoji": "🍊", "image": "grapefruit", "category": "garnish", "allergens": []}
+  ]
+}

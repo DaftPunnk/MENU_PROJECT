@@ -1,0 +1,19 @@
+{
+  "id": "sweet-pink-sour",
+  "name_zh": "Sweet & Pink Sour",
+  "name_en": "Sweet & Pink Sour",
+  "name_fr": "Sweet & Pink Sour",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "Alcohol-free. Lyre's Pink London Spirit is shaken with lemon and sugar, dry and wet shaken for a silky foam, and served in a glass teacup with an edible flower and freeze-dried strawberry. Sweet, sour and pretty in pink.",
+  "cultural_note_zh": "无酒精。Lyre's 粉红伦敦无醇金酒，加入柠檬和糖浆，干摇再湿摇出丝滑泡沫，盛于玻璃茶杯，以食用花和冻干草莓点缀。酸甜可口，粉嫩可爱。",
+  "cultural_note_fr": "Sans alcool. Le Lyre's Pink London Spirit est shaké avec citron et sucre, à sec puis sur glace pour une mousse soyeuse, servi dans une tasse en verre avec une fleur comestible et des fraises lyophilisées. Doux, acidulé et tout en rose.",
+  "ingredients": [
+    {"name_zh": "Lyre's 粉红无醇金酒", "name_en": "Lyre's Pink London Spirit", "name_fr": "Lyre's Pink London Spirit", "emoji": "🍸", "image": "lyres_pink", "category": "non_alcoholic", "allergens": []},
+    {"name_zh": "柠檬汁", "name_en": "Lemon juice", "name_fr": "Jus de citron", "emoji": "🍋", "image": "lemon", "category": "citrus", "allergens": []},
+    {"name_zh": "糖浆", "name_en": "Sugar syrup", "name_fr": "Sirop de sucre", "emoji": "🍬", "image": "sugar", "category": "sweetener", "allergens": []},
+    {"name_zh": "起泡剂", "name_en": "Cocktail foamer", "name_fr": "Agent moussant", "emoji": "🫧", "image": "foamer", "category": "foam", "allergens": []},
+    {"name_zh": "食用花", "name_en": "Edible flower", "name_fr": "Fleur comestible", "emoji": "🌸", "image": "edible_flower", "category": "garnish", "allergens": []},
+    {"name_zh": "冻干草莓", "name_en": "Freeze-dried strawberry", "name_fr": "Fraise lyophilisée", "emoji": "🍓", "image": "strawberry", "category": "garnish", "allergens": []}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "icebreaker",
+  "name_zh": "Icebreaker",
+  "name_en": "Icebreaker",
+  "name_fr": "Icebreaker",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "Alcohol-free. Apple juice, Lu Cha (green tea) syrup and fresh mint are built in a stemmed highball over ice and topped with Icebreaker Chinese mint tea, finished with a dehydrated apple ring and mint. Light and refreshing.",
+  "cultural_note_zh": "无酒精。苹果汁、绿茶糖浆和新鲜薄荷直接调于加冰的高脚杯中，注满 Icebreaker 中式薄荷茶，以苹果干片和薄荷点缀。清淡爽口。",
+  "cultural_note_fr": "Sans alcool. Jus de pomme, sirop de thé vert (Lu Cha) et menthe fraîche montés dans un verre à pied sur glace, allongés de thé chinois à la menthe Icebreaker, garnis d'une rondelle de pomme séchée et de menthe. Léger et rafraîchissant.",
+  "ingredients": [
+    {"name_zh": "苹果汁", "name_en": "Apple juice", "name_fr": "Jus de pomme", "emoji": "🍏", "image": "apple_juice", "category": "fruit", "allergens": []},
+    {"name_zh": "绿茶糖浆", "name_en": "Lu Cha green tea syrup", "name_fr": "Sirop de thé vert Lu Cha", "emoji": "🍵", "image": "green_tea", "category": "tea", "allergens": []},
+    {"name_zh": "薄荷叶", "name_en": "Mint leaves", "name_fr": "Feuilles de menthe", "emoji": "🌿", "image": "mint", "category": "herb", "allergens": []},
+    {"name_zh": "中式薄荷茶", "name_en": "Chinese mint tea", "name_fr": "Thé chinois à la menthe", "emoji": "🍵", "image": "mint_tea", "category": "tea", "allergens": []},
+    {"name_zh": "苹果干片", "name_en": "Dehydrated apple ring", "name_fr": "Rondelle de pomme séchée", "emoji": "🍎", "image": "apple", "category": "garnish", "allergens": []}
+  ]
+}

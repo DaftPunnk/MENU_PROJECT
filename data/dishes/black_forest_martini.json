@@ -1,0 +1,21 @@
+{
+  "id": "black-forest-martini",
+  "name_zh": "Black Forest Martini",
+  "name_en": "Black Forest Martini",
+  "name_fr": "Black Forest Martini",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "Black Forest gâteau in a glass. Vodka, Chambord, white crème de cacao, cherry purée and cold brew coffee are shaken and fine strained into a sour glass, finished with three coffee beans and a Luxardo cherry. Rich, fruity and gently bitter.",
+  "cultural_note_zh": "杯中的黑森林蛋糕。伏特加、香博覆盆子利口酒、白可可利口酒、樱桃果泥和冷萃咖啡摇和后细滤入酸酒杯，以三颗咖啡豆和一颗 Luxardo 樱桃点缀。浓郁果香，带淡淡苦味。",
+  "cultural_note_fr": "Une forêt-noire en verre. Vodka, Chambord, crème de cacao blanc, purée de cerise et café cold brew sont shakés et filtrés finement dans un verre à sour, garnis de trois grains de café et d'une cerise Luxardo. Riche, fruité et légèrement amer.",
+  "ingredients": [
+    {"name_zh": "伏特加", "name_en": "Vodka", "name_fr": "Vodka", "emoji": "🍸", "image": "vodka", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "香博覆盆子利口酒", "name_en": "Chambord", "name_fr": "Chambord", "emoji": "🫐", "image": "chambord", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "白可可利口酒", "name_en": "Crème de cacao", "name_fr": "Crème de cacao", "emoji": "🍫", "image": "cacao", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "樱桃果泥", "name_en": "Cherry purée", "name_fr": "Purée de cerise", "emoji": "🍒", "image": "cherry", "category": "fruit", "allergens": []},
+    {"name_zh": "冷萃咖啡", "name_en": "Cold brew coffee", "name_fr": "Café cold brew", "emoji": "☕", "image": "coffee", "category": "coffee", "allergens": []},
+    {"name_zh": "糖浆", "name_en": "Sugar syrup", "name_fr": "Sirop de sucre", "emoji": "🍬", "image": "sugar", "category": "sweetener", "allergens": []},
+    {"name_zh": "咖啡豆", "name_en": "Coffee beans", "name_fr": "Grains de café", "emoji": "🫘", "image": "coffee_beans", "category": "garnish", "allergens": []},
+    {"name_zh": "Luxardo 樱桃", "name_en": "Luxardo cherry", "name_fr": "Cerise Luxardo", "emoji": "🍒", "image": "cherry", "category": "garnish", "allergens": []}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "baijiu-blush",
+  "name_zh": "Baijiu Blush",
+  "name_en": "Baijiu Blush",
+  "name_fr": "Baijiu Blush",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "Small-batch rhubarb gin and violette, shaken with hibiscus and rose syrup, lemon and a dash of rhubarb bitters, reverse dry shaken for a soft foam and served in a coupette with an edible flower. Floral, tart and blushing pink.",
+  "cultural_note_zh": "小批量大黄金酒与紫罗兰利口酒，加入洛神花玫瑰糖浆、柠檬和少许大黄苦精摇和，反向干摇出柔软泡沫，盛于 coupette 杯，以食用花点缀。花香、微酸，呈淡淡的粉色。",
+  "cultural_note_fr": "Gin à la rhubarbe en petite série et liqueur de violette, shakés avec sirop d'hibiscus et de rose, citron et un trait d'amer à la rhubarbe, émulsionnés pour une mousse légère et servis en coupette avec une fleur comestible. Floral, acidulé et rosé.",
+  "ingredients": [
+    {"name_zh": "大黄金酒", "name_en": "Rhubarb gin", "name_fr": "Gin à la rhubarbe", "emoji": "🍸", "image": "gin", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "紫罗兰利口酒", "name_en": "Crème de violette", "name_fr": "Crème de violette", "emoji": "💜", "image": "violette", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "洛神花玫瑰糖浆", "name_en": "Hibiscus & rose syrup", "name_fr": "Sirop d'hibiscus et de rose", "emoji": "🌺", "image": "hibiscus", "category": "sweetener", "allergens": []},
+    {"name_zh": "柠檬汁", "name_en": "Lemon juice", "name_fr": "Jus de citron", "emoji": "🍋", "image": "lemon", "category": "citrus", "allergens": []},
+    {"name_zh": "大黄苦精", "name_en": "Rhubarb bitters", "name_fr": "Amer à la rhubarbe", "emoji": "💧", "image": "bitters", "category": "bitters", "allergens": ["alcohol"]},
+    {"name_zh": "起泡剂", "name_en": "Cocktail foamer", "name_fr": "Agent moussant", "emoji": "🫧", "image": "foamer", "category": "foam", "allergens": []},
+    {"name_zh": "食用花", "name_en": "Edible flower", "name_fr": "Fleur comestible", "emoji": "🌸", "image": "edible_flower", "category": "garnish", "allergens": []}
+  ]
+}

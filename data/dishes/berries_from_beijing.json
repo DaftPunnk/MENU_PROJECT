@@ -1,0 +1,20 @@
+{
+  "id": "berries-from-beijing",
+  "name_zh": "北京莓果",
+  "name_en": "Berries From Beijing",
+  "name_fr": "Berries From Beijing",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "A long, fruity baijiu highball. Baijiu, Chambord and raspberry purée are shaken with lemon and sugar, topped with soda over cubed ice and finished with a dehydrated strawberry. An easy introduction to China's national spirit.",
+  "cultural_note_zh": "清爽果香的白酒高球。白酒、香博覆盆子利口酒和覆盆子果泥，加入柠檬和糖摇和，倒入加冰的高球杯后注满苏打水，以草莓干点缀。初尝白酒的好选择。",
+  "cultural_note_fr": "Un highball au baijiu, long et fruité. Baijiu, Chambord et purée de framboise sont shakés avec citron et sucre, allongés d'eau gazeuse sur glace et garnis d'une fraise séchée. Une belle porte d'entrée vers l'eau-de-vie nationale chinoise.",
+  "ingredients": [
+    {"name_zh": "白酒", "name_en": "Baijiu", "name_fr": "Baijiu", "emoji": "🍶", "image": "baijiu", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "香博覆盆子利口酒", "name_en": "Chambord", "name_fr": "Chambord", "emoji": "🫐", "image": "chambord", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "覆盆子果泥", "name_en": "Raspberry purée", "name_fr": "Purée de framboise", "emoji": "🍓", "image": "raspberry", "category": "fruit", "allergens": []},
+    {"name_zh": "柠檬汁", "name_en": "Lemon juice", "name_fr": "Jus de citron", "emoji": "🍋", "image": "lemon", "category": "citrus", "allergens": []},
+    {"name_zh": "糖", "name_en": "Sugar", "name_fr": "Sucre", "emoji": "🍬", "image": "sugar", "category": "sweetener", "allergens": []},
+    {"name_zh": "苏打水", "name_en": "Soda", "name_fr": "Eau gazeuse", "emoji": "🫧", "image": "soda", "category": "mixer", "allergens": []},
+    {"name_zh": "草莓干", "name_en": "Dehydrated strawberry", "name_fr": "Fraise séchée", "emoji": "🍓", "image": "strawberry", "category": "garnish", "allergens": []}
+  ]
+}

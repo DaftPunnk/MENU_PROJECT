@@ -1,0 +1,18 @@
+{
+  "id": "msg",
+  "name_zh": "M.S.G",
+  "name_en": "M.S.G",
+  "name_fr": "M.S.G",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "Mint, Spice and Gin. Chai-infused gin is shaken with lime, five-spice syrup and fresh mint, reverse dry shaken for a silky foam, and served in a Nick & Nora glass with a mint leaf laid into the foam. So refreshing it will leave you wanting more.",
+  "cultural_note_zh": "薄荷、香料与金酒。以印度奶茶香料浸泡的金酒，加入青柠、五香糖浆和新鲜薄荷摇和，再反向干摇出细腻泡沫，盛于 Nick & Nora 杯，泡沫上放一片薄荷叶。清爽得让人想再来一杯。",
+  "cultural_note_fr": "Menthe, épices et gin. Un gin infusé au chai est shaké avec citron vert, sirop aux cinq épices et menthe fraîche, puis émulsionné pour une mousse soyeuse, servi en verre Nick & Nora avec une feuille de menthe posée sur la mousse. Si rafraîchissant qu'on en redemande.",
+  "ingredients": [
+    {"name_zh": "印度香料金酒", "name_en": "Chai-infused gin", "name_fr": "Gin infusé au chai", "emoji": "🍸", "image": "gin", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "青柠汁", "name_en": "Lime juice", "name_fr": "Jus de citron vert", "emoji": "🍋", "image": "lime", "category": "citrus", "allergens": []},
+    {"name_zh": "五香糖浆", "name_en": "Five-spice syrup", "name_fr": "Sirop aux cinq épices", "emoji": "✴️", "image": "star_anise", "category": "sweetener", "allergens": []},
+    {"name_zh": "薄荷叶", "name_en": "Mint leaves", "name_fr": "Feuilles de menthe", "emoji": "🌿", "image": "mint", "category": "herb", "allergens": []},
+    {"name_zh": "起泡剂", "name_en": "Cocktail foamer", "name_fr": "Agent moussant", "emoji": "🫧", "image": "foamer", "category": "foam", "allergens": []}
+  ]
+}

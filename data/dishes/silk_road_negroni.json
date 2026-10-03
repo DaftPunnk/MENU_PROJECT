@@ -1,0 +1,21 @@
+{
+  "id": "silk-road-negroni",
+  "name_zh": "Silk Road Negroni",
+  "name_en": "Silk Road Negroni",
+  "name_fr": "Silk Road Negroni",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "A Chinese twist on the classic Negroni. Gin is spiced with ginger, black pepper, black tea and clove, then stirred with Campari and sweet vermouth and served over a large cube in a fancy rocks glass with an orange twist. Bittersweet, warming and aromatic.",
+  "cultural_note_zh": "经典尼格罗尼的中式演绎。金酒以生姜、黑胡椒、红茶和丁香调香，再与金巴利和甜味美思调和，加大冰块盛于古典杯，以橙皮卷点缀。苦甜交织，温暖芳香。",
+  "cultural_note_fr": "Une version chinoise du Negroni classique. Le gin est épicé au gingembre, au poivre noir, au thé noir et au clou de girofle, puis mélangé au Campari et au vermouth rouge, servi sur un gros glaçon avec un zeste d'orange. Doux-amer, chaleureux et aromatique.",
+  "ingredients": [
+    {"name_zh": "金酒", "name_en": "Gin", "name_fr": "Gin", "emoji": "🍸", "image": "gin", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "生姜", "name_en": "Ginger", "name_fr": "Gingembre", "emoji": "🫚", "image": "ginger", "category": "spice", "allergens": []},
+    {"name_zh": "黑胡椒", "name_en": "Black pepper", "name_fr": "Poivre noir", "emoji": "⚫", "image": "black_pepper", "category": "spice", "allergens": []},
+    {"name_zh": "红茶", "name_en": "Black tea", "name_fr": "Thé noir", "emoji": "🍵", "image": "black_tea", "category": "tea", "allergens": []},
+    {"name_zh": "丁香", "name_en": "Clove", "name_fr": "Clou de girofle", "emoji": "🌰", "image": "clove", "category": "spice", "allergens": []},
+    {"name_zh": "金巴利", "name_en": "Campari", "name_fr": "Campari", "emoji": "🍷", "image": "campari", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "甜味美思", "name_en": "Sweet vermouth", "name_fr": "Vermouth rouge", "emoji": "🍷", "image": "sweet_vermouth", "category": "wine", "allergens": ["alcohol"]},
+    {"name_zh": "橙皮卷", "name_en": "Orange twist", "name_fr": "Zeste d'orange", "emoji": "🍊", "image": "orange", "category": "garnish", "allergens": []}
+  ]
+}

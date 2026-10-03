@@ -1,0 +1,18 @@
+{
+  "id": "chang-jiang",
+  "name_zh": "长江",
+  "name_en": "Chang Jiang",
+  "name_fr": "Chang Jiang",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "A modern twist on the classic Sidecar, named after the Yangtze. Maker's Mark bourbon and Mandarine Napoléon are shaken with lime and a mandarin oleo-saccharum, double strained into a coupe with a mandarin sugar rim. Citrusy, rounded and smooth.",
+  "cultural_note_zh": "以长江命名的经典边车(Sidecar)新演绎。美格波本威士忌与拿破仑柑橘利口酒，加入青柠和柑橘糖油摇和，双重过滤后倒入杯口沾有柑橘糖边的 coupe 杯。柑橘清香，圆润顺滑。",
+  "cultural_note_fr": "Une version moderne du Sidecar, baptisée d'après le Yangtsé. Bourbon Maker's Mark et Mandarine Napoléon sont shakés avec citron vert et oleo-saccharum de mandarine, puis filtrés dans une coupe givrée au sucre de mandarine. Agrumé, rond et soyeux.",
+  "ingredients": [
+    {"name_zh": "美格波本威士忌", "name_en": "Maker's Mark bourbon", "name_fr": "Bourbon Maker's Mark", "emoji": "🥃", "image": "bourbon", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "拿破仑柑橘利口酒", "name_en": "Mandarine Napoléon", "name_fr": "Mandarine Napoléon", "emoji": "🍊", "image": "mandarin_liqueur", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "青柠汁", "name_en": "Lime juice", "name_fr": "Jus de citron vert", "emoji": "🍋", "image": "lime", "category": "citrus", "allergens": []},
+    {"name_zh": "柑橘糖油", "name_en": "Mandarin oleo-saccharum", "name_fr": "Oleo-saccharum de mandarine", "emoji": "🍊", "image": "mandarin", "category": "sweetener", "allergens": []},
+    {"name_zh": "柑橘糖边", "name_en": "Mandarin sugar rim", "name_fr": "Bord givré au sucre de mandarine", "emoji": "🍬", "image": "sugar", "category": "garnish", "allergens": []}
+  ]
+}

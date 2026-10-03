@@ -1,0 +1,20 @@
+{
+  "id": "ool-la-la",
+  "name_zh": "Ool-La-La",
+  "name_en": "Ool-La-La",
+  "name_fr": "Ool-La-La",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "A not-so Old Fashioned. Oolong tea-infused Maker's Mark is stirred with a honey, cinnamon and clove syrup and black walnut bitters, served over a large rock in a fancy rocks glass, with orange peel wrapped around a torched cinnamon stick.",
+  "cultural_note_zh": "不那么「古典」的古典鸡尾酒。乌龙茶浸泡的美格波本，加入蜂蜜肉桂丁香糖浆和黑核桃苦精调和，加大冰块盛于古典杯，以橙皮包裹炙烤过的肉桂棒点缀。",
+  "cultural_note_fr": "Un Old Fashioned pas si classique. Le Maker's Mark infusé au thé oolong est mélangé à un sirop miel-cannelle-girofle et à un amer à la noix noire, servi sur un gros glaçon, avec un zeste d'orange enroulé autour d'un bâton de cannelle flambé.",
+  "ingredients": [
+    {"name_zh": "乌龙茶波本", "name_en": "Oolong-infused Maker's Mark", "name_fr": "Maker's Mark infusé à l'oolong", "emoji": "🥃", "image": "bourbon", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "乌龙茶", "name_en": "Oolong tea", "name_fr": "Thé oolong", "emoji": "🍵", "image": "oolong", "category": "tea", "allergens": []},
+    {"name_zh": "蜂蜜", "name_en": "Honey", "name_fr": "Miel", "emoji": "🍯", "image": "honey", "category": "sweetener", "allergens": []},
+    {"name_zh": "肉桂", "name_en": "Cinnamon", "name_fr": "Cannelle", "emoji": "🪵", "image": "cinnamon", "category": "spice", "allergens": []},
+    {"name_zh": "丁香", "name_en": "Clove", "name_fr": "Clou de girofle", "emoji": "🌰", "image": "clove", "category": "spice", "allergens": []},
+    {"name_zh": "黑核桃苦精", "name_en": "Black walnut bitters", "name_fr": "Amer à la noix noire", "emoji": "🌰", "image": "walnut", "category": "bitters", "allergens": ["alcohol", "tree nut"]},
+    {"name_zh": "橙皮", "name_en": "Orange peel", "name_fr": "Zeste d'orange", "emoji": "🍊", "image": "orange", "category": "garnish", "allergens": []}
+  ]
+}

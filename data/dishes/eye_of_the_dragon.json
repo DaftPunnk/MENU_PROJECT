@@ -1,0 +1,21 @@
+{
+  "id": "eye-of-the-dragon",
+  "name_zh": "龙眼",
+  "name_en": "Eye of the Dragon",
+  "name_fr": "Eye of the Dragon",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "Jet black and served in a Nick & Nora glass. Vodka, Kwai Feh lychee liqueur and Marasquin are shaken with lemon, a little sugar and a pinch of activated charcoal for its colour. The garnish is the dragon's eye: a lychee stuffed with a Luxardo cherry.",
+  "cultural_note_zh": "漆黑如墨，盛于 Nick & Nora 杯。伏特加、荔枝利口酒和黑樱桃利口酒，加入柠檬、少许糖浆和一小撮活性炭(用来上色)摇和。点缀便是「龙眼」：一颗塞入 Luxardo 樱桃的荔枝。",
+  "cultural_note_fr": "D'un noir de jais, servi en verre Nick & Nora. Vodka, liqueur de litchi Kwai Feh et Marasquin sont shakés avec citron, un peu de sucre et une pincée de charbon actif pour la couleur. La garniture est l'œil du dragon : un litchi farci d'une cerise Luxardo.",
+  "ingredients": [
+    {"name_zh": "伏特加", "name_en": "Vodka", "name_fr": "Vodka", "emoji": "🍸", "image": "vodka", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "荔枝利口酒", "name_en": "Kwai Feh lychee liqueur", "name_fr": "Liqueur de litchi Kwai Feh", "emoji": "🍶", "image": "lychee_liqueur", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "黑樱桃利口酒", "name_en": "Marasquin", "name_fr": "Marasquin", "emoji": "🍒", "image": "maraschino", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "柠檬汁", "name_en": "Lemon juice", "name_fr": "Jus de citron", "emoji": "🍋", "image": "lemon", "category": "citrus", "allergens": []},
+    {"name_zh": "糖浆", "name_en": "Sugar syrup", "name_fr": "Sirop de sucre", "emoji": "🍬", "image": "sugar", "category": "sweetener", "allergens": []},
+    {"name_zh": "活性炭", "name_en": "Activated charcoal", "name_fr": "Charbon actif", "emoji": "⚫", "image": "charcoal", "category": "colour", "allergens": []},
+    {"name_zh": "荔枝", "name_en": "Lychee", "name_fr": "Litchi", "emoji": "⚪", "image": "lychee", "category": "garnish", "allergens": []},
+    {"name_zh": "Luxardo 樱桃", "name_en": "Luxardo cherry", "name_fr": "Cerise Luxardo", "emoji": "🍒", "image": "cherry", "category": "garnish", "allergens": []}
+  ]
+}

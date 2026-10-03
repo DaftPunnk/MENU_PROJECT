@@ -17,15 +17,15 @@
         {
           "items": [
             { "name": "Flox-tail", "price": 26, "dish": "flox-tail", "desc_en": "A cocktail inspired by New Zealand artist Flox and her artwork created for our bar. Dark Rum, Pink Grapefruit, Spiced Peach & a touch of art" },
-            { "name": "Royal 75", "price": 28, "desc_en": "Lychee, Mandarin, Gin topped with Perrier-Jouët Champagne" },
-            { "name": "Silk Road Negroni", "price": 25, "desc_en": "Gin, Spiced with Ginger, Black Pepper, Black Tea and Clove, combined with Campari & Sweet Vermouth. A Chinese twist on a classic" },
-            { "name": "M.S.G", "price": 25, "desc_en": "Fragrant Mint, Chai Spiced Gin & Citrus. So refreshing it will leave you wanting more" },
-            { "name": "Chang Jiang", "price": 25, "desc_en": "Bourbon & Mandarin Brandy, with a hint of lemon. A modern twist on a classic Sidecar." },
-            { "name": "Wēi là Margarita", "price": 25, "desc_en": "A Margarita improved with Honey, Tea, and a touch of heat. Tequila, Apple Liqueur, Honey & Amber Tea Syrup, Apple Juice, Kaitaia Fire Hot Sauce" },
-            { "name": "Black Forest Martini", "price": 25, "desc_en": "Vodka, Chambord, Crème de Cacao Blanc, Cherry Purée, Cold Brew Coffee" },
-            { "name": "Eye of the Dragon", "price": 25, "desc_en": "Vodka, Lychee, Marasquin, Citrus" },
-            { "name": "Monkey Business", "price": 25, "desc_en": "Monkey Shoulder, Banana Liqueur, Ginger Liqueur, Citrus" },
-            { "name": "Ool-La-La", "price": 25, "desc_en": "A not-so Old Fashioned. Oolong tea infused Makers Mark with Spiced Syrup & Black Walnut bitters" }
+            { "name": "Royal 75", "price": 28, "dish": "royal-75", "desc_en": "Lychee, Mandarin, Gin topped with Perrier-Jouët Champagne" },
+            { "name": "Silk Road Negroni", "price": 25, "dish": "silk-road-negroni", "desc_en": "Gin, Spiced with Ginger, Black Pepper, Black Tea and Clove, combined with Campari & Sweet Vermouth. A Chinese twist on a classic" },
+            { "name": "M.S.G", "price": 25, "dish": "msg", "desc_en": "Fragrant Mint, Chai Spiced Gin & Citrus. So refreshing it will leave you wanting more" },
+            { "name": "Chang Jiang", "price": 25, "dish": "chang-jiang", "desc_en": "Bourbon & Mandarin Brandy, with a hint of lemon. A modern twist on a classic Sidecar." },
+            { "name": "Wēi là Margarita", "price": 25, "dish": "wei-la-margarita", "desc_en": "A Margarita improved with Honey, Tea, and a touch of heat. Tequila, Apple Liqueur, Honey & Amber Tea Syrup, Apple Juice, Kaitaia Fire Hot Sauce" },
+            { "name": "Black Forest Martini", "price": 25, "dish": "black-forest-martini", "desc_en": "Vodka, Chambord, Crème de Cacao Blanc, Cherry Purée, Cold Brew Coffee" },
+            { "name": "Eye of the Dragon", "price": 25, "dish": "eye-of-the-dragon", "desc_en": "Vodka, Lychee, Marasquin, Citrus" },
+            { "name": "Monkey Business", "price": 25, "dish": "monkey-business", "desc_en": "Monkey Shoulder, Banana Liqueur, Ginger Liqueur, Citrus" },
+            { "name": "Ool-La-La", "price": 25, "dish": "ool-la-la", "desc_en": "A not-so Old Fashioned. Oolong tea infused Makers Mark with Spiced Syrup & Black Walnut bitters" }
           ]
         }
       ]
@@ -42,9 +42,9 @@
       "groups": [
         {
           "items": [
-            { "name": "Jade Dragon", "price": 25, "desc_en": "A Sweet Balance of White Rum, Zealong Green Heart Tea, Apple Juice, Green Apple Syrup, Citrus & Bitters." },
-            { "name": "Berries From Beijing", "price": 25, "desc_en": "Baijiu, Chambord, Raspberry, Topped with Soda" },
-            { "name": "Baijiu Blush", "price": 25, "desc_en": "Small Batch Rhubarb Gin, Violette & Citrus, shaken & served" }
+            { "name": "Jade Dragon", "price": 25, "dish": "jade-dragon", "desc_en": "A Sweet Balance of White Rum, Zealong Green Heart Tea, Apple Juice, Green Apple Syrup, Citrus & Bitters." },
+            { "name": "Berries From Beijing", "price": 25, "dish": "berries-from-beijing", "desc_en": "Baijiu, Chambord, Raspberry, Topped with Soda" },
+            { "name": "Baijiu Blush", "price": 25, "dish": "baijiu-blush", "desc_en": "Small Batch Rhubarb Gin, Violette & Citrus, shaken & served" }
           ]
         }
       ]
@@ -61,10 +61,10 @@
       "groups": [
         {
           "items": [
-            { "name": "Icebreaker", "price": 12, "desc_en": "Fresh Mint, Lu Cha, Apple & Chinese Mint Tea" },
-            { "name": "In the Grove", "price": 14, "desc_en": "Seedlip Grove, Grapefruit, Blood Orange Purée, Agave" },
-            { "name": "Sweet & Pink Sour", "price": 14, "desc_en": "Pink London Dry Lyre’s, Lemon, Sugar & Dried Strawberries" },
-            { "name": "Suan-Mei-Tang", "price": 12, "desc_en": "Sour Plum, Juniper, Pineapple, Chinese Spiced Grenadine" }
+            { "name": "Icebreaker", "price": 12, "dish": "icebreaker", "desc_en": "Fresh Mint, Lu Cha, Apple & Chinese Mint Tea" },
+            { "name": "In the Grove", "price": 14, "dish": "in-the-grove", "desc_en": "Seedlip Grove, Grapefruit, Blood Orange Purée, Agave" },
+            { "name": "Sweet & Pink Sour", "price": 14, "dish": "sweet-pink-sour", "desc_en": "Pink London Dry Lyre’s, Lemon, Sugar & Dried Strawberries" },
+            { "name": "Suan-Mei-Tang", "price": 12, "dish": "suan-mei-tang", "desc_en": "Sour Plum, Juniper, Pineapple, Chinese Spiced Grenadine" }
           ]
         }
       ]

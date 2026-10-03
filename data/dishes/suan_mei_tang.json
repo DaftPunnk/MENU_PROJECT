@@ -1,0 +1,19 @@
+{
+  "id": "suan-mei-tang",
+  "name_zh": "酸梅汤",
+  "name_en": "Suan-Mei-Tang",
+  "name_fr": "Suan-Mei-Tang",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "Alcohol-free, inspired by the classic Chinese sour plum drink. Juniper berries are muddled with spiced grenadine and sour plum juice, then pineapple juice and a float of cranberry juice are built into three layers in a stemmed highball, finished with dehydrated pineapple.",
+  "cultural_note_zh": "无酒精，灵感来自经典中式酸梅汤。杜松子与香料红石榴糖浆、酸梅汁一起捣压，再依次倒入菠萝汁、浮上一层蔓越莓汁，在高脚杯中形成三层，以菠萝干点缀。",
+  "cultural_note_fr": "Sans alcool, inspiré de la boisson chinoise classique à la prune acide. Des baies de genièvre sont pilées avec une grenadine épicée et du jus de prune acide, puis le jus d'ananas et une couche de jus de canneberge forment trois étages dans un verre à pied, garni d'ananas séché.",
+  "ingredients": [
+    {"name_zh": "杜松子", "name_en": "Juniper berries", "name_fr": "Baies de genièvre", "emoji": "🫐", "image": "juniper", "category": "spice", "allergens": []},
+    {"name_zh": "香料红石榴糖浆", "name_en": "Spiced grenadine", "name_fr": "Grenadine épicée", "emoji": "🍒", "image": "grenadine", "category": "sweetener", "allergens": []},
+    {"name_zh": "酸梅汁", "name_en": "Sour plum juice", "name_fr": "Jus de prune acide", "emoji": "🟣", "image": "sour_plum", "category": "fruit", "allergens": []},
+    {"name_zh": "菠萝汁", "name_en": "Pineapple juice", "name_fr": "Jus d'ananas", "emoji": "🍍", "image": "pineapple", "category": "fruit", "allergens": []},
+    {"name_zh": "蔓越莓汁", "name_en": "Cranberry juice", "name_fr": "Jus de canneberge", "emoji": "🔴", "image": "cranberry", "category": "fruit", "allergens": []},
+    {"name_zh": "菠萝干", "name_en": "Dehydrated pineapple", "name_fr": "Ananas séché", "emoji": "🍍", "image": "pineapple", "category": "garnish", "allergens": []}
+  ]
+}

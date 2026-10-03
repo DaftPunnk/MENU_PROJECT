@@ -1,0 +1,21 @@
+{
+  "id": "jade-dragon",
+  "name_zh": "玉龙",
+  "name_en": "Jade Dragon",
+  "name_fr": "Jade Dragon",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "A sweet balance of white rum and Zealong Green Heart tea from Waikato. The house batch of rum, green apple syrup and bitters is shaken with apple juice, lime and Green Heart tea syrup, and served in a stone short cup with an edible flower and dehydrated apple.",
+  "cultural_note_zh": "白朗姆酒与怀卡托 Zealong 绿心茶的甜美平衡。店内预调的朗姆酒、青苹果糖浆和苦精，加入苹果汁、青柠和绿心茶糖浆摇和，盛于石质矮杯，以食用花和苹果干点缀。",
+  "cultural_note_fr": "Un doux équilibre entre rhum blanc et thé Zealong Green Heart du Waikato. Le mélange maison de rhum, sirop de pomme verte et amer est shaké avec jus de pomme, citron vert et sirop de thé Green Heart, servi dans une tasse basse en pierre avec une fleur comestible et de la pomme séchée.",
+  "ingredients": [
+    {"name_zh": "白朗姆酒", "name_en": "White rum", "name_fr": "Rhum blanc", "emoji": "🥃", "image": "rum", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "青苹果糖浆", "name_en": "Green apple syrup", "name_fr": "Sirop de pomme verte", "emoji": "🍏", "image": "green_apple", "category": "sweetener", "allergens": []},
+    {"name_zh": "Zealong 绿心茶糖浆", "name_en": "Zealong Green Heart tea syrup", "name_fr": "Sirop de thé Zealong Green Heart", "emoji": "🍵", "image": "green_tea", "category": "tea", "allergens": []},
+    {"name_zh": "苹果汁", "name_en": "Apple juice", "name_fr": "Jus de pomme", "emoji": "🍏", "image": "apple_juice", "category": "fruit", "allergens": []},
+    {"name_zh": "青柠汁", "name_en": "Lime juice", "name_fr": "Jus de citron vert", "emoji": "🍋", "image": "lime", "category": "citrus", "allergens": []},
+    {"name_zh": "苦精", "name_en": "Bitters", "name_fr": "Amer", "emoji": "💧", "image": "bitters", "category": "bitters", "allergens": ["alcohol"]},
+    {"name_zh": "食用花", "name_en": "Edible flower", "name_fr": "Fleur comestible", "emoji": "🌸", "image": "edible_flower", "category": "garnish", "allergens": []},
+    {"name_zh": "苹果干", "name_en": "Dehydrated apple", "name_fr": "Pomme séchée", "emoji": "🍎", "image": "apple", "category": "garnish", "allergens": []}
+  ]
+}

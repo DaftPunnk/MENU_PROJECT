@@ -1,0 +1,19 @@
+{
+  "id": "royal-75",
+  "name_zh": "Royal 75",
+  "name_en": "Royal 75",
+  "name_fr": "Royal 75",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "A lychee-and-mandarin take on the French 75, served in a coupette. Gin, Kwai Feh lychee liqueur, Mandarine Napoléon and a mandarin oleo-saccharum are stirred, then topped with Perrier-Jouët Champagne and finished with dehydrated mandarin rind. Bright, floral and celebratory.",
+  "cultural_note_zh": "以荔枝和柑橘演绎经典 French 75，用 coupette 杯呈上。金酒、荔枝利口酒、拿破仑柑橘利口酒和柑橘糖油调和后，注入巴黎之花香槟，以柑橘干皮点缀。明亮、花香、适合庆祝。",
+  "cultural_note_fr": "Une version litchi-mandarine du French 75, servie en coupette. Gin, liqueur de litchi Kwai Feh, Mandarine Napoléon et oleo-saccharum de mandarine sont mélangés au verre, puis allongés de champagne Perrier-Jouët et garnis d'écorce de mandarine séchée. Vif, floral et festif.",
+  "ingredients": [
+    {"name_zh": "金酒", "name_en": "Gin", "name_fr": "Gin", "emoji": "🍸", "image": "gin", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "荔枝利口酒", "name_en": "Kwai Feh lychee liqueur", "name_fr": "Liqueur de litchi Kwai Feh", "emoji": "🍶", "image": "lychee_liqueur", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "拿破仑柑橘利口酒", "name_en": "Mandarine Napoléon", "name_fr": "Mandarine Napoléon", "emoji": "🍊", "image": "mandarin_liqueur", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "柑橘糖油", "name_en": "Mandarin oleo-saccharum", "name_fr": "Oleo-saccharum de mandarine", "emoji": "🍊", "image": "mandarin", "category": "sweetener", "allergens": []},
+    {"name_zh": "巴黎之花香槟", "name_en": "Perrier-Jouët Champagne", "name_fr": "Champagne Perrier-Jouët", "emoji": "🥂", "image": "champagne", "category": "wine", "allergens": ["alcohol"]},
+    {"name_zh": "柑橘干皮", "name_en": "Dehydrated mandarin rind", "name_fr": "Écorce de mandarine séchée", "emoji": "🍊", "image": "mandarin", "category": "garnish", "allergens": []}
+  ]
+}

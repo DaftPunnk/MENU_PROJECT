@@ -1,0 +1,21 @@
+{
+  "id": "wei-la-margarita",
+  "name_zh": "微辣玛格丽特",
+  "name_en": "Wēi là Margarita",
+  "name_fr": "Wēi là Margarita",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "A Margarita improved with honey, tea and a touch of heat — 微辣 means 'mildly spicy'. Espolòn tequila, green apple liqueur, amber honey tea syrup, lime and apple juice get a dash of Kaitaia Fire chilli sauce, served in a coupe with a shichimi salt rim and a dehydrated lime wheel.",
+  "cultural_note_zh": "加入蜂蜜、茶香和一丝辣味的玛格丽特。Espolòn 龙舌兰、青苹果利口酒、琥珀蜂蜜茶糖浆、青柠和苹果汁，再滴入 Kaitaia Fire 辣椒酱，盛于沾有七味盐边的 coupe 杯，以青柠干片点缀。",
+  "cultural_note_fr": "Une Margarita relevée de miel, de thé et d'une pointe de piquant — 微辣 signifie « légèrement épicé ». Tequila Espolòn, liqueur de pomme verte, sirop de thé ambré au miel, citron vert et jus de pomme, avec un trait de sauce pimentée Kaitaia Fire, servie en coupe givrée au sel shichimi avec une rondelle de citron vert séchée.",
+  "ingredients": [
+    {"name_zh": "Espolòn 龙舌兰", "name_en": "Espolòn tequila", "name_fr": "Tequila Espolòn", "emoji": "🌵", "image": "tequila", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "青苹果利口酒", "name_en": "Green apple liqueur", "name_fr": "Liqueur de pomme verte", "emoji": "🍏", "image": "apple_liqueur", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "琥珀蜂蜜茶糖浆", "name_en": "Amber honey tea syrup", "name_fr": "Sirop de thé ambré au miel", "emoji": "🍯", "image": "honey", "category": "sweetener", "allergens": []},
+    {"name_zh": "青柠汁", "name_en": "Lime juice", "name_fr": "Jus de citron vert", "emoji": "🍋", "image": "lime", "category": "citrus", "allergens": []},
+    {"name_zh": "苹果汁", "name_en": "Apple juice", "name_fr": "Jus de pomme", "emoji": "🍏", "image": "apple_juice", "category": "fruit", "allergens": []},
+    {"name_zh": "Kaitaia Fire 辣椒酱", "name_en": "Kaitaia Fire chilli sauce", "name_fr": "Sauce pimentée Kaitaia Fire", "emoji": "🌶️", "image": "chili", "category": "spice", "allergens": []},
+    {"name_zh": "七味盐边", "name_en": "Shichimi salt rim", "name_fr": "Bord au sel shichimi", "emoji": "🧂", "image": "salt", "category": "garnish", "allergens": ["sesame"]},
+    {"name_zh": "青柠干片", "name_en": "Dehydrated lime wheel", "name_fr": "Rondelle de citron vert séchée", "emoji": "🍋", "image": "lime", "category": "garnish", "allergens": []}
+  ]
+}
