@@ -89,6 +89,7 @@ function drinkCatalogueText(drinks) {
         id: d.id,
         type: d.group.name_en ? `${d.section.name_en} · ${d.group.name_en}` : d.section.name_en,
         detail: d.item.detail,
+        limited: d.item.limited || undefined,
         desc: d.item.desc_en,
         price: d.item.price ?? d.item.prices?.map((p) => `${p.label} ${p.price}`).join(' / '),
       }),

@@ -1,0 +1,18 @@
+{
+  "id": "velvet-petal",
+  "name_zh": "Velvet Petal",
+  "name_en": "Velvet Petal",
+  "name_fr": "Velvet Petal",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "A limited-time, cherry-blossom take on the Negroni. Roku Sakura gin, Campari and rose-infused vermouth are stirred and served over a large rock in a fancy rocks glass, garnished with an orange wheel and rose petals. Floral, bittersweet and elegant.",
+  "cultural_note_zh": "限时供应的樱花版尼格罗尼。六金酒樱花版、金巴利和玫瑰浸泡味美思调和，加大冰块盛于古典杯，以橙片和玫瑰花瓣点缀。花香、苦甜、优雅。",
+  "cultural_note_fr": "Un Negroni aux fleurs de cerisier, en édition limitée. Gin Roku Sakura, Campari et vermouth infusé à la rose sont mélangés au verre et servis sur un gros glaçon, garnis d'une rondelle d'orange et de pétales de rose. Floral, doux-amer et élégant.",
+  "ingredients": [
+    {"name_zh": "六金酒樱花版", "name_en": "Roku Sakura gin", "name_fr": "Gin Roku Sakura", "emoji": "🌸", "image": "gin", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "金巴利", "name_en": "Campari", "name_fr": "Campari", "emoji": "🍷", "image": "campari", "category": "liqueur", "allergens": ["alcohol"]},
+    {"name_zh": "玫瑰味美思", "name_en": "Rose-infused vermouth", "name_fr": "Vermouth infusé à la rose", "emoji": "🌹", "image": "rose_vermouth", "category": "wine", "allergens": ["alcohol"]},
+    {"name_zh": "橙片", "name_en": "Orange wheel", "name_fr": "Rondelle d'orange", "emoji": "🍊", "image": "orange", "category": "garnish", "allergens": []},
+    {"name_zh": "玫瑰花瓣", "name_en": "Rose petals", "name_fr": "Pétales de rose", "emoji": "🌹", "image": "rose", "category": "garnish", "allergens": []}
+  ]
+}

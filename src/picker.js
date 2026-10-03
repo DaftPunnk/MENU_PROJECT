@@ -13,6 +13,7 @@ import food from '../data/food.json'
 import beverages from '../data/beverages.json'
 import picker from '../data/picker.json'
 import { dishById } from './menu'
+import { isAvailable } from './availability'
 
 // 忌口:对应菜单标记 + 成分过敏原关键词 / avoid options → menu code + ingredient allergen keywords
 export const AVOID = {
@@ -82,7 +83,7 @@ export function drinksFor(prefs) {
     sections = new Set([...sections].filter((s) => ALCOHOL_FREE.has(s)))
     if (!sections.size) sections = new Set(ALCOHOL_FREE)
   }
-  return drinkCandidates.filter((d) => sections.has(d.section.id))
+  return drinkCandidates.filter((d) => sections.has(d.section.id) && isAvailable(d.item))
 }
 
 // 几款酒水 / how many drinks to suggest
@@ -119,7 +120,7 @@ if (import.meta.env.DEV) {
 export const allCandidates = candidates
 
 // 排除忌口后还能点的菜(安全过滤,AI 只能从这里面选) / what's left after the avoid filter — the AI may only pick from these
-export const candidatesFor = (avoid) => candidates.filter((c) => allowed(c, avoid))
+export const candidatesFor = (avoid) => candidates.filter((c) => isAvailable(c.item) && allowed(c, avoid))
 
 function allowed(c, avoid) {
   for (const key of avoid) {

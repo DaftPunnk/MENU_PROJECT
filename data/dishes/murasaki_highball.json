@@ -1,0 +1,21 @@
+{
+  "id": "murasaki-highball",
+  "name_zh": "Murasaki Highball",
+  "name_en": "Murasaki Highball",
+  "name_fr": "Murasaki Highball",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "Limited time. Murasaki means 'purple' in Japanese. Haku vodka is shaken with blueberry shrub, blueberry purée, lemon and sugar, topped with soda over cubed ice in a highball, and garnished with frozen, sugar-coated blueberries on a rosemary stem. Tangy, fruity and refreshing.",
+  "cultural_note_zh": "限时供应。Murasaki 在日语里是「紫色」。白伏特加与蓝莓醋饮、蓝莓果泥、柠檬和糖浆摇和，倒入加冰的高球杯后注满苏打水，以串在迷迭香枝上的冷冻糖霜蓝莓点缀。酸甜果香，清爽解腻。",
+  "cultural_note_fr": "Édition limitée. Murasaki signifie « violet » en japonais. La vodka Haku est shakée avec un shrub à la myrtille, purée de myrtille, citron et sucre, allongée d'eau gazeuse sur glace, et garnie de myrtilles givrées et sucrées sur une branche de romarin. Acidulé, fruité et rafraîchissant.",
+  "ingredients": [
+    {"name_zh": "白伏特加", "name_en": "Haku vodka", "name_fr": "Vodka Haku", "emoji": "🍸", "image": "vodka", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "蓝莓醋饮", "name_en": "Blueberry shrub", "name_fr": "Shrub à la myrtille", "emoji": "🫐", "image": "blueberry", "category": "sweetener", "allergens": []},
+    {"name_zh": "蓝莓果泥", "name_en": "Blueberry purée", "name_fr": "Purée de myrtille", "emoji": "🫐", "image": "blueberry", "category": "fruit", "allergens": []},
+    {"name_zh": "柠檬汁", "name_en": "Lemon juice", "name_fr": "Jus de citron", "emoji": "🍋", "image": "lemon", "category": "citrus", "allergens": []},
+    {"name_zh": "糖浆", "name_en": "Sugar syrup", "name_fr": "Sirop de sucre", "emoji": "🍬", "image": "sugar", "category": "sweetener", "allergens": []},
+    {"name_zh": "苏打水", "name_en": "Soda", "name_fr": "Eau gazeuse", "emoji": "🫧", "image": "soda", "category": "mixer", "allergens": []},
+    {"name_zh": "糖霜蓝莓", "name_en": "Sugar-coated blueberries", "name_fr": "Myrtilles sucrées", "emoji": "🫐", "image": "blueberry", "category": "garnish", "allergens": []},
+    {"name_zh": "迷迭香", "name_en": "Rosemary", "name_fr": "Romarin", "emoji": "🌿", "image": "rosemary", "category": "herb", "allergens": []}
+  ]
+}

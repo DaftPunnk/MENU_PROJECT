@@ -16,6 +16,9 @@
       "groups": [
         {
           "items": [
+            { "name": "Velvet Petal", "limited": true, "dish": "velvet-petal", "desc_en": "Roku Sakura Gin, Campari & Rose-infused Vermouth. A blossoming Negroni" },
+            { "name": "Murasaki Highball", "limited": true, "dish": "murasaki-highball", "desc_en": "Haku Vodka, Blueberry Shrub, Blueberry, Lemon, topped with Soda" },
+            { "name": "Electric Shogun", "limited": true, "dish": "electric-shogun", "desc_en": "Toki Whisky, Sichuan Pepper Vermouth, Spiced Cherry Cola, Orange & Cranberry Bitters" },
             { "name": "Flox-tail", "price": 26, "dish": "flox-tail", "desc_en": "A cocktail inspired by New Zealand artist Flox and her artwork created for our bar. Dark Rum, Pink Grapefruit, Spiced Peach & a touch of art" },
             { "name": "Royal 75", "price": 28, "dish": "royal-75", "desc_en": "Lychee, Mandarin, Gin topped with Perrier-Jouët Champagne" },
             { "name": "Silk Road Negroni", "price": 25, "dish": "silk-road-negroni", "desc_en": "Gin, Spiced with Ginger, Black Pepper, Black Tea and Clove, combined with Campari & Sweet Vermouth. A Chinese twist on a classic" },

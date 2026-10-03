@@ -20,6 +20,7 @@ const UI = {
   tapOpen: { zh: '点击分解', en: 'Tap to break apart', fr: 'Touchez pour décomposer' },
   tapClose: { zh: '点击复原', en: 'Tap to reassemble', fr: 'Touchez pour recomposer' },
   ingredients: { zh: '成分 ›', en: 'Ingredients ›', fr: 'Ingrédients ›' },
+  limited: { zh: '限定', en: 'Limited', fr: 'Édition limitée' },
 }
 
 // 界面文字 / a UI string in the given language

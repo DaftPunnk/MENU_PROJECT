@@ -102,12 +102,17 @@ function MenuList({ menu, openSection, onToggleSection, onSelectDish }) {
                             const itemName = names(item, lang)
                             const detail = pick(item, 'detail', lang)
                             const desc = pick(item, 'desc', lang)
-                            // 过敏原字母 + 「成分」入口 / allergen letters + the "ingredients" link tag
+                            // 过敏原字母 + 「限定」+ 「成分」入口 / allergen letters + "limited" + the "ingredients" link tag
                             const tags = (
                               <>
                                 {item.codes?.length > 0 && (
                                   <span className="ml-1.5">
                                     <CodeBadges codes={item.codes} />
+                                  </span>
+                                )}
+                                {item.limited && (
+                                  <span className="ml-2 text-[10px] text-[#14234a] bg-[#c9a96a] rounded-full px-1.5 py-px align-middle whitespace-nowrap">
+                                    {t('limited', lang)}
                                   </span>
                                 )}
                                 {linked && (

@@ -202,6 +202,9 @@ Everything is in `data/beverages.json`: `sections` → `groups` (optionally titl
 - `price_note`：价格后的小字，如 `pp` / small text after the price, e.g. `pp`
 - `price_text`：文字价格，如 `MP` 时价 / a text price such as `MP`
 - `dish`：填某道菜 JSON 的 `id`，这一行就能点进成分拆解 / set to a dish JSON's `id` to make the row open its breakdown
+- `limited: true`：显示「限定」标签 / shows a "limited" tag
+- `until: "2026-11-30"`：最后供应日(含当天，奥克兰时间)，过了自动从菜单和 AI 推荐里消失，不用重新部署；菜品单(`food.json`)同样适用
+  last day served (inclusive, Auckland time); after it the item disappears from the menu and AI picks automatically, no redeploy needed. Works in `food.json` too.
 
 ### 4.4 图片工具 / Image helpers
 

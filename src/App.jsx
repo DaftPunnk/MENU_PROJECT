@@ -17,8 +17,13 @@ import DishCard from './components/DishCard'
 import MenuList from './components/MenuList'
 import HelpMePick from './components/HelpMePick'
 import { LANGS, LangContext, t } from './i18n'
-import food from '../data/food.json'
-import beverages from '../data/beverages.json'
+import foodMenu from '../data/food.json'
+import beverageMenu from '../data/beverages.json'
+import { withoutExpired } from './availability'
+
+// 过了 until 日期的限时品项不显示(见 availability.js) / limited-time items past their `until` date are hidden (see availability.js)
+const food = withoutExpired(foodMenu)
+const beverages = withoutExpired(beverageMenu)
 
 // 初始语言:本次访问里切换过就用切换的(sessionStorage),否则看手机系统语言(中文 / 法语),其余默认英文
 // starting language: the one switched to earlier in this visit (sessionStorage), else the phone's system

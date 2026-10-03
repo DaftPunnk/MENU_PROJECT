@@ -1,0 +1,20 @@
+{
+  "id": "electric-shogun",
+  "name_zh": "Electric Shogun",
+  "name_en": "Electric Shogun",
+  "name_fr": "Electric Shogun",
+  "category": "cocktail",
+  "emoji": "🍸",
+  "cultural_note_en": "Limited time. Toki Japanese whisky is stirred with Sichuan pepper-infused vermouth, a spiced cherry cola syrup and orange and spiced cranberry bitters, strained into a sour glass and finished with an orange twist and a maraschino cherry. Spiced, rich and gently tingling.",
+  "cultural_note_zh": "限时供应。季日本威士忌与花椒浸泡味美思、香料樱桃可乐糖浆，以及橙味和香料蔓越莓苦精调和，滤入酸酒杯，以橙皮卷和黑樱桃点缀。香料浓郁，带花椒的微麻。",
+  "cultural_note_fr": "Édition limitée. Le whisky japonais Toki est mélangé à un vermouth infusé au poivre du Sichuan, un sirop épicé cerise-cola et des amers à l'orange et à la canneberge épicée, filtré dans un verre à sour et garni d'un zeste d'orange et d'une cerise au marasquin. Épicé, riche et légèrement fourmillant.",
+  "ingredients": [
+    {"name_zh": "季日本威士忌", "name_en": "Toki Japanese whisky", "name_fr": "Whisky japonais Toki", "emoji": "🥃", "image": "whisky", "category": "spirit", "allergens": ["alcohol"]},
+    {"name_zh": "花椒味美思", "name_en": "Sichuan pepper-infused vermouth", "name_fr": "Vermouth infusé au poivre du Sichuan", "emoji": "🍷", "image": "peppercorn", "category": "wine", "allergens": ["alcohol"]},
+    {"name_zh": "香料樱桃可乐糖浆", "name_en": "Spiced cherry cola syrup", "name_fr": "Sirop épicé cerise-cola", "emoji": "🍒", "image": "cherry", "category": "sweetener", "allergens": []},
+    {"name_zh": "橙味苦精", "name_en": "Orange bitters", "name_fr": "Amer à l'orange", "emoji": "💧", "image": "bitters", "category": "bitters", "allergens": ["alcohol"]},
+    {"name_zh": "香料蔓越莓苦精", "name_en": "Spiced cranberry bitters", "name_fr": "Amer à la canneberge épicée", "emoji": "💧", "image": "bitters", "category": "bitters", "allergens": ["alcohol"]},
+    {"name_zh": "橙皮卷", "name_en": "Orange twist", "name_fr": "Zeste d'orange", "emoji": "🍊", "image": "orange", "category": "garnish", "allergens": []},
+    {"name_zh": "黑樱桃", "name_en": "Maraschino cherry", "name_fr": "Cerise au marasquin", "emoji": "🍒", "image": "cherry", "category": "garnish", "allergens": []}
+  ]
+}
