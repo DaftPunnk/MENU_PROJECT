@@ -9,12 +9,28 @@
 import kungPaoImg from './assets/kongpao_dish.webp'
 import harGowImg from './assets/ha_kao_dish.webp'
 import floxTailImg from './assets/flox_tail_dish.webp'
+import blackForestMartiniImg from './assets/black_forest_martini_dish.webp'
+import eyeOfTheDragonImg from './assets/eye_of_the_dragon_dish.webp'
+import oolLaLaImg from './assets/ool_la_la_dish.webp'
+import royal75Img from './assets/royal_75_dish.webp'
+import changJiangImg from './assets/chang_jiang_dish.webp'
+import weiLaMargaritaImg from './assets/wei_la_margarita_dish.webp'
+import monkeyBusinessImg from './assets/monkey_business_dish.webp'
+import berriesFromBeijingImg from './assets/berries_from_beijing_dish.webp'
 
 // 按菜品 id 对应成菜图 / hero image by dish id
 const heroImages = {
   'kung-pao-chicken': kungPaoImg,
   'ha-kao': harGowImg,
   'flox-tail': floxTailImg,
+  'black-forest-martini': blackForestMartiniImg,
+  'eye-of-the-dragon': eyeOfTheDragonImg,
+  'ool-la-la': oolLaLaImg,
+  'royal-75': royal75Img,
+  'chang-jiang': changJiangImg,
+  'wei-la-margarita': weiLaMargaritaImg,
+  'monkey-business': monkeyBusinessImg,
+  'berries-from-beijing': berriesFromBeijingImg,
 }
 
 const dishFiles = import.meta.glob('../data/dishes/*.json', { eager: true, import: 'default' })
