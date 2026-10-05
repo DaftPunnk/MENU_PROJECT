@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+/* 页面底色跟菜单一样是藏青:手机上划过头(回弹)时露出的是藏青而不是一大片白;
+   同时关掉上下回弹/链式滚动,划到底就停住 */
+/* paint the page itself navy so an overscroll on a phone shows navy, not a white void,
+   and turn off the vertical bounce so the page simply stops at the end */
+html,
+body {
+  background-color: #14234a;
+  overscroll-behavior-y: none;
+}

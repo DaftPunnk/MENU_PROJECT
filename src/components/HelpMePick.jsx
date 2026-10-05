@@ -194,7 +194,7 @@ function HelpMePick({ hidden, onSelectDish }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 16 }}
             onClick={() => setOpen(true)}
-            className="fixed bottom-5 right-4 z-40 px-4 py-2.5 rounded-full bg-[#c9a96a] text-[#14234a] text-sm font-medium
+            className="fixed bottom-[calc(1.25rem+env(safe-area-inset-bottom))] right-4 z-40 px-4 py-2.5 rounded-full bg-[#c9a96a] text-[#14234a] text-sm font-medium
                        shadow-[0_8px_24px_rgba(0,0,0,0.45)]"
           >
             {s('button')}

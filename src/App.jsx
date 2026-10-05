@@ -77,7 +77,7 @@ function App() {
     <LangContext.Provider value={lang}>
       {/* 藏青蓝底 + 中心一抹金色微光 / navy base with a faint gold glow at center */}
       <div
-        className="min-h-screen bg-[#14234a] text-[#e8dcc6]"
+        className="min-h-dvh bg-[#14234a] text-[#e8dcc6]"
         style={{
           backgroundImage:
             'radial-gradient(circle at 50% 28%, rgba(201,169,106,0.12), transparent 60%)',
@@ -160,7 +160,9 @@ function App() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
-              className="max-w-md mx-auto px-4 py-4"
+              // 开着「帮我选」时底部多留一截,浮动按钮不会盖住最底下的图例和小字
+              // with "help me pick" on, leave extra room at the bottom so the floating button can't cover the legend and footer
+              className={'max-w-md mx-auto px-4 pt-4 ' + (ai ? 'pb-24' : 'pb-4')}
             >
               {/* 菜品 / 酒水 切换 / food ⇄ drinks toggle */}
               <div className="flex justify-center gap-2 mb-2">
